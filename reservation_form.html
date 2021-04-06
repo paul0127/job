@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>預約諮詢</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./assets/carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/reservation_form.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="head">
+          <div class="logo"><img src="./images/common/logo.svg" alt="" /></div>
+          <ul class="main_nav">
+            <li><a href="#">服務項目</a></li>
+            <li><a href="#">預約諮詢</a></li>
+            <li><a href="#">顧問介紹</a></li>
+            <li><a href="#">職涯二三事</a></li>
+            <li><a href="#">常見問題</a></li>
+            <li><a href="#">聯絡我們</a></li>
+          </ul>
+          <ul class="toolBar">
+            <li>
+              <a href="#"><img src="./images/common/login.svg" /></a>
+            </li>
+            <li>
+              <a href="#"><img src="./images/common/search.svg" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="top_banner">
+      <div class="container">
+        <h1>預約諮詢</h1>
+        <p>一對一職涯諮詢<br />客觀的分析，專業的建議，學習如何掌握職涯人生</p>
+      </div>
+    </div>
+    <div class="container">
+      <ul class="bread">
+        <li><a href="#">Career首頁</a></li>
+        <li><a href="#">職涯門診</a></li>
+        <li>預約諮詢</li>
+      </ul>
+    </div>
+    <div class="page">
+      <div class="container">
+        <ul class="stepwizard">
+          <li class="complete">
+            <span>1</span>
+            <div class="text">想了解自己、解開迷惘、學習如何掌握職涯人生</div>
+          </li>
+          <li class="active">
+            <span>2</span>
+            <div class="text">預約諮詢時段</div>
+          </li>
+          <li>
+            <span>3</span>
+            <div class="text">投資自己</div>
+          </li>
+          <li>
+            <span>4</span>
+            <div class="text">10分鐘了解你</div>
+          </li>
+          <li>
+            <span>5</span>
+            <div class="text">客觀分析<br />與專業建議</div>
+          </li>
+          <li>
+            <span>6</span>
+            <div class="text">帶走諮詢建議</div>
+          </li>
+        </ul>
+        <div class="reservation_form">
+          <h2>您預約的場次是：台北場 2020/09/10(四) 14:00-16:00 趙美珍顧問</h2>
+          <h1>職涯門診時間表</h1>
+          <div class="tip">
+            <span class="red">*</span
+            >為必填欄位。您的資料僅作為職涯門診使用，請您可參閱「Career隱私權保護政策」。
+          </div>
+          <div class="form">
+            <div class="list">
+              <label for=""><span class="red">*</span>姓名</label>
+              <div class="input">
+                <input type="text" />
+              </div>
+            </div>
+            <div class="list">
+              <label for=""><span class="red">*</span>身分證字號</label>
+              <div class="input">
+                <input type="text" />
+              </div>
+            </div>
+            <div class="list">
+              <label for=""><span class="red">*</span>性別</label>
+              <div class="input">
+                <input type="radio" name="sex" id="sex_0" /><label for="sex_0"
+                  ><span class="circle"></span>男</label
+                >
+                <input type="radio" name="sex" id="sex_1" /><label for="sex_1"
+                  ><span class="circle"></span>女</label
+                >
+              </div>
+            </div>
+            <div class="list">
+              <label for=""><span class="red">*</span>婚姻狀況</label>
+              <div class="input">
+                <input type="radio" name="married" id="m_0" /><label for="m_0"
+                  ><span class="circle"></span>已婚</label
+                >
+                <input type="radio" name="married" id="m_1" /><label for="m_1"
+                  ><span class="circle"></span>未婚</label
+                >
+              </div>
+            </div>
+            <div class="list">
+              <label for=""><span class="red">*</span>出生年月日</label>
+              <div class="input">
+                <input type="date" />
+              </div>
+            </div>
+            <div class="list">
+              <label for=""><span class="red">*</span>手機</label>
+              <div class="input">
+                <input type="text" placeholder="例如：0910-000-123" />
+              </div>
+            </div>
+            <div class="list">
+              <label for="">電話</label>
+              <div class="input">
+                <input type="text" placeholder="例如：02-12345678" />
+              </div>
+            </div>
+            <div class="list">
+              <label for=""><span class="red">*</span>EMAIL</label>
+              <div class="input">
+                <input type="text" />
+              </div>
+            </div>
+            <div class="list">
+              <label for=""><span class="red">*</span>身份</label>
+              <div class="input">
+                <input type="radio" name="identity" id="i_0" /><label for="i_0"
+                  ><span class="circle"></span>已就業</label
+                >
+                <input type="radio" name="identity" id="i_1" /><label for="i_1"
+                  ><span class="circle"></span>待業中</label
+                >
+                <input type="radio" name="identity" id="i_2" /><label for="i_2"
+                  ><span class="circle"></span>學生</label
+                >
+              </div>
+            </div>
+            <div class="list">
+              <label for=""><span class="red">*</span>學歷</label>
+              <div class="input">
+                <input type="radio" name="education" id="e_0" /><label for="e_0"
+                  ><span class="circle"></span>博士</label
+                >
+                <input type="radio" name="education" id="e_1" /><label for="e_1"
+                  ><span class="circle"></span>碩士</label
+                >
+                <input type="radio" name="education" id="e_2" /><label for="e_2"
+                  ><span class="circle"></span>大學</label
+                >
+                <input type="radio" name="education" id="e_3" /><label for="e_3"
+                  ><span class="circle"></span>專科</label
+                >
+                <input type="radio" name="education" id="e_4" /><label for="e_4"
+                  ><span class="circle"></span>高中</label
+                >
+                <input type="radio" name="education" id="e_5" /><label for="e_5"
+                  ><span class="circle"></span>高職</label
+                >
+                <input type="radio" name="education" id="e_6" /><label for="e_6"
+                  ><span class="circle"></span>國中(含以下)</label
+                >
+              </div>
+            </div>
+            <div class="list">
+              <label for=""><span class="red">*</span>就讀或畢業學校</label>
+              <div class="input">
+                <input type="text" placeholder="請填全名"/>
+              </div>
+            </div>
+            <div class="list">
+              <label for=""><span class="red">*</span>就讀或畢業科系</label>
+              <div class="input">
+                <select name="" id="">
+                  <option value="">請選擇學院</option>
+                </select>
+                <select name="" id="">
+                  <option value="">請選擇科系</option>
+                </select>
+              </div>
+            </div>
+            <div class="list">
+              <label for="">就讀年級<br />(在學中請填)</label>
+              <div class="input">
+                <select name="" id="">
+                  <option value="">請選擇就讀年級</option>
+                </select>
+              </div>
+            </div>
+            <div class="list">
+              <label for="">產業</label>
+              <div class="input">
+                <select name="" id="">
+                  <option value="">批發/零售/傳直銷業</option>
+                </select>
+                <select name="" id="">
+                  <option value="">批發業</option>
+                </select>
+                <select name="" id="">
+                  <option value="">農/畜/水產品批發業</option>
+                </select>
+              </div>
+            </div>
+            <div class="list">
+              <label for="">職務類別</label>
+              <div class="input">
+                <select name="" id="">
+                  <option value="">經營/人資類</option>
+                </select>
+                <select name="" id="">
+                  <option value="">經營/幕僚類人員</option>
+                </select>
+                <select name="" id="">
+                  <option value="">經營管理</option>
+                </select>
+              </div>
+            </div>
+            <div class="list">
+              <label for="">任職公司</label>
+              <div class="input">
+                <input type="text" />
+              </div>
+            </div>
+            <div class="list">
+              <label for="">職稱</label>
+              <div class="input">
+                <input type="text" />
+              </div>
+            </div>
+            <div class="list">
+              <label for="">工作年資</label>
+              <div class="input">
+                <select name="" id="">
+                  <option value="">工作年資</option>
+                </select>
+              </div>
+            </div>
+            
+            <div class="list">
+              <label for=""
+                ><span class="red">*</span>諮詢目的<br />(可複選)</label
+              >
+              <div class="input wrap">
+                <input type="checkbox" name="purpose" id="p_0" /><label for="p_0"
+                  ><span class="circle"></span>找工作</label
+                >
+                <input type="checkbox" name="purpose" id="p_1" /><label for="p_1"
+                  ><span class="circle"></span>想了解自己的適才適所</label
+                >
+                <input type="checkbox" name="purpose" id="p_2" /><label for="p_2"
+                  ><span class="circle"></span>想考公職</label
+                >
+                <input type="checkbox" name="purpose" id="p_3" /><label for="p_3"
+                  ><span class="circle"></span>想改善人際關係</label
+                >
+                <input type="checkbox" name="purpose" id="p_4" /><label for="p_4"
+                  ><span class="circle"></span>升學及科系選擇</label
+                >
+                <input type="checkbox" name="purpose" id="p_5" /><label for="p_5"
+                  ><span class="circle"></span>想出國深造</label
+                >
+                <input type="checkbox" name="purpose" id="p_6" /><label for="p_6"
+                  ><span class="circle"></span>其他：</label
+                ><input class="other_input" type="text">
+              </div>
+            </div>
+            <div class="list">
+              <label for=""
+                ><span class="red">*</span>諮詢問題說明<br />(請簡述)</label
+              >
+              <div class="input">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn">
+          <a class="send_btn" href="#">確認送出</a>
+          <a href="#" class="go_back">回上一頁</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer_menu_btn">
+        <img src="./images/common/arrow_icon.svg" alt="" />
+      </div>
+      <div class="footer_menu">
+        <div class="container">
+          <ul class="footer_nav">
+            <li>
+              <label>CPAS人才培訓</label>
+              <ul class="sub">
+                <li><a href="">站內子選單</a></li>
+                <li><a href="">站內子選單</a></li>
+                <li><a href="">站內子選單</a></li>
+                <li><a href="">站內子選單</a></li>
+              </ul>
+            </li>
+            <li>
+              <label>職涯活動</label>
+              <ul class="sub">
+                <li><a href="">最新活動</a></li>
+                <li><a href="">活動花絮</a></li>
+              </ul>
+            </li>
+            <li>
+              <label>職涯智庫</label>
+              <ul class="sub">
+                <li><a href="">職涯好文</a></li>
+                <li><a href="">影音專區</a></li>
+                <li><a href="">趣味調查</a></li>
+              </ul>
+            </li>
+            <li>
+              <label>人才徵聘</label>
+              <ul class="sub">
+                <li><a href="">最新職缺</a></li>
+                <li><a href="">派遣員工專區</a></li>
+                <li><a href="">人力派遣</a></li>
+                <li><a href="">薪資代管</a></li>
+                <li><a href="">人事管理顧問方案</a></li>
+                <li><a href="">專案招募</a></li>
+                <li><a href="">高階獵才</a></li>
+                <li><a href="">聯絡我們</a></li>
+              </ul>
+            </li>
+            <li>
+              <label>人才培訓</label>
+              <ul class="sub">
+                <li><a href="">關於我們</a></li>
+                <li><a href="">培訓課程</a></li>
+                <li><a href="">顧問團隊</a></li>
+                <li><a href="">人才培訓專案</a></li>
+              </ul>
+            </li>
+            <li>
+              <label>校園專區</label>
+              <ul class="sub">
+                <li><a href="">職涯地圖</a></li>
+                <li><a href="">服務項目</a></li>
+                <li><a href="">教師培訓</a></li>
+                <li><a href="">講座邀約</a></li>
+                <li><a href="">專屬方案</a></li>
+              </ul>
+            </li>
+            <li>
+              <label>職涯門診</label>
+              <ul class="sub">
+                <li><a href="">服務內容</a></li>
+                <li><a href="">顧問介紹</a></li>
+                <li><a href="">預約報名</a></li>
+                <li><a href="">常見問題</a></li>
+                <li><a href="">顧問登入</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottom">
+        <div class="container">
+          <div class="footer_logo">
+            <img src="./images/common/footer_logo.svg" alt="" />
+          </div>
+          <div class="line">
+            <ul class="social">
+              <li>
+                <a href=""><img src="./images/common/facebook.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href=""><img src="./images/common/line.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./images/common/instagram.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""
+                  ><img src="./images/common/youtube-play.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+            <ul class="menu">
+              <li><a href="">關於Career</a></li>
+              <li><a href="">服務據點</a></li>
+              <li><a href="">版權聲明</a></li>
+              <li><a href="">隱私權政策</a></li>
+              <li><a href="">常見問題</a></li>
+              <li><a href="">聯絡我們</a></li>
+            </ul>
+          </div>
+          <div class="line">
+            <ul class="info">
+              <li>
+                <label for=""
+                  ><img src="./images/common/phone.svg" alt="" /></label
+                >0800-712-712 平日9:00~18:00
+              </li>
+              <li>
+                <label for=""
+                  ><img src="./images/common/envelope.svg" alt="" /></label
+                >service@career.com.tw
+              </li>
+            </ul>
+            <div class="copyright">
+              Copyright 2020 @ Career Consulting Co.Ltd
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"
+      integrity="sha512-qzrZqY/kMVCEYeu/gCm8U2800Wz++LTGK4pitW/iswpCbjwxhsmUwleL1YXaHImptCHG0vJwU7Ly7ROw3ZQoww=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/carousel/owl.carousel.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

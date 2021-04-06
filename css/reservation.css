@@ -1,14 +1,15 @@
 @import 'common.css';
 
 /*查詢門診地點*/
-.panel {
+.reservation {
   padding: 60px 95px;
   border-radius: 24px;
   background-color: #fff;
   box-shadow: 5px 10px 10px #00000029;
   margin-bottom: 60px;
+  margin-top: 30px;
 }
-.panel h1 {
+.reservation h1 {
   font-size: 3rem;
   text-align: center;
   font-weight: 900;
@@ -16,21 +17,21 @@
   letter-spacing: -2px;
   margin-bottom: 16px;
 }
-.panel p {
+.reservation p {
   font-size: 1.25rem;
   text-align: center;
   color: #333333;
   margin-bottom: 12px;
 }
-.panel p a {
+.reservation p a {
   color: #ec0086;
   text-decoration: underline;
   margin: 0 5px;
 }
-.panel p a:hover {
+.reservation p a:hover {
   opacity: 0.8;
 }
-.panel .local {
+.reservation .local {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -38,16 +39,16 @@
   color: #ec0086;
   margin-bottom: 30px;
 }
-.panel .local img {
+.reservation .local img {
   margin-right: 20px;
 }
-.panel ul.tabs {
+.reservation ul.tabs {
   list-style: none;
   padding-left: 0;
   display: flex;
   margin-bottom: 40px;
 }
-.panel ul.tabs li {
+.reservation ul.tabs li {
   flex: 1;
   display: flex;
   align-items: center;
@@ -61,41 +62,41 @@
   margin-right: 30px;
   cursor: pointer;
 }
-.panel ul.tabs li.active,.panel ul.tabs li:hover{
+.reservation ul.tabs li.active,.reservation ul.tabs li:hover{
   background: transparent linear-gradient(180deg, #ec0086 0%, #db4954 100%) 0%
     0% no-repeat padding-box;
   box-shadow: 5px 5px 6px #00000029;
   color: #fff;
 }
-.panel ul.tabs li:last-child {
+.reservation ul.tabs li:last-child {
   margin-right: 0;
 }
-.panel ul.tabs_panel {
+.reservation ul.tabs_panel {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
   margin-bottom: 22px;
 }
-.panel ul.tabs_panel li {
+.reservation ul.tabs_panel li {
   display: none;
 }
-.panel ul.tabs_panel li.active {
+.reservation ul.tabs_panel li.active {
   display: block;
 }
-.panel ul.tabs_panel .owl-carousel.owl-loaded {
+.reservation ul.tabs_panel .owl-carousel.owl-loaded {
   display: block;
 }
-.panel ul.tabs_panel .owl-carousel.owl-hidden {
+.reservation ul.tabs_panel .owl-carousel.owl-hidden {
   opacity: 0;
 }
-.panel ul.tabs_panel .owl-carousel.owl-loading {
+.reservation ul.tabs_panel .owl-carousel.owl-loading {
   opacity: 0;
   display: block;
 }
-.panel ul.tabs_panel .table_slider{
+.reservation ul.tabs_panel .table_slider{
   position: relative;
 }
-.panel ul.tabs_panel .table_slider .owl-nav {
+.reservation ul.tabs_panel .table_slider .owl-nav {
   position: absolute;
   top: 50%;
   transform: translateY(-16px);
@@ -104,8 +105,8 @@
   display: flex;
   justify-content: space-between;
 }
-.panel ul.tabs_panel .table_slider .owl-nav .owl-prev,
-.panel ul.tabs_panel .table_slider .owl-nav .owl-next {
+.reservation ul.tabs_panel .table_slider .owl-nav .owl-prev,
+.reservation ul.tabs_panel .table_slider .owl-nav .owl-next {
   width: 32px;
   height: 32px;
   background-color: #ec0086;
@@ -115,67 +116,71 @@
   align-items: center;
   justify-content: center;
 }
-.panel ul.tabs_panel .table_slider .owl-nav .owl-prev {
+.reservation ul.tabs_panel .table_slider .owl-nav .owl-prev.disabled,
+.reservation ul.tabs_panel .table_slider .owl-nav .owl-next.disabled {
+  background-color: #3333334d;
+}
+.reservation ul.tabs_panel .table_slider .owl-nav .owl-prev {
   transform: translateX(-200%);
 }
-.panel ul.tabs_panel .table_slider .owl-nav .owl-next {
+.reservation ul.tabs_panel .table_slider .owl-nav .owl-next {
   transform: translateX(200%);
 }
-.panel ul.tabs_panel .table_slider .owl-nav .owl-prev::before,
-.panel ul.tabs_panel .table_slider .owl-nav .owl-next::before {
+.reservation ul.tabs_panel .table_slider .owl-nav .owl-prev::before,
+.reservation ul.tabs_panel .table_slider .owl-nav .owl-next::before {
   content: url(../images/common/arrow_icon.svg);
 }
-.panel ul.tabs_panel .table_slider .owl-nav .owl-prev::before {
+.reservation ul.tabs_panel .table_slider .owl-nav .owl-prev::before {
   transform: rotate(90deg) scale(0.7);
 }
-.panel ul.tabs_panel .table_slider .owl-nav .owl-next::before {
+.reservation ul.tabs_panel .table_slider .owl-nav .owl-next::before {
   transform: rotate(-90deg) scale(0.7);
 }
-.panel ul.tabs_panel .table_slider .owl-nav .owl-prev span,
-.panel ul.tabs_panel .table_slider .owl-nav .owl-next span {
+.reservation ul.tabs_panel .table_slider .owl-nav .owl-prev span,
+.reservation ul.tabs_panel .table_slider .owl-nav .owl-next span {
   display: none;
 }
-.panel ul.tabs_panel .table_slider .owl-nav .owl-prev:hover,
-.panel ul.tabs_panel .table_slider .owl-nav .owl-next:hover {
+.reservation ul.tabs_panel .table_slider .owl-nav .owl-prev:hover,
+.reservation ul.tabs_panel .table_slider .owl-nav .owl-next:hover {
   opacity: 0.8;
 }
-.panel ul.tabs_panel li .table{
+.reservation ul.tabs_panel li .table{
   margin-bottom: 0;
 }
-.panel ul.tabs_panel li .table .head {
+.reservation ul.tabs_panel li .table .head {
   display: flex;
 }
-.panel ul.tabs_panel li .table .head .th {
+.reservation ul.tabs_panel li .table .head .th {
   flex: 1;
   text-align: center;
   font-size: 1.25rem;
   color: #333333;
   padding: 20px 0;
 }
-.panel ul.tabs_panel li .table .body .tr {
+.reservation ul.tabs_panel li .table .body .tr {
   display: flex;
   padding: 20px 0;
 }
-.panel ul.tabs_panel li .table .body .tr:nth-child(odd) {
+.reservation ul.tabs_panel li .table .body .tr:nth-child(odd) {
   background-color: #ec00860d;
 }
-.panel ul.tabs_panel li .table .body .tr .td {
+.reservation ul.tabs_panel li .table .body .tr .td {
   flex: 1;
   text-align: center;
   font-size: 1.25rem;
   color: #333333;
 }
-.panel ul.tabs_panel li .table .body .tr .td input[type='radio'] {
+.reservation ul.tabs_panel li .table .body .tr .td input[type='radio'] {
   display: none;
 }
 
-.panel ul.tabs_panel li .table .body .tr .td label {
+.reservation ul.tabs_panel li .table .body .tr .td label {
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
-.panel ul.tabs_panel li .table .body .tr .td label span.circle {
+.reservation ul.tabs_panel li .table .body .tr .td label span.circle {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -185,7 +190,7 @@
   border-radius: 100%;
   margin-right: 5px;
 }
-.panel ul.tabs_panel li .table .body .tr .td label span.circle::before {
+.reservation ul.tabs_panel li .table .body .tr .td label span.circle::before {
   content: '';
   display: block;
   width: 8px;
@@ -193,7 +198,7 @@
   border-radius: 100%;
   background-color: #fff;
 }
-.panel
+.reservation
   ul.tabs_panel
   li
   .table
@@ -205,7 +210,7 @@
   span.circle {
   border-color: #ec0086;
 }
-.panel
+.reservation
   ul.tabs_panel
   li
   .table
@@ -217,14 +222,14 @@
   span.circle::before {
   background-color: #ec0086;
 }
-.panel .desc .list{
+.reservation .desc .list{
   display: flex;
   margin-bottom: 22px;
 }
-.panel .desc .list:last-child{
+.reservation .desc .list:last-child{
   margin-bottom: 0;
 }
-.panel .desc .list p{
+.reservation .desc .list p{
   min-width: 315px;
   margin-bottom: 0;
   margin-right: 20px;
