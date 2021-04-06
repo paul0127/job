@@ -7,8 +7,6 @@ body {
 .slider {
   width: 100%;
 }
-.slider .banner_slider {
-}
 .slider .banner_slider .item a img {
   max-width: 100%;
 }
@@ -67,6 +65,169 @@ header .head ul.toolBar li:last-child {
 }
 header .head ul.toolBar li a:hover {
   opacity: 0.8;
+}
+
+/*top_banner*/
+.top_banner {
+  background-image: url(../images/common/top_banner.png);
+  background-size: cover;
+  padding: 50px 0;
+}
+.top_banner h1 {
+  color: #fff;
+  margin-bottom: 32px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.top_banner h1::after {
+  content: '';
+  display: block;
+  padding-top: 32px;
+  width: 445px;
+  border-bottom: 2px solid #ec0086;
+}
+.top_banner p {
+  color: #fff;
+  font-size: 1.75rem;
+}
+
+.page {
+  padding-bottom: 48px;
+  background-color: #f9f9f9;
+}
+.page .btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 81px;
+}
+.page .btn a.send_btn {
+  width: 350px;
+  height: 72px;
+  color: #fff;
+  background: transparent linear-gradient(180deg, #ec0086 0%, #db4954 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1.75rem;
+  margin-bottom: 32px;
+}
+.page .btn a.go_back {
+  color: #EC0086;
+  text-decoration: underline;
+}
+.page .btn a:hover {
+  opacity: 0.8;
+}
+
+/*bread*/
+ul.bread {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  display: flex;
+  margin: 20px 0;
+}
+ul.bread li {
+  color: #000;
+}
+ul.bread li::after {
+  content: '/';
+  padding: 0 5px;
+}
+ul.bread li:last-child::after {
+  display: none;
+}
+ul.bread li a {
+  color: #000;
+}
+
+/*流程圖*/
+ul.stepwizard {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 128px;
+  padding-bottom: 184px;
+  display: flex;
+}
+ul.stepwizard li {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+ul.stepwizard li::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  border-bottom: 5px solid #3333334d;
+  transform: translateX(-50%);
+}
+ul.stepwizard li:first-child:before {
+  display: none;
+}
+ul.stepwizard li.complete::before {
+  border-color: #ec0086;
+}
+ul.stepwizard li.active::before {
+  border-color: #ec0086;
+}
+ul.stepwizard li::after {
+  content: 'STEP';
+  position: absolute;
+  top: calc(-50% - 10px);
+  color: #3333334d;
+  font-size: 1rem;
+}
+ul.stepwizard li.complete::after {
+  color: #ec0086;
+}
+ul.stepwizard li.active::after {
+  color: #ec0086;
+}
+ul.stepwizard li span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 3px solid #3333334d;
+  border-radius: 100%;
+  font-size: 1.75rem;
+  color: #3333334d;
+  background-color: #fff;
+  z-index: 2;
+}
+ul.stepwizard li.complete span {
+  border-color: #ec0086;
+  color: #ec0086;
+}
+ul.stepwizard li.active span {
+  background-color: #ec0086;
+  border-color: #ec0086;
+  color: #fff;
+}
+ul.stepwizard li .text {
+  position: absolute;
+  top: calc(100% + 23px);
+  font-size: 1.25rem;
+  padding: 0 5px;
+  text-align: center;
+  color: #33333380;
+}
+ul.stepwizard li.complete .text {
+  color: #000;
+}
+ul.stepwizard li.active .text {
+  color: #000;
 }
 
 /*首頁關於職崖門診*/
@@ -261,25 +422,25 @@ header .head ul.toolBar li a:hover {
   transform: translateX(-25%);
   padding-bottom: 20px;
 }
-.index_news .news_frame .news_block .news_slider .owl-nav{
+.index_news .news_frame .news_block .news_slider .owl-nav {
   position: absolute;
   top: 50%;
   right: 18%;
   display: flex;
 }
-.index_news .news_frame .news_block .news_slider .owl-prev{
+.index_news .news_frame .news_block .news_slider .owl-prev {
   display: none;
 }
-.index_news .news_frame .news_block .news_slider .owl-next{
+.index_news .news_frame .news_block .news_slider .owl-next {
   outline: none;
 }
-.index_news .news_frame .news_block .news_slider .owl-next:hover{
-  opacity: .8;
+.index_news .news_frame .news_block .news_slider .owl-next:hover {
+  opacity: 0.8;
 }
-.index_news .news_frame .news_block .news_slider .owl-next::before{
+.index_news .news_frame .news_block .news_slider .owl-next::before {
   content: url(../images/index/arrow_icon-w.svg);
 }
-.index_news .news_frame .news_block .news_slider .owl-next span{
+.index_news .news_frame .news_block .news_slider .owl-next span {
   display: none;
 }
 .index_news .news_frame .news_block .news_slider .item {
@@ -318,7 +479,7 @@ header .head ul.toolBar li a:hover {
 .index_news .news_frame .news_block .news_slider .item .text a.btn img {
   width: 32px;
   transform: translateX(-10px);
-  transition-duration: .3s;
+  transition-duration: 0.3s;
 }
 .index_news .news_frame .news_block .news_slider .item .text a.btn:hover img {
   transform: translateX(0);
@@ -398,16 +559,22 @@ footer .footer_menu_btn {
   justify-content: center;
   cursor: pointer;
 }
+footer .footer_menu_btn.closed img {
+  transform: rotate(180deg);
+}
 footer .footer_menu {
   border-top: 3px solid #cc4951;
-  padding-top: 60px;
+  transition: height 0.3s ease;
+  overflow: hidden;
 }
+
 footer .footer_menu ul.footer_nav {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
   display: flex;
   justify-content: space-between;
+  margin-top: 60px;
 }
 footer .footer_menu ul.footer_nav li label {
   margin-bottom: 32px;
@@ -499,4 +666,234 @@ footer .bottom .line ul.info li:last-child {
 }
 footer .bottom .line .copyright {
   color: #77777780;
+}
+
+/*查詢門診地點*/
+.panel {
+  padding: 60px 95px;
+  border-radius: 24px;
+  background-color: #fff;
+  box-shadow: 5px 10px 10px #00000029;
+  margin-bottom: 60px;
+}
+.panel h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 900;
+  color: #000;
+  letter-spacing: -2px;
+  margin-bottom: 16px;
+}
+.panel p {
+  font-size: 1.25rem;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 12px;
+}
+.panel p a {
+  color: #ec0086;
+  text-decoration: underline;
+  margin: 0 5px;
+}
+.panel p a:hover {
+  opacity: 0.8;
+}
+.panel .local {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.25rem;
+  color: #ec0086;
+  margin-bottom: 30px;
+}
+.panel .local img {
+  margin-right: 20px;
+}
+.panel ul.tabs {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  margin-bottom: 40px;
+}
+.panel ul.tabs li {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #ec0086;
+  border: 1px solid #ec0086;
+  border-radius: 48px;
+  padding: 15px 0;
+  font-size: 1rem;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.panel ul.tabs li.active,.panel ul.tabs li:hover{
+  background: transparent linear-gradient(180deg, #ec0086 0%, #db4954 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 5px 5px 6px #00000029;
+  color: #fff;
+}
+.panel ul.tabs li:last-child {
+  margin-right: 0;
+}
+.panel ul.tabs_panel {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-bottom: 22px;
+}
+.panel ul.tabs_panel li {
+  display: none;
+}
+.panel ul.tabs_panel li.active {
+  display: block;
+}
+.panel ul.tabs_panel .owl-carousel.owl-loaded {
+  display: block;
+}
+.panel ul.tabs_panel .owl-carousel.owl-hidden {
+  opacity: 0;
+}
+.panel ul.tabs_panel .owl-carousel.owl-loading {
+  opacity: 0;
+  display: block;
+}
+.panel ul.tabs_panel .table_slider{
+  position: relative;
+}
+.panel ul.tabs_panel .table_slider .owl-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-16px);
+  width: 100%;
+  height: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.panel ul.tabs_panel .table_slider .owl-nav .owl-prev,
+.panel ul.tabs_panel .table_slider .owl-nav .owl-next {
+  width: 32px;
+  height: 32px;
+  background-color: #ec0086;
+  outline: none;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.panel ul.tabs_panel .table_slider .owl-nav .owl-prev {
+  transform: translateX(-200%);
+}
+.panel ul.tabs_panel .table_slider .owl-nav .owl-next {
+  transform: translateX(200%);
+}
+.panel ul.tabs_panel .table_slider .owl-nav .owl-prev::before,
+.panel ul.tabs_panel .table_slider .owl-nav .owl-next::before {
+  content: url(../images/common/arrow_icon.svg);
+}
+.panel ul.tabs_panel .table_slider .owl-nav .owl-prev::before {
+  transform: rotate(90deg) scale(0.7);
+}
+.panel ul.tabs_panel .table_slider .owl-nav .owl-next::before {
+  transform: rotate(-90deg) scale(0.7);
+}
+.panel ul.tabs_panel .table_slider .owl-nav .owl-prev span,
+.panel ul.tabs_panel .table_slider .owl-nav .owl-next span {
+  display: none;
+}
+.panel ul.tabs_panel .table_slider .owl-nav .owl-prev:hover,
+.panel ul.tabs_panel .table_slider .owl-nav .owl-next:hover {
+  opacity: 0.8;
+}
+.panel ul.tabs_panel li .table{
+  margin-bottom: 0;
+}
+.panel ul.tabs_panel li .table .head {
+  display: flex;
+}
+.panel ul.tabs_panel li .table .head .th {
+  flex: 1;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #333333;
+  padding: 20px 0;
+}
+.panel ul.tabs_panel li .table .body .tr {
+  display: flex;
+  padding: 20px 0;
+}
+.panel ul.tabs_panel li .table .body .tr:nth-child(odd) {
+  background-color: #ec00860d;
+}
+.panel ul.tabs_panel li .table .body .tr .td {
+  flex: 1;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #333333;
+}
+.panel ul.tabs_panel li .table .body .tr .td input[type='radio'] {
+  display: none;
+}
+
+.panel ul.tabs_panel li .table .body .tr .td label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.panel ul.tabs_panel li .table .body .tr .td label span.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #3333334d;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+.panel ul.tabs_panel li .table .body .tr .td label span.circle::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #fff;
+}
+.panel
+  ul.tabs_panel
+  li
+  .table
+  .body
+  .tr
+  .td
+  input[type='radio']:checked
+  + label
+  span.circle {
+  border-color: #ec0086;
+}
+.panel
+  ul.tabs_panel
+  li
+  .table
+  .body
+  .tr
+  .td
+  input[type='radio']:checked
+  + label
+  span.circle::before {
+  background-color: #ec0086;
+}
+.panel .desc .list{
+  display: flex;
+  margin-bottom: 22px;
+}
+.panel .desc .list:last-child{
+  margin-bottom: 0;
+}
+.panel .desc .list p{
+  min-width: 315px;
+  margin-bottom: 0;
+  margin-right: 20px;
+  text-align: left;
 }
