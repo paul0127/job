@@ -25,37 +25,40 @@
   font-size: 1.25rem;
   margin-bottom: 42px;
 }
-.reservation_form .form {
-}
 .reservation_form .form .list {
   display: flex;
   margin-bottom: 20px;
 }
+.reservation_form .form .list.no_bottom {
+  margin-bottom: 0;
+}
 .reservation_form .form .list > label {
   flex: 0 0 150px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   font-size: 1.25rem;
   margin-right: 42px;
+  margin-bottom: 0;
 }
 .reservation_form .form .list .input {
   display: flex;
   align-items: center;
-}
-.reservation_form .form .list .input.wrap {
-    flex-wrap: wrap;
+  flex: 1;
+  flex-wrap: wrap;
 }
 .reservation_form .form .list .input input[type='text'] {
-  flex: 0 0 825px;
+  flex: 1;
   min-width: 0;
+  max-width: 825px;
   border: 1px solid #ec0086;
   padding: 8px 15px;
   outline: none;
   border-radius: 48px;
 }
 .reservation_form .form .list .input input[type='date'] {
-  flex: 0 0 255px;
+  flex: 1;
   min-width: 0;
+  max-width: 255px;
   border: 1px solid #ec0086;
   padding: 8px 15px;
   outline: none;
@@ -69,8 +72,9 @@
   display: none;
 }
 .reservation_form .form .list .input select {
-  flex: 0 0 255px;
+  flex: 1;
   min-width: 0;
+  max-width: 255px;
   border: 1px solid #ec0086;
   padding: 10px 15px;
   outline: none;
@@ -79,14 +83,15 @@
   margin-right: 30px;
 }
 .reservation_form .form .list .input textarea {
-    flex: 0 0 825px;
-    min-width: 0;
-    border: 1px solid #ec0086;
-    padding: 10px 15px;
-    outline: none;
-    border-radius: 24px;
-    color: #ec0086;
-  }
+  flex: 1;
+  min-width: 0;
+  max-width: 825px;
+  border: 1px solid #ec0086;
+  padding: 10px 15px;
+  outline: none;
+  border-radius: 24px;
+  color: #ec0086;
+}
 .reservation_form .form .list .input select:last-child {
   margin-right: 0;
 }
@@ -98,8 +103,8 @@
   margin-right: 20px;
   cursor: pointer;
 }
-.reservation_form .form .list .input.wrap > label {
-    margin-bottom: 5px;
+.reservation_form .form .list.no_bottom .input > label {
+  margin-bottom: 20px;
 }
 .reservation_form .form .list .input > label:last-child {
   margin-right: 0;
@@ -156,5 +161,49 @@
   background-color: #ec0086;
 }
 .reservation_form .form .list .input input.other_input {
-    flex: 0 0 579px;
+  flex: 1;
+  width: 579px;
+}
+@media (max-width: 1200px) {
+  .reservation_form{
+    margin-bottom: 40px;
+  }
+  .reservation_form h2 {
+    font-size: 1.5rem;
+    margin-bottom: 13px;
+  }
+  .reservation_form h1 {
+    font-size: 1.75rem;
+    margin-bottom: 23px;
+  }
+  .reservation_form .form .list {
+    flex-wrap: wrap;
+  }
+
+  .reservation_form .form .list > label {
+    flex: 0 0 100%;
+    margin-bottom: 10px;
+  }
+  .reservation_form .form .list .input {
+    flex: 0 0 100%;
+  }
+  .reservation_form .form .list .input input[type='date'] {
+    max-width: 825px;
+  }
+  .reservation_form .form .list .input select {
+    flex: 0 0 100%;
+    max-width: 825px;
+    margin-bottom: 10px;
+  }
+  .reservation_form .form .list .input select:last-child {
+    margin-bottom: 0;
+  }
+  .reservation_form .form .list .input input.other_input {
+    width: 100%;
+    max-width: 579px;
+  }
+  .reservation_form .form .list .input > label,
+  .reservation_form .form .list.no_bottom .input > label {
+    margin-bottom: 10px;
+  }
 }

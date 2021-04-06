@@ -62,7 +62,8 @@
   margin-right: 30px;
   cursor: pointer;
 }
-.reservation ul.tabs li.active,.reservation ul.tabs li:hover{
+.reservation ul.tabs li.active,
+.reservation ul.tabs li:hover {
   background: transparent linear-gradient(180deg, #ec0086 0%, #db4954 100%) 0%
     0% no-repeat padding-box;
   box-shadow: 5px 5px 6px #00000029;
@@ -93,7 +94,7 @@
   opacity: 0;
   display: block;
 }
-.reservation ul.tabs_panel .table_slider{
+.reservation ul.tabs_panel .table_slider {
   position: relative;
 }
 .reservation ul.tabs_panel .table_slider .owl-nav {
@@ -144,7 +145,7 @@
 .reservation ul.tabs_panel .table_slider .owl-nav .owl-next:hover {
   opacity: 0.8;
 }
-.reservation ul.tabs_panel li .table{
+.reservation ul.tabs_panel li .table {
   margin-bottom: 0;
 }
 .reservation ul.tabs_panel li .table .head {
@@ -222,16 +223,31 @@
   span.circle::before {
   background-color: #ec0086;
 }
-.reservation .desc .list{
+.reservation .desc .list {
   display: flex;
   margin-bottom: 22px;
 }
-.reservation .desc .list:last-child{
+.reservation .desc .list:last-child {
   margin-bottom: 0;
 }
-.reservation .desc .list p{
+.reservation .desc .list p {
   min-width: 315px;
   margin-bottom: 0;
   margin-right: 20px;
   text-align: left;
+}
+@media (max-width: 1200px) {
+  .reservation {
+    padding: 20px 10px;
+  }
+  .reservation h1 {
+    font-size: 1.75rem;
+    margin-bottom: 13px;
+  }
+  .reservation p{
+    margin-bottom: 22px;
+  }
+  .reservation .local{
+    margin-bottom: 20px;
+  }
 }
