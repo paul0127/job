@@ -17,6 +17,7 @@ header {
   background: transparent linear-gradient(90deg, #ec0086 0%, #db4954 100%) 0% 0%
     no-repeat padding-box;
   position: relative;
+  z-index: 5;
 }
 header .head {
   display: flex;
@@ -103,17 +104,18 @@ header .head ul.toolBar li .search_bar .search .send {
   color: #fff;
   margin-left: 20px;
 }
-header .head .close{
-  position: absolute;
-  top: 68px;
+.pc_closed {
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 8;
-  height: calc(100vh - 68px);
+  height: 100vh;
   display: none;
+  z-index: 4;
 }
-header .head .close.active{
+.pc_closed.active {
   display: block;
 }
 
@@ -195,7 +197,7 @@ header .testing_head .bar .range_bar span.progress {
   margin-left: 32px;
   display: flex;
 }
-.mobile_head .search_btn .btn{
+.mobile_head .search_btn .btn {
   display: flex;
   align-items: center;
   padding-top: 10px;
@@ -317,7 +319,7 @@ header .testing_head .bar .range_bar span.progress {
   align-items: center;
   font-size: 1.1rem;
 }
-.mobile_head .menu_btn > .dropdown > ul.info > li:last-child{
+.mobile_head .menu_btn > .dropdown > ul.info > li:last-child {
   margin-bottom: 0;
 }
 .mobile_head .menu_btn > .dropdown > ul.info > li > label {
@@ -326,17 +328,17 @@ header .testing_head .bar .range_bar span.progress {
   flex: 0 0 23px;
 }
 
-.mobile_head .close{
-  position: absolute;
-  top: 68px;
+.mobile_closed {
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 8;
-  height: calc(100vh - 68px);
+  z-index: 4;
+  height: 100vh;
   display: none;
 }
-.mobile_head .close.active{
+.mobile_closed.active {
   display: none;
 }
 @media (max-width: 1200px) {
@@ -346,7 +348,7 @@ header .testing_head .bar .range_bar span.progress {
   .mobile_head {
     display: flex;
   }
-  header .head .close.active{
+  .pc_closed.active {
     display: none;
   }
   header .testing_head .logo {
@@ -373,7 +375,7 @@ header .testing_head .bar .range_bar span.progress {
   header .testing_head .bar .range_bar {
     width: 100%;
   }
-  .mobile_head .close.active{
+  .mobile_closed.active {
     display: block;
   }
 }

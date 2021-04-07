@@ -17,13 +17,15 @@
     <link rel="stylesheet" href="./css/payment.css" />
   </head>
   <body>
+    <div class="pc_closed"></div>
+    <div class="mobile_closed"></div>
     <header>
       <div class="container">
         <div class="head">
           <div class="logo"><img src="./images/common/logo.svg" alt="" /></div>
           <ul class="nav">
             <li><a href="#">服務項目</a></li>
-            <li><a href="#">預約諮詢</a></li>
+            <li><a href="05_reservation.html">預約諮詢</a></li>
             <li><a href="#">顧問介紹</a></li>
             <li><a href="#">職涯二三事</a></li>
             <li><a href="#">常見問題</a></li>
@@ -34,10 +36,19 @@
               <a href="#"><img src="./images/common/login.svg" /></a>
             </li>
             <li>
-              <a href="#"><img src="./images/common/search.svg" /></a>
+              <a class="search_btn"><img src="./images/common/search.svg" /></a>
+              <div class="search_bar">
+                <div class="container">
+                  <div class="search">
+                    <input type="text" placeholder="請輸入關鍵字搜尋" />
+                    <div class="send">搜尋</div>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
+
         <div class="mobile_head">
           <div class="logo"><img src="./images/common/logo.svg" alt="" /></div>
           <div class="menu_btn">
@@ -45,7 +56,7 @@
             <div class="dropdown">
               <ul class="nav">
                 <li><a href="#">服務項目</a></li>
-                <li><a href="#">預約諮詢</a></li>
+                <li><a href="05_reservation.html">預約諮詢</a></li>
                 <li><a href="#">顧問介紹</a></li>
                 <li><a href="#">職涯二三事</a></li>
                 <li><a href="#">常見問題</a></li>
@@ -85,7 +96,17 @@
               </ul>
             </div>
           </div>
-          <div class="search_btn"><img src="./images/common/search.svg" /></div>
+          <div class="search_btn">
+            <div class="btn"></div>
+            <div class="search_bar">
+              <div class="container">
+                <div class="search">
+                  <input type="text" placeholder="請輸入關鍵字搜尋" />
+                  <div class="send">搜尋</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -147,7 +168,9 @@
               </div>
               <div class="list">
                 <div class="input">
-                  <input type="radio" name="price" id="p_1" /><label class="have_input" for="p_1"
+                  <input type="radio" name="price" id="p_1" /><label
+                    class="have_input"
+                    for="p_1"
                     ><span class="circle"></span
                     ><span class="text">
                       $1,600 持有8折券者，請填寫8折券編號：<input
