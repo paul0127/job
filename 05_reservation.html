@@ -132,12 +132,14 @@
           </li>
         </ul>
         <div class="top_tip">預約諮詢時段</div>
+        <div class="top_alert">您預約的場次已額滿，請重新選擇場次；若無適當時段，請來電洽詢</div>
         <div class="reservation">
           <h1>職涯門診時間表</h1>
           <p>可透過<a href="#">聯絡我們</a>或來電洽詢</p>
           <div class="local">
             <img src="./images/common/icon_location.svg" alt="" />查詢門診地點
           </div>
+          <!--PC版 start-->
           <ul class="tabs">
             <li class="active" data-local="tp">台北場</li>
             <li data-local="ty">桃園場</li>
@@ -1035,6 +1037,29 @@
               </div>
             </li>
           </ul>
+          <!--PC版 end-->
+          <!--mobile版 start-->
+          <div class="mobile_option">
+            <div class="local">
+              <div class="title">請選擇您想預約諮詢的地區</div>
+              <select name="" id="">
+                <option value="">台北場</option>
+                <option value="">桃園場</option>
+                <option value="">新竹場</option>
+                <option value="">台中場</option>
+                <option value="">台南場</option>
+              </select>
+              <div class="title">請選擇您想預約諮詢的日期</div>
+              <select name="" id="">
+                <option value="">2021-02-20</option>
+                <option value="">2021-02-21</option>
+                <option value="">2021-02-22</option>
+                <option value="">2021-02-23</option>
+                <option value="">2021-02-24</option>
+              </select>
+            </div>
+          </div>
+          <!--mobile版 end-->
           <div class="desc">
             <div class="list">
               <p>若無適當時段，可透過<a href="">聯絡我們</a>或來電洽詢</p>

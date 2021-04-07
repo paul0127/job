@@ -31,7 +31,7 @@
 .reservation p a:hover {
   opacity: 0.8;
 }
-.reservation .local {
+.reservation > .local {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -39,7 +39,7 @@
   color: #ec0086;
   margin-bottom: 30px;
 }
-.reservation .local img {
+.reservation > .local img {
   margin-right: 20px;
 }
 .reservation ul.tabs {
@@ -223,6 +223,29 @@
   span.circle::before {
   background-color: #ec0086;
 }
+.reservation .mobile_option{
+  display: none;
+}
+.reservation .mobile_option .local {
+  text-align: center;
+}
+.reservation .mobile_option .local .title {
+  text-align: center;
+  font-size: 1.25rem;
+  margin-bottom: 12px;
+}
+.reservation .mobile_option .local select {
+  background: transparent linear-gradient(180deg, #ec0086 0%, #db4954 100%) 0%
+    0% no-repeat padding-box;
+  color: #fff;
+  width: 305px;
+  height: 50px;
+  padding: 5px 12px;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  margin-bottom: 12px;
+}
 .reservation .desc .list {
   display: flex;
   margin-bottom: 22px;
@@ -244,10 +267,19 @@
     font-size: 1.75rem;
     margin-bottom: 13px;
   }
-  .reservation p{
+  .reservation p {
     margin-bottom: 22px;
   }
-  .reservation .local{
+  .reservation .local {
     margin-bottom: 20px;
+  }
+  .reservation ul.tabs {
+    display: none;
+  }
+  .reservation ul.tabs_panel {
+    display: none;
+  }
+  .reservation .mobile_option{
+    display: block;
   }
 }

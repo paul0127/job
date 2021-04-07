@@ -379,6 +379,10 @@ ul.stepwizard li.active .text {
   margin-bottom: 22px;
   display: none;
 }
+.top_alert {
+  font-size: 1.5rem;
+  text-align: center;
+}
 @media (max-width: 1200px) {
   ul.stepwizard {
     padding-top: 51px;
@@ -402,6 +406,9 @@ ul.stepwizard li.active .text {
   }
   .top_tip {
     display: block;
+  }
+  .top_alert {
+    text-align: left;
   }
 }
 
@@ -518,7 +525,7 @@ footer .bottom .line .footer_right {
   justify-content: space-between;
 }
 
-footer .bottom .line .footer_right ul.mobile_menu{
+footer .bottom .line .footer_right ul.mobile_menu {
   list-style: none;
   padding-left: 0;
   margin-bottom: 0;
@@ -527,10 +534,10 @@ footer .bottom .line .footer_right ul.mobile_menu{
   margin-bottom: 20px;
   display: none;
 }
-footer .bottom .line .footer_right ul.mobile_menu li{
+footer .bottom .line .footer_right ul.mobile_menu li {
   flex: 0 0 50%;
 }
-footer .bottom .line .footer_right ul.mobile_menu li{
+footer .bottom .line .footer_right ul.mobile_menu li {
   flex: 0 0 50%;
   margin-right: 0;
   margin-bottom: 20px;
@@ -575,40 +582,40 @@ footer .bottom .line .footer_right .copyright {
   footer .footer_menu {
     display: none;
   }
-  footer .bottom{
+  footer .bottom {
     padding: 37px 0 28px 0;
   }
-  footer .bottom .footer_logo{
+  footer .bottom .footer_logo {
     margin-bottom: 35px;
   }
   footer .bottom .line {
     flex-wrap: wrap;
   }
-  footer .bottom .line .footer_left{
+  footer .bottom .line .footer_left {
     flex: 0 0 100%;
   }
-  footer .bottom .line .footer_left ul.social li{
+  footer .bottom .line .footer_left ul.social li {
     margin-right: 43px;
   }
-  footer .bottom .line .footer_left ul.info{
+  footer .bottom .line .footer_left ul.info {
     margin-bottom: 40px;
   }
-  footer .bottom .line .footer_right{
+  footer .bottom .line .footer_right {
     flex: 100%;
   }
-  footer .bottom .line .footer_right ul.mobile_menu{
+  footer .bottom .line .footer_right ul.mobile_menu {
     display: flex;
   }
-  footer .bottom .line .footer_right ul.menu{
+  footer .bottom .line .footer_right ul.menu {
     flex-wrap: wrap;
     margin-bottom: 20px;
   }
-  footer .bottom .line .footer_right ul.menu li{
+  footer .bottom .line .footer_right ul.menu li {
     flex: 0 0 50%;
     margin-right: 0;
     margin-bottom: 20px;
   }
-  footer .bottom .line .footer_right .copyright{
+  footer .bottom .line .footer_right .copyright {
     margin-left: unset;
   }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>預約諮詢</title>
+    <title>繳費方式</title>
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -14,7 +14,7 @@
     />
 
     <link rel="stylesheet" href="./assets/carousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./css/reservation_form.css" />
+    <link rel="stylesheet" href="./css/payment.css" />
   </head>
   <body>
     <header>
@@ -131,235 +131,106 @@
             <div class="text">帶走諮詢建議</div>
           </li>
         </ul>
-        <div class="top_tip">預約諮詢時段</div>
-        <div class="reservation_form">
-          <h2>您預約的場次是：台北場 2020/09/10(四) 14:00-16:00 趙美珍顧問</h2>
-          <h1>職涯門診時間表</h1>
-          <div class="tip">
-            <span class="red">*</span
-            >為必填欄位。您的資料僅作為職涯門診使用，請您可參閱「Career隱私權保護政策」。
-          </div>
+        <div class="top_tip">投資自己</div>
+        <div class="payment">
+          <h1>繳費方式</h1>
           <div class="form">
-            <div class="list">
-              <label for=""><span class="red">*</span>姓名</label>
-              <div class="input">
-                <input type="text" />
+            <div class="item">
+              <div class="title">1. 繳費金額</div>
+              <div class="list">
+                <div class="input">
+                  <input type="radio" name="price" id="p_0" /><label for="p_0"
+                    ><span class="circle"></span
+                    ><span class="text">$2,000</span></label
+                  >
+                </div>
+              </div>
+              <div class="list">
+                <div class="input">
+                  <input type="radio" name="price" id="p_1" /><label for="p_1"
+                    ><span class="circle"></span
+                    ><span class="text">
+                      $1,600 持有8折券者，請填寫8折券編號：<input
+                        class="other_input"
+                        type="text"
+                      />，並於諮詢時繳回。</span
+                    ></label
+                  >
+                </div>
               </div>
             </div>
-            <div class="list">
-              <label for=""><span class="red">*</span>身分證字號</label>
-              <div class="input">
-                <input type="text" />
+            <div class="item">
+              <div class="title">2. 線上繳費</div>
+              <div class="list">
+                <div class="input">
+                  <input type="radio" name="pay" id="pay_0" /><label for="pay_0"
+                    ><span class="circle"></span
+                    ><span class="text"
+                      >信用卡線上刷卡(VISA/MASTER/JCB/UCARD)<b class="tip">
+                        本機制採用SSL傳輸加密VeriSign安全電子交易認證,以確保線上交易安全。
+                      </b></span
+                    ></label
+                  >
+                </div>
+              </div>
+              <div class="list">
+                <div class="input">
+                  <input type="radio" name="pay" id="pay_1" /><label for="pay_1"
+                    ><span class="circle"></span
+                    ><span class="text"
+                      >Web ATM(此付費方式須搭配讀卡機,僅限電腦操作)</span
+                    ></label
+                  >
+                </div>
               </div>
             </div>
-            <div class="list">
-              <label for=""><span class="red">*</span>性別</label>
-              <div class="input">
-                <input type="radio" name="sex" id="sex_0" /><label for="sex_0"
-                  ><span class="circle"></span>男</label
-                >
-                <input type="radio" name="sex" id="sex_1" /><label for="sex_1"
-                  ><span class="circle"></span>女</label
-                >
+            <div class="item">
+              <div class="title">3. 發票開立資訊<span class="red">*</span></div>
+              <div class="list">
+                <label for="">發票型式：</label>
+                <div class="input">
+                  <input type="radio" name="invoice" id="invoice_0" /><label
+                    for="invoice_0"
+                    ><span class="circle"></span
+                    ><span class="text">二聯式</span></label
+                  >
+                  <input type="radio" name="invoice" id="invoice_1" /><label
+                    for="invoice_1"
+                    ><span class="circle"></span
+                    ><span class="text">三聯式</span></label
+                  >
+                </div>
               </div>
-            </div>
-            <div class="list">
-              <label for=""><span class="red">*</span>婚姻狀況</label>
-              <div class="input">
-                <input type="radio" name="married" id="m_0" /><label for="m_0"
-                  ><span class="circle"></span>已婚</label
-                >
-                <input type="radio" name="married" id="m_1" /><label for="m_1"
-                  ><span class="circle"></span>未婚</label
-                >
+              <div class="list">
+                <label for="">發票抬頭：</label>
+                <div class="input">
+                  <input type="text" />
+                </div>
               </div>
-            </div>
-            <div class="list">
-              <label for=""><span class="red">*</span>出生年月日</label>
-              <div class="input">
-                <input type="date" />
+              <div class="list">
+                <label for="">統一編號：</label>
+                <div class="input">
+                  <input type="text" placeholder="三聯式需填" />
+                </div>
               </div>
-            </div>
-            <div class="list">
-              <label for=""><span class="red">*</span>手機</label>
-              <div class="input">
-                <input type="text" placeholder="例如：0910-000-123" />
-              </div>
-            </div>
-            <div class="list">
-              <label for="">電話</label>
-              <div class="input">
-                <input type="text" placeholder="例如：02-12345678" />
-              </div>
-            </div>
-            <div class="list">
-              <label for=""><span class="red">*</span>EMAIL</label>
-              <div class="input">
-                <input type="text" />
-              </div>
-            </div>
-            <div class="list">
-              <label for=""><span class="red">*</span>身份</label>
-              <div class="input">
-                <input type="radio" name="identity" id="i_0" /><label for="i_0"
-                  ><span class="circle"></span>已就業</label
-                >
-                <input type="radio" name="identity" id="i_1" /><label for="i_1"
-                  ><span class="circle"></span>待業中</label
-                >
-                <input type="radio" name="identity" id="i_2" /><label for="i_2"
-                  ><span class="circle"></span>學生</label
-                >
-              </div>
-            </div>
-            <div class="list">
-              <label for=""><span class="red">*</span>學歷</label>
-              <div class="input">
-                <input type="radio" name="education" id="e_0" /><label for="e_0"
-                  ><span class="circle"></span>博士</label
-                >
-                <input type="radio" name="education" id="e_1" /><label for="e_1"
-                  ><span class="circle"></span>碩士</label
-                >
-                <input type="radio" name="education" id="e_2" /><label for="e_2"
-                  ><span class="circle"></span>大學</label
-                >
-                <input type="radio" name="education" id="e_3" /><label for="e_3"
-                  ><span class="circle"></span>專科</label
-                >
-                <input type="radio" name="education" id="e_4" /><label for="e_4"
-                  ><span class="circle"></span>高中</label
-                >
-                <input type="radio" name="education" id="e_5" /><label for="e_5"
-                  ><span class="circle"></span>高職</label
-                >
-                <input type="radio" name="education" id="e_6" /><label for="e_6"
-                  ><span class="circle"></span>國中(含以下)</label
-                >
-              </div>
-            </div>
-            <div class="list">
-              <label for=""><span class="red">*</span>就讀或畢業學校</label>
-              <div class="input">
-                <input type="text" placeholder="請填全名" />
-              </div>
-            </div>
-            <div class="list">
-              <label for=""><span class="red">*</span>就讀或畢業科系</label>
-              <div class="input">
-                <select name="" id="">
-                  <option value="">請選擇學院</option>
-                </select>
-                <select name="" id="">
-                  <option value="">請選擇科系</option>
-                </select>
-              </div>
-            </div>
-            <div class="list">
-              <label for="">就讀年級<br />(在學中請填)</label>
-              <div class="input">
-                <select name="" id="">
-                  <option value="">請選擇就讀年級</option>
-                </select>
-              </div>
-            </div>
-            <div class="list">
-              <label for="">產業</label>
-              <div class="input">
-                <select name="" id="">
-                  <option value="">批發/零售/傳直銷業</option>
-                </select>
-                <select name="" id="">
-                  <option value="">批發業</option>
-                </select>
-                <select name="" id="">
-                  <option value="">農/畜/水產品批發業</option>
-                </select>
-              </div>
-            </div>
-            <div class="list">
-              <label for="">職務類別</label>
-              <div class="input">
-                <select name="" id="">
-                  <option value="">經營/人資類</option>
-                </select>
-                <select name="" id="">
-                  <option value="">經營/幕僚類人員</option>
-                </select>
-                <select name="" id="">
-                  <option value="">經營管理</option>
-                </select>
-              </div>
-            </div>
-            <div class="list">
-              <label for="">任職公司</label>
-              <div class="input">
-                <input type="text" />
-              </div>
-            </div>
-            <div class="list">
-              <label for="">職稱</label>
-              <div class="input">
-                <input type="text" />
-              </div>
-            </div>
-            <div class="list">
-              <label for="">工作年資</label>
-              <div class="input">
-                <select name="" id="">
-                  <option value="">工作年資</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="list no_bottom">
-              <label for=""
-                ><span class="red">*</span>諮詢目的<br />(可複選)</label
-              >
-              <div class="input">
-                <input type="checkbox" name="purpose" id="p_0" /><label
-                  for="p_0"
-                  ><span class="circle"></span>找工作</label
-                >
-                <input type="checkbox" name="purpose" id="p_1" /><label
-                  for="p_1"
-                  ><span class="circle"></span>想了解自己的適才適所</label
-                >
-                <input type="checkbox" name="purpose" id="p_2" /><label
-                  for="p_2"
-                  ><span class="circle"></span>想考公職</label
-                >
-                <input type="checkbox" name="purpose" id="p_3" /><label
-                  for="p_3"
-                  ><span class="circle"></span>想改善人際關係</label
-                >
-                <input type="checkbox" name="purpose" id="p_4" /><label
-                  for="p_4"
-                  ><span class="circle"></span>升學及科系選擇</label
-                >
-                <input type="checkbox" name="purpose" id="p_5" /><label
-                  for="p_5"
-                  ><span class="circle"></span>想出國深造</label
-                >
-                <input type="checkbox" name="purpose" id="p_6" /><label
-                  for="p_6"
-                  ><span class="circle"></span>其他：<input class="other_input" type="text" /></label
-                >
-              </div>
-            </div>
-            <div class="list">
-              <label for=""
-                ><span class="red">*</span>諮詢問題說明<br />(請簡述)</label
-              >
-              <div class="input">
-                <textarea name="" id="" cols="30" rows="10"></textarea>
+              <div class="list">
+                <label for="">寄送地址：</label>
+                <div class="input">
+                  <select name="" id="">
+                    <option value="">請選擇縣市</option>
+                  </select>
+                  <select name="" id="">
+                    <option value="">請選擇區域</option>
+                  </select>
+                  <input type="text" class="" placeholder="郵遞區號" />
+                  <input type="text" class="address" placeholder="輸入地址" />
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="btn">
-          <a class="send_btn" href="#">確認送出</a>
-          <a href="#" class="go_back">回上一頁</a>
+          <a class="send_btn" href="#">確認送出，進行繳費</a>
         </div>
       </div>
     </div>
