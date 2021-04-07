@@ -64,9 +64,49 @@ footer_menu_btn.addEventListener('click', () => {
   console.log(footer_menu.offsetHeight)
 })
 
-/*手機板主選單 開關*/
+let search = document.querySelector('.head .search_btn')
+let search_bar = document.querySelector('.head .search_bar')
+
+let closed = document.querySelector('.head .close')
+search.addEventListener('click',()=>{
+  search_bar.classList.toggle('active')
+  if(search_bar.classList.contains('active')){
+    closed.classList.add('active')
+  }
+})
+
+closed.addEventListener('click',()=>{
+  search_bar.classList.remove('active')
+  closed.classList.remove('active')
+})
+
+/*手機板主選單 搜尋 開關*/
+let mobile_search = document.querySelector('.mobile_head .search_btn .btn')
+let mobile_search_bar = document.querySelector('.mobile_head .search_btn')
+
 let menu_btn = document.querySelector('.menu_btn .btn')
 let menu = document.querySelector('.menu_btn')
+
+let mobile_closed = document.querySelector('.mobile_head .close')
 menu_btn.addEventListener('click',()=>{
+  mobile_search_bar.classList.remove('active')
   menu.classList.toggle('active')
+  if(mobile_search_bar.classList.contains('active') || menu.classList.contains('active')){
+    mobile_closed.classList.add('active')
+  }
 })
+
+mobile_search.addEventListener('click',()=>{
+  menu.classList.remove('active')
+  mobile_search_bar.classList.toggle('active')
+  if(mobile_search_bar.classList.contains('active') || menu.classList.contains('active')){
+    mobile_closed.classList.add('active')
+  }
+})
+
+mobile_closed.addEventListener('click',()=>{
+  mobile_search_bar.classList.remove('active')
+  menu.classList.remove('active')
+  mobile_closed.classList.remove('active')
+})
+

@@ -34,9 +34,18 @@
               <a href="#"><img src="./images/common/login.svg" /></a>
             </li>
             <li>
-              <a href="#"><img src="./images/common/search.svg" /></a>
+              <a class="search_btn"><img src="./images/common/search.svg" /></a>
+              <div class="search_bar">
+                <div class="container">
+                  <div class="search">
+                    <input type="text" placeholder="請輸入關鍵字搜尋" />
+                    <div class="send">搜尋</div>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
+          <div class="close"></div>
         </div>
         <div class="mobile_head">
           <div class="logo"><img src="./images/common/logo.svg" alt="" /></div>
@@ -85,7 +94,18 @@
               </ul>
             </div>
           </div>
-          <div class="search_btn"><img src="./images/common/search.svg" /></div>
+          <div class="search_btn">
+            <div class="btn"></div>
+            <div class="search_bar">
+              <div class="container">
+                <div class="search">
+                  <input type="text" placeholder="請輸入關鍵字搜尋" />
+                  <div class="send">搜尋</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="close"></div>
         </div>
       </div>
     </header>
@@ -343,8 +363,10 @@
                 >
                 <input type="checkbox" name="purpose" id="p_6" /><label
                   for="p_6"
-                  ><span class="circle"></span>其他：<input class="other_input" type="text" /></label
-                >
+                  ><span class="circle"></span>其他：<input
+                    class="other_input"
+                    type="text"
+                /></label>
               </div>
             </div>
             <div class="list">

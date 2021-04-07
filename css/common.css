@@ -66,8 +66,55 @@ header .head ul.toolBar li {
 header .head ul.toolBar li:last-child {
   margin-right: 0;
 }
+header .head ul.toolBar li a {
+  cursor: pointer;
+}
 header .head ul.toolBar li a:hover {
   opacity: 0.8;
+}
+header .head ul.toolBar li .search_bar {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: transparent linear-gradient(90deg, #ec0086 0%, #db4954 100%) 0% 0%
+    no-repeat padding-box;
+  padding: 10px 0 15px 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition-duration: 0.3s;
+  z-index: 9;
+}
+header .head ul.toolBar li .search_bar.active {
+  transform: scaleY(1);
+}
+header .head ul.toolBar li .search_bar .search {
+  display: flex;
+  align-items: center;
+}
+header .head ul.toolBar li .search_bar .search input[type='text'] {
+  flex: 1;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  padding: 3px 15px;
+}
+header .head ul.toolBar li .search_bar .search .send {
+  color: #fff;
+  margin-left: 20px;
+}
+header .head .close{
+  position: absolute;
+  top: 68px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 8;
+  height: calc(100vh - 68px);
+  display: none;
+}
+header .head .close.active{
+  display: block;
 }
 
 header .testing_head {
@@ -148,6 +195,47 @@ header .testing_head .bar .range_bar span.progress {
   margin-left: 32px;
   display: flex;
 }
+.mobile_head .search_btn .btn{
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+.mobile_head .search_btn .btn::before {
+  content: url(../images/common/search.svg);
+}
+.mobile_head .search_btn .search_bar {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: transparent linear-gradient(90deg, #ec0086 0%, #db4954 100%) 0% 0%
+    no-repeat padding-box;
+  padding: 10px 0 15px 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition-duration: 0.3s;
+  z-index: 9;
+}
+.mobile_head .search_btn.active .search_bar {
+  transform: scaleY(1);
+  z-index: 10;
+}
+.mobile_head .search_btn .search_bar .search {
+  display: flex;
+  align-items: center;
+}
+.mobile_head .search_btn .search_bar .search input[type='text'] {
+  flex: 1;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  padding: 3px 15px;
+}
+.mobile_head .search_btn .search_bar .search .send {
+  color: #fff;
+  margin-left: 20px;
+}
+
 .mobile_head .menu_btn .btn {
   display: flex;
   align-items: center;
@@ -169,10 +257,12 @@ header .testing_head .bar .range_bar span.progress {
   transform: scaleY(0);
   transform-origin: top;
   transition-duration: 0.3s;
-  padding: 0 15px;
+  padding: 0 15px 20px 15px;
+  z-index: 9;
 }
 .mobile_head .menu_btn.active > .dropdown {
   transform: scaleY(1);
+  z-index: 10;
 }
 .mobile_head .menu_btn > .dropdown > ul.nav {
   padding: 10px 0;
@@ -227,10 +317,27 @@ header .testing_head .bar .range_bar span.progress {
   align-items: center;
   font-size: 1.1rem;
 }
+.mobile_head .menu_btn > .dropdown > ul.info > li:last-child{
+  margin-bottom: 0;
+}
 .mobile_head .menu_btn > .dropdown > ul.info > li > label {
   margin-bottom: 0;
   margin-right: 10px;
   flex: 0 0 23px;
+}
+
+.mobile_head .close{
+  position: absolute;
+  top: 68px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 8;
+  height: calc(100vh - 68px);
+  display: none;
+}
+.mobile_head .close.active{
+  display: none;
 }
 @media (max-width: 1200px) {
   header .head {
@@ -238,6 +345,9 @@ header .testing_head .bar .range_bar span.progress {
   }
   .mobile_head {
     display: flex;
+  }
+  header .head .close.active{
+    display: none;
   }
   header .testing_head .logo {
     flex: 0 0 230px;
@@ -262,6 +372,9 @@ header .testing_head .bar .range_bar span.progress {
   }
   header .testing_head .bar .range_bar {
     width: 100%;
+  }
+  .mobile_head .close.active{
+    display: block;
   }
 }
 
