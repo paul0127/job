@@ -61,7 +61,7 @@
 .payment .form .item .list .input > label {
   margin-bottom: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   font-size: 1.25rem;
   margin-right: 20px;
   cursor: pointer;
@@ -79,6 +79,10 @@
   border: 2px solid #c0b7bc;
   border-radius: 100%;
   margin-right: 15px;
+  margin-top: 7px;
+}
+.payment .form .item .list .input > label.have_input span.circle {
+  margin-top: 16px;
 }
 .payment .form .item .list .input > label span.circle::before {
   content: '';
@@ -159,6 +163,9 @@
   }
   .payment .form .item .list > label {
     margin-right: 20px;
+  }
+  .payment .form .item .list .input > label.have_input span.circle {
+    margin-top: 8px;
   }
   .payment .form .list .input input[type='text'] {
     flex: 0 0 100%;
