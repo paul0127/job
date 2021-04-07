@@ -200,7 +200,7 @@ header .testing_head .bar .range_bar span.progress {
 .mobile_head .search_btn .btn {
   display: flex;
   align-items: center;
-  padding-top: 10px;
+  padding: 5px 0 0;
 }
 .mobile_head .search_btn .btn::before {
   content: url(../images/common/search.svg);
