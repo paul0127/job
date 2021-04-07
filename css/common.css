@@ -121,7 +121,7 @@ header .testing_head .bar .range_bar {
   border-radius: 24px;
   position: relative;
 }
-header .testing_head .bar .range_bar::before {
+header .testing_head .bar .range_bar span.progress {
   content: '';
   position: absolute;
   top: 0;
@@ -398,7 +398,7 @@ ul.stepwizard li::before {
   position: absolute;
   z-index: 1;
   width: 100%;
-  border-bottom: 5px solid #3333334d;
+  border-bottom: 5px solid #d2d2d2;
   transform: translateX(-50%);
 }
 ul.stepwizard li:first-child:before {
@@ -414,7 +414,7 @@ ul.stepwizard li::after {
   content: 'STEP';
   position: absolute;
   top: calc(-50% - 10px);
-  color: #3333334d;
+  color: #d2d2d2;
   font-size: 1rem;
 }
 ul.stepwizard li.complete::after {
@@ -429,10 +429,10 @@ ul.stepwizard li span {
   justify-content: center;
   width: 48px;
   height: 48px;
-  border: 3px solid #3333334d;
+  border: 3px solid #d2d2d2;
   border-radius: 100%;
   font-size: 1.75rem;
-  color: #3333334d;
+  color: #d2d2d2;
   background-color: #fff;
   z-index: 2;
 }
@@ -555,7 +555,7 @@ footer .footer_menu ul.footer_nav li ul.sub li a {
 
 footer .bottom {
   padding: 60px 0 28px 0;
-  background-color: #eeeeeecc;
+  background-color: #f0f0f0;
 }
 footer .bottom .footer_logo {
   margin-bottom: 60px;

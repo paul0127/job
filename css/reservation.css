@@ -5,7 +5,7 @@
   padding: 60px 95px;
   border-radius: 24px;
   background-color: #fff;
-  box-shadow: 5px 10px 10px #00000029;
+  box-shadow: 5px 10px 10px #d2d2d2;
   margin-bottom: 60px;
 }
 .reservation h1 {
@@ -77,120 +77,54 @@
   margin-bottom: 0;
   margin-bottom: 22px;
 }
-.reservation ul.tabs_panel li {
-  display: none;
-}
-.reservation ul.tabs_panel li.active {
-  display: block;
-}
-.reservation ul.tabs_panel .owl-carousel.owl-loaded {
-  display: block;
-}
-.reservation ul.tabs_panel .owl-carousel.owl-hidden {
-  opacity: 0;
-}
-.reservation ul.tabs_panel .owl-carousel.owl-loading {
-  opacity: 0;
-  display: block;
-}
-.reservation ul.tabs_panel .table_slider {
+.reservation .table {
+  margin-bottom: 0;
   position: relative;
 }
-.reservation ul.tabs_panel .table_slider .owl-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-16px);
-  width: 100%;
-  height: 0;
-  display: flex;
-  justify-content: space-between;
-}
-.reservation ul.tabs_panel .table_slider .owl-nav .owl-prev,
-.reservation ul.tabs_panel .table_slider .owl-nav .owl-next {
-  width: 32px;
-  height: 32px;
-  background-color: #ec0086;
-  outline: none;
-  border-radius: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.reservation ul.tabs_panel .table_slider .owl-nav .owl-prev.disabled,
-.reservation ul.tabs_panel .table_slider .owl-nav .owl-next.disabled {
-  background-color: #3333334d;
-}
-.reservation ul.tabs_panel .table_slider .owl-nav .owl-prev {
-  transform: translateX(-200%);
-}
-.reservation ul.tabs_panel .table_slider .owl-nav .owl-next {
-  transform: translateX(200%);
-}
-.reservation ul.tabs_panel .table_slider .owl-nav .owl-prev::before,
-.reservation ul.tabs_panel .table_slider .owl-nav .owl-next::before {
-  content: url(../images/common/arrow_icon.svg);
-}
-.reservation ul.tabs_panel .table_slider .owl-nav .owl-prev::before {
-  transform: rotate(90deg) scale(0.7);
-}
-.reservation ul.tabs_panel .table_slider .owl-nav .owl-next::before {
-  transform: rotate(-90deg) scale(0.7);
-}
-.reservation ul.tabs_panel .table_slider .owl-nav .owl-prev span,
-.reservation ul.tabs_panel .table_slider .owl-nav .owl-next span {
-  display: none;
-}
-.reservation ul.tabs_panel .table_slider .owl-nav .owl-prev:hover,
-.reservation ul.tabs_panel .table_slider .owl-nav .owl-next:hover {
-  opacity: 0.8;
-}
-.reservation ul.tabs_panel li .table {
-  margin-bottom: 0;
-}
-.reservation ul.tabs_panel li .table .head {
+.reservation .table .head {
   display: flex;
 }
-.reservation ul.tabs_panel li .table .head .th {
+.reservation .table .head .th {
   flex: 1;
   text-align: center;
   font-size: 1.25rem;
   color: #333333;
   padding: 20px 0;
 }
-.reservation ul.tabs_panel li .table .body .tr {
+.reservation .table .body .tr {
   display: flex;
   padding: 20px 0;
 }
-.reservation ul.tabs_panel li .table .body .tr:nth-child(odd) {
-  background-color: #ec00860d;
+.reservation .table .body .tr:nth-child(odd) {
+  background-color: #fdf1f8;
 }
-.reservation ul.tabs_panel li .table .body .tr .td {
+.reservation .table .body .tr .td {
   flex: 1;
   text-align: center;
   font-size: 1.25rem;
   color: #333333;
 }
-.reservation ul.tabs_panel li .table .body .tr .td input[type='radio'] {
+.reservation .table .body .tr .td input[type='radio'] {
   display: none;
 }
 
-.reservation ul.tabs_panel li .table .body .tr .td label {
+.reservation .table .body .tr .td label {
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
-.reservation ul.tabs_panel li .table .body .tr .td label span.circle {
+.reservation .table .body .tr .td label span.circle {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 18px;
   height: 18px;
-  border: 2px solid #3333334d;
+  border: 2px solid #c0b7bc;
   border-radius: 100%;
   margin-right: 5px;
 }
-.reservation ul.tabs_panel li .table .body .tr .td label span.circle::before {
+.reservation .table .body .tr .td label span.circle::before {
   content: '';
   display: block;
   width: 8px;
@@ -199,8 +133,6 @@
   background-color: #fff;
 }
 .reservation
-  ul.tabs_panel
-  li
   .table
   .body
   .tr
@@ -211,8 +143,6 @@
   border-color: #ec0086;
 }
 .reservation
-  ul.tabs_panel
-  li
   .table
   .body
   .tr
@@ -222,7 +152,49 @@
   span.circle::before {
   background-color: #ec0086;
 }
-.reservation .mobile_option{
+
+.reservation .table .local_nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.reservation .table .local_nav .pre,
+.reservation .table .local_nav .next {
+  width: 32px;
+  height: 32px;
+  background-color: #ec0086;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.reservation .table .local_nav .pre:hover,
+.reservation .table .local_nav .next:hover {
+  opacity: 0.8;
+}
+.reservation .table .local_nav .pre {
+  transform: translateX(-130%);
+}
+.reservation .table .local_nav .next {
+  transform: translateX(130%);
+}
+.reservation .table .local_nav .pre::before,
+.reservation .table .local_nav .next::before {
+  content: url(../images/common/arrow_icon.svg);
+}
+.reservation .table .local_nav .pre::before {
+  transform: rotate(90deg) scale(0.6);
+}
+.reservation .table .local_nav .next::before {
+  transform: rotate(-90deg) scale(0.6);
+}
+
+/*手機板*/
+.reservation .mobile_option {
   display: none;
 }
 .reservation .mobile_option .local {
@@ -245,6 +217,111 @@
   outline: none;
   margin-bottom: 12px;
 }
+
+.reservation .mobile_table {
+  display: none;
+  margin-bottom: 20px;
+}
+.reservation .mobile_table .title {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.reservation .mobile_table .body .tr {
+  display: flex;
+  padding: 20px 0;
+}
+.reservation .mobile_table .body .tr:nth-child(odd) {
+  background-color: #fff3fa;
+}
+.reservation .mobile_table .body .tr .td {
+  flex: 1;
+  text-align: center;
+  font-size: 1.25rem;
+  color: #333333;
+}
+.reservation .mobile_table .body .tr .td input[type='radio'] {
+  display: none;
+}
+.reservation .mobile_table .body .tr .td label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.reservation .mobile_table .body .tr .td label span.circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #c0b7bc;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+.reservation .mobile_table .body .tr .td label span.circle::before {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #fff;
+}
+.reservation
+  .mobile_table
+  .body
+  .tr
+  .td
+  input[type='radio']:checked
+  + label
+  span.circle {
+  border-color: #ec0086;
+}
+.reservation
+  .mobile_table
+  .body
+  .tr
+  .td
+  input[type='radio']:checked
+  + label
+  span.circle::before {
+  background-color: #ec0086;
+}
+
+.mobile_local_nav {
+  width: 100%;
+  display: none;
+  justify-content: center;
+}
+.mobile_local_nav .pre,
+.mobile_local_nav .next {
+  width: 32px;
+  height: 32px;
+  background-color: #ec0086;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.mobile_local_nav .pre:hover,
+.mobile_local_nav .next:hover {
+  opacity: 0.8;
+}
+.mobile_local_nav .pre {
+  margin-right: 20px;
+}
+.mobile_local_nav .pre::before,
+.mobile_local_nav .next::before {
+  content: url(../images/common/arrow_icon.svg);
+}
+.mobile_local_nav .pre::before {
+  transform: rotate(90deg) scale(0.6);
+}
+.mobile_local_nav .next::before {
+  transform: rotate(-90deg) scale(0.6);
+}
+
 .reservation .desc .list {
   display: flex;
   margin-bottom: 22px;
@@ -260,7 +337,8 @@
 }
 @media (max-width: 1200px) {
   .reservation {
-    padding: 20px 10px;
+    padding: 20px;
+    margin-bottom: 20px;
   }
   .reservation h1 {
     font-size: 1.75rem;
@@ -269,16 +347,26 @@
   .reservation p {
     margin-bottom: 22px;
   }
-  .reservation .local {
+  .reservation > .local {
     margin-bottom: 20px;
   }
   .reservation ul.tabs {
     display: none;
   }
-  .reservation ul.tabs_panel {
+  .reservation .table {
     display: none;
   }
-  .reservation .mobile_option{
+  .reservation .mobile_option {
     display: block;
+  }
+  .reservation .mobile_table {
+    display: block;
+  }
+  .mobile_local_nav {
+    display: flex;
+    margin-bottom: 40px;
+  }
+  .reservation .desc .list.mobile_hide {
+    display: none;
   }
 }

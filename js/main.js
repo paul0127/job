@@ -64,23 +64,6 @@ footer_menu_btn.addEventListener('click', () => {
   console.log(footer_menu.offsetHeight)
 })
 
-let tabs = document.querySelectorAll('.tabs>li')
-tabs.forEach((item) => {
-  item.addEventListener('click', () => {
-    let btn = item.dataset.local
-    tabs.forEach((el)=>{
-      el.classList.remove('active')
-    })
-    item.classList.add('active')
-
-    let hide = document.querySelector('.tabs_panel>li.active')
-    hide.classList.remove('active')
-
-    let show = document.querySelector('li.'+btn)
-    show.classList.add('active')
-  })
-})
-
 /*手機板主選單 開關*/
 let menu_btn = document.querySelector('.menu_btn .btn')
 let menu = document.querySelector('.menu_btn')

@@ -39,6 +39,7 @@
   font-size: 1.25rem;
   margin-right: 42px;
   margin-bottom: 0;
+  margin-top: 3px;
 }
 .reservation_form .form .list .input {
   display: flex;
@@ -115,7 +116,7 @@
   justify-content: center;
   width: 18px;
   height: 18px;
-  border: 2px solid #3333334d;
+  border: 2px solid #c0b7bc;
   border-radius: 100%;
   margin-right: 10px;
 }

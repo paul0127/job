@@ -13,7 +13,7 @@
 }
 .payment .form .item {
   padding-bottom: 40px;
-  border-bottom: 1px solid #3333334d;
+  border-bottom: 1px solid #c0b7bc;
   margin-bottom: 40px;
 }
 .payment .form .item:last-child {
@@ -76,7 +76,7 @@
   flex: 0 0 18px;
   width: 18px;
   height: 18px;
-  border: 2px solid #3333334d;
+  border: 2px solid #c0b7bc;
   border-radius: 100%;
   margin-right: 15px;
 }
