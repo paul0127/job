@@ -382,6 +382,7 @@ ul.stepwizard li.active .text {
 .top_alert {
   font-size: 1.5rem;
   text-align: center;
+  margin-bottom: 43px;
 }
 @media (max-width: 1200px) {
   ul.stepwizard {

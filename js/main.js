@@ -47,6 +47,7 @@ $('.table_slider').owlCarousel({
   },
 })
 
+/*頁尾選單 開合*/
 let footer_menu = document.querySelector('.footer_menu')
 let footer_menu_btn = document.querySelector('.footer_menu_btn')
 
@@ -80,6 +81,7 @@ tabs.forEach((item) => {
   })
 })
 
+/*手機板主選單 開關*/
 let menu_btn = document.querySelector('.menu_btn .btn')
 let menu = document.querySelector('.menu_btn')
 menu_btn.addEventListener('click',()=>{
