@@ -491,6 +491,56 @@ header .testing_head .bar .range_bar span.progress {
   }
 }
 
+.pager {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 49px;
+}
+.pager .pre,
+.pager .next {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background-color: #ec0086;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+.pager .pre {
+  margin-right: 40px;
+}
+.pager .next {
+  margin-left: 40px;
+}
+.pager .pre::before,
+.pager .next::before {
+  content: url(../images/common/arrow_icon.svg);
+}
+.pager .pre::before {
+  transform: rotate(90deg) scale(0.6);
+}
+.pager .next::before {
+  transform: rotate(-90deg) scale(0.6);
+}
+.pager .pager_count{
+  display: flex;
+  align-items: center;
+}
+.pager .pager_count a.num{
+  color: #333;
+  margin-right: 20px;
+  text-decoration: none;
+}
+.pager .pager_count a.num:last-child{
+  margin-right: 0;
+}
+.pager .pager_count .num.active{
+  color: #ec0086;
+  text-decoration: underline;
+}
+
 /*bread*/
 ul.bread {
   list-style: none;
