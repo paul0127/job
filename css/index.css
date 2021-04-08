@@ -173,6 +173,24 @@
   letter-spacing: -2px;
   margin-bottom: 45px;
 }
+.index_news .news_frame .news_block .mobile_btn {
+  display: none;
+  justify-content: center;
+}
+.index_news .news_frame .news_block .mobile_btn a {
+  width: 160px;
+  height: 48px;
+  color: #fff;
+  background: transparent linear-gradient(180deg, #ec0086 0%, #db4954 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 1rem;
+}
 .index_news .news_frame .news_block .news_slider {
   position: relative;
 }
@@ -279,7 +297,7 @@
 .index_news .news_frame .question_block .text .img {
   position: relative;
 }
-.index_news .news_frame .question_block .text .img .s_img{
+.index_news .news_frame .question_block .text .img .s_img {
   position: relative;
 }
 .index_news .news_frame .question_block .text .img img {
@@ -381,7 +399,7 @@
     width: 175%;
     transform: translateX(-45%);
   }
-  .index_news .news_frame .news_block .news_slider::before{
+  .index_news .news_frame .news_block .news_slider::before {
     display: none;
   }
   .index_news .news_frame .news_block .news_slider .owl-stage-outer {
@@ -398,6 +416,9 @@
   .index_news .news_frame .news_block .news_slider .item .text a.btn img {
     transform: translateX(0);
   }
+  .index_news .news_frame .news_block .mobile_btn {
+    display: flex;
+  }
   .index_news .news_frame .question_block {
     flex: 0 0 100%;
     padding-bottom: 31px;
@@ -405,14 +426,14 @@
   .index_news .news_frame .question_block h1 {
     font-size: 1.75rem;
   }
-  .index_news .news_frame .question_block .text{
+  .index_news .news_frame .question_block .text {
     height: auto;
   }
-  .index_news .news_frame .question_block .text .img .btn{
+  .index_news .news_frame .question_block .text .img .btn {
     position: relative;
     bottom: auto;
   }
-  .index_news .news_frame .question_block .text .img .s_img{
+  .index_news .news_frame .question_block .text .img .s_img {
     margin-bottom: 20px;
   }
 }
