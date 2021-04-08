@@ -524,21 +524,24 @@ header .testing_head .bar .range_bar span.progress {
 .pager .next::before {
   transform: rotate(-90deg) scale(0.6);
 }
-.pager .pager_count{
+.pager .pager_count {
   display: flex;
   align-items: center;
 }
-.pager .pager_count a.num{
+.pager .pager_count a.num {
   color: #333;
   margin-right: 20px;
   text-decoration: none;
 }
-.pager .pager_count a.num:last-child{
+.pager .pager_count a.num:last-child {
   margin-right: 0;
 }
-.pager .pager_count .num.active{
+.pager .pager_count .num.active {
   color: #ec0086;
   text-decoration: underline;
+}
+.pager a:hover {
+  opacity: 0.7;
 }
 
 /*bread*/
