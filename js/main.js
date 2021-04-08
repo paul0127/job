@@ -25,12 +25,16 @@ $('.challenge_slider').owlCarousel({
 
 $('.news_slider').owlCarousel({
   loop: true,
-  margin: 30,
   nav: true,
   dots: false,
   responsive: {
     0: {
       items: 2,
+      margin: 10,
+    },
+    1200: {
+      items: 2,
+      margin: 30,
     },
   },
 })
@@ -67,17 +71,17 @@ let search = document.querySelector('.head .search_btn')
 let search_bar = document.querySelector('.head .search_bar')
 
 let closed = document.querySelector('.pc_closed')
-search.addEventListener('click',()=>{
+search.addEventListener('click', () => {
   search_bar.classList.toggle('active')
   console.log(search_bar.classList.contains('active'))
-  if(search_bar.classList.contains('active')){
+  if (search_bar.classList.contains('active')) {
     closed.classList.add('active')
-  }else{
+  } else {
     closed.classList.remove('active')
   }
 })
 
-closed.addEventListener('click',()=>{
+closed.addEventListener('click', () => {
   search_bar.classList.remove('active')
   closed.classList.remove('active')
 })
@@ -90,29 +94,34 @@ let menu_btn = document.querySelector('.menu_btn .btn')
 let menu = document.querySelector('.menu_btn')
 
 let mobile_closed = document.querySelector('.mobile_closed')
-menu_btn.addEventListener('click',()=>{
+menu_btn.addEventListener('click', () => {
   mobile_search_bar.classList.remove('active')
   menu.classList.toggle('active')
-  if(mobile_search_bar.classList.contains('active') || menu.classList.contains('active')){
+  if (
+    mobile_search_bar.classList.contains('active') ||
+    menu.classList.contains('active')
+  ) {
     mobile_closed.classList.add('active')
-  }else{
+  } else {
     mobile_closed.classList.remove('active')
   }
 })
 
-mobile_search.addEventListener('click',()=>{
+mobile_search.addEventListener('click', () => {
   menu.classList.remove('active')
   mobile_search_bar.classList.toggle('active')
-  if(mobile_search_bar.classList.contains('active') || menu.classList.contains('active')){
+  if (
+    mobile_search_bar.classList.contains('active') ||
+    menu.classList.contains('active')
+  ) {
     mobile_closed.classList.add('active')
-  }else{
+  } else {
     mobile_closed.classList.remove('active')
   }
 })
 
-mobile_closed.addEventListener('click',()=>{
+mobile_closed.addEventListener('click', () => {
   mobile_search_bar.classList.remove('active')
   menu.classList.remove('active')
   mobile_closed.classList.remove('active')
 })
-
