@@ -544,6 +544,48 @@ header .testing_head .bar .range_bar span.progress {
   opacity: 0.7;
 }
 
+.page_change {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 42px;
+}
+.page_change .pre,
+.page_change .next {
+  width: 160px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 48px;
+  border: 1px solid #ec0086;
+  text-decoration: none;
+}
+.page_change .pre:hover,
+.page_change .next:hover {
+  opacity: 0.8;
+}
+.page_change .pre {
+  margin-right: 30px;
+  background-color: #ec0086;
+}
+.page_change .next {
+  background-color: #db4954;
+}
+
+.go_list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 81px;
+}
+.go_list a {
+  color: #ec0086;
+  text-decoration: underline;
+}
+.go_list a:hover {
+  opacity: 0.8;
+}
+
 /*bread*/
 ul.bread {
   list-style: none;
