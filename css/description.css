@@ -55,6 +55,7 @@
     display: flex;
     align-items: center;
     margin-bottom: 0;
+    cursor: pointer;
 }
 .description .form .check label span.square{
     margin-right: 10px;

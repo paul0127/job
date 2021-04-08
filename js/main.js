@@ -51,7 +51,7 @@ $('.table_slider').owlCarousel({
 let footer_menu = document.querySelector('.footer_menu')
 let footer_menu_btn = document.querySelector('.footer_menu_btn')
 
-const footer_menu_height = footer_menu.offsetHeight
+let footer_menu_height = $('.footer_menu').height()
 footer_menu.setAttribute('style', 'height: ' + footer_menu_height + 'px')
 
 footer_menu_btn.addEventListener('click', () => {
@@ -61,7 +61,6 @@ footer_menu_btn.addEventListener('click', () => {
   } else {
     footer_menu.setAttribute('style', 'height: ' + footer_menu_height + 'px')
   }
-  console.log(footer_menu.offsetHeight)
 })
 
 let search = document.querySelector('.head .search_btn')
