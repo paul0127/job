@@ -1,0 +1,155 @@
+@import 'common.css';
+
+.contact ul.tabs {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+.contact ul.tabs li {
+  display: block;
+}
+.contact ul.tabs li a {
+  width: 160px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  color: #ec0086;
+  border: 1px solid #ec0086;
+  border-radius: 48px;
+  font-size: 1rem;
+  margin-right: 30px;
+  text-decoration: none;
+}
+.contact ul.tabs li.active a,
+.contact ul.tabs li a:hover {
+  background: transparent linear-gradient(180deg, #ec0086 0%, #db4954 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 5px 5px 6px #00000029;
+  color: #fff;
+}
+.contact ul.tabs li:last-child a {
+  margin-right: 0;
+}
+.contact .form {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 46px 60px;
+  background: #ffffffe6 0% 0% no-repeat padding-box;
+  box-shadow: 5px 10px 10px #00000029;
+  border-radius: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.contact .form .list {
+  display: flex;
+  align-items: flex-start;
+  flex: 0 0 100%;
+  font-size: 1.25rem;
+  color: #333333;
+  margin-bottom: 20px;
+}
+.contact .form .list.half {
+  flex: 0 0 340px;
+}
+.contact .form .list label {
+  flex: 0 0 100px;
+  margin-right: 40px;
+  margin-bottom: 0;
+  margin-top: 8px;
+}
+.contact .form .list label span.red {
+  color: #ec0086;
+}
+.contact .form .list .input {
+  flex: 1;
+}
+.contact .form .list .input input[type='text'] {
+  border: 1px solid #ec0086;
+  border-radius: 48px;
+  width: 200px;
+  height: 42px;
+  font-size: 1.25rem;
+  padding: 0 30px;
+  outline: none;
+}
+.contact .form .list .input select {
+  border: 1px solid #ec0086;
+  border-radius: 48px;
+  width: 200px;
+  height: 42px;
+  color: #ec0086;
+  font-size: 1.25rem;
+  padding: 0 30px;
+  outline: none;
+}
+.contact .form .list .input textarea {
+  width: 659px;
+  height: 120px;
+  border: 1px solid #ec0086;
+  border-radius: 8px;
+  padding: 5px 10px;
+  outline: none;
+}
+.contact .form .list .verify {
+  display: flex;
+  align-items: center;
+}
+.contact .form .list .verify input[type='text'] {
+  width: 200px;
+  height: 42px;
+  margin-right: 24px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #bbb;
+}
+
+.contact .desc {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto 61px auto;
+  padding: 0 60px;
+  font-size: 1.25rem;
+}
+.contact .desc p {
+  margin-bottom: 40px;
+}
+.contact .desc p:last-child {
+  margin-bottom: 0;
+}
+.contact .desc p span {
+  display: inline-block;
+  margin-right: 26px;
+  margin-top: 22px;
+}
+@media (max-width: 1200px) {
+  .contact ul.tabs {
+    margin-top: 20px;
+    margin-bottom: 27px;
+  }
+  .contact .form {
+    padding: 20px;
+  }
+  .contact .form .list label {
+    margin-right: 37px;
+  }
+  .contact .form .list .input input[type='text'],
+  .contact .form .list .input select,
+  .contact .form .list .input textarea {
+    width: 185px;
+  }
+  .contact .form .list .verify {
+    flex-wrap: wrap;
+  }
+  .contact .form .list .verify input[type='text'] {
+    width: 185px;
+    margin-bottom: 10px;
+  }
+  .contact .desc{padding: 0 0 0 0;}
+}

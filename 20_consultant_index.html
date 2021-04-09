@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+      crossorigin="anonymous"
+    />
+    <!-- CSS Style -->
+    <link href="css/20.Consultant-index.css" rel="stylesheet" />
+    <title>職涯門診-顧問系統</title>
+  </head>
+  <body>
+    <nav>
+      <div class="container">
+        <a href="#"
+          ><img class="nav-logo" />
+          <span class="nav-outpatient-tittle">職涯門診</span>
+          <span class="nav-consultant-tittle">顧問系統</span>
+        </a>
+        <div class="nav-user-info">
+          <div class="info">
+            <img class="icon-user" src="svg/icon-user.svg" />
+            <p>Hi,顧問<span>王ＯＯ</span></p>
+          </div>
+          <div class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn" onclick="myFunction()">
+              <img class="dropbtn" src="svg/icon-logout.svg" />
+            </a>
+            <div class="dropdown-content" id="logoutDropdown">
+              <p>admin<br />admin@career.com</p>
+              <input class="btn-sub" type="button" value="登出" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div>
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">職涯門診顧問系統</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            施測者諮詢報告管理
+          </li>
+        </ol>
+      </div>
+    </div>
+    <div class="all">
+      <div class="container">
+        <div class="page-tittle">
+          <img src="svg/icon_user.svg" />
+          <h2>施測者諮詢報告管理</h2>
+        </div>
+      </div>
+
+      <div class="search-area">
+        <div class="container">
+          <form>
+            <ol>
+              <li>
+                <p>搜尋條件</p>
+                <input class="input-text-style" type="text" />
+              </li>
+              <li>
+                <p>諮詢顧問</p>
+                <select class="select-style">
+                  <option value="all">全部</option>
+                  <option value="num1">顧問一</option>
+                  <option value="num2">顧問二</option>
+                  <option value="num3">顧問三</option>
+                </select>
+              </li>
+              <li>
+                <p>地區</p>
+                <select class="select-style">
+                  <option value="all">全部</option>
+                  <option value="num1">地區一</option>
+                  <option value="num2">地區二</option>
+                  <option value="num3">地區三</option>
+                </select>
+              </li>
+              <li>
+                <p>諮詢報告狀態</p>
+                <select class="select-style">
+                  <option value="all">全部</option>
+                  <option value="num1">狀態一</option>
+                  <option value="num2">狀態二</option>
+                  <option value="num3">狀態三</option>
+                </select>
+              </li>
+              <li>
+                <p>諮詢日期</p>
+                <input
+                  id="date-style"
+                  class="date-style"
+                  type="date"
+                  max="2022-03-11"
+                  min="2021-01-01"
+                />
+              </li>
+              <li>
+                <p>至</p>
+                <input
+                  id="date-style"
+                  class="date-style"
+                  type="date"
+                  max="2022-03-11"
+                  min="2021-01-01"
+                />
+              </li>
+              <li>
+                <input class="reset-style" type="reset" value="清除條件" />
+                <input class="submit-style" type="submit" value="查詢" />
+              </li>
+            </ol>
+          </form>
+        </div>
+      </div>
+      <div class="report-list">
+        <div class="container">
+          <ul>
+            <li class="thead">
+              <ol class="tr">
+                <li>no.</li>
+                <li>測驗狀態</li>
+                <li>諮詢安排</li>
+                <li>報告狀態</li>
+                <li>諮詢顧問</li>
+                <li>地區</li>
+                <li>施測者姓名</li>
+                <li>諮詢時間</li>
+                <li>排序編號</li>
+                <li>管理功能</li>
+              </ol>
+            </li>
+            <li class="tbody">
+              <ol class="tr">
+                <li date-title="No.">1</li>
+                <li date-title="測驗狀態">已完成</li>
+                <li date-title="諮詢安排">待處理</li>
+                <li date-title="報告狀態">已完成</li>
+                <li date-title="諮詢顧問">林ＯＯ</li>
+                <li date-title="地區">臺北</li>
+                <li date-title="施測者姓名">
+                  <a
+                    class="link"
+                    href="#"
+                    target="_blank"
+                    title="施測者詳細基本資料"
+                    >王ＯＯ</a
+                  >
+                </li>
+                <li date-title="諮詢時間">
+                  2020-10-10<br />
+                  14:00~16:00
+                </li>
+                <li date-title="排序編號">10</li>
+                <li date-title="管理功能">
+                  <input
+                    class="report-list-btn-01"
+                    type="button"
+                    value="測驗結果"
+                    onclick="location.href='#'"
+                  />
+                  <input
+                    class="report-list-btn-02"
+                    type="button"
+                    value="諮詢報告"
+                    onclick="location.href='#'"
+                  />
+                </li>
+              </ol>
+              <ol class="tr">
+                <li date-title="No.">1</li>
+                <li date-title="測驗狀態">已完成</li>
+                <li date-title="諮詢安排">待處理</li>
+                <li date-title="報告狀態">已完成</li>
+                <li date-title="諮詢顧問">林ＯＯ</li>
+                <li date-title="地區">臺北</li>
+                <li date-title="施測者姓名">
+                  <a
+                    class="link"
+                    href="#"
+                    target="_blank"
+                    title="施測者詳細基本資料"
+                    >王ＯＯ</a
+                  >
+                </li>
+                <li date-title="諮詢時間">
+                  2020-10-10<br />
+                  14:00~16:00
+                </li>
+                <li date-title="排序編號">10</li>
+                <li date-title="管理功能˙">
+                  <input
+                    class="report-list-btn-01"
+                    type="button"
+                    value="測驗結果"
+                    onclick="location.href='#'"
+                  />
+                  <input
+                    class="report-list-btn-02"
+                    type="button"
+                    value="諮詢報告"
+                    onclick="location.href='#'"
+                  />
+                </li>
+              </ol>
+              <ol class="tr">
+                <li date-title="No.">1</li>
+                <li date-title="測驗狀態">已完成</li>
+                <li date-title="諮詢安排">待處理</li>
+                <li date-title="報告狀態">已完成</li>
+                <li date-title="諮詢顧問">林ＯＯ</li>
+                <li date-title="地區">臺北</li>
+                <li date-title="施測者姓名">
+                  <a
+                    class="link"
+                    href="#"
+                    target="_blank"
+                    title="施測者詳細基本資料"
+                    >王ＯＯ</a
+                  >
+                </li>
+                <li date-title="諮詢時間">
+                  2020-10-10<br />
+                  14:00~16:00
+                </li>
+                <li date-title="排序編號">10</li>
+                <li date-title="管理功能˙">
+                  <input
+                    class="report-list-btn-01"
+                    type="button"
+                    value="測驗結果"
+                    onclick="location.href='#'"
+                  />
+                  <input
+                    class="report-list-btn-02"
+                    type="button"
+                    value="諮詢報告"
+                    onclick="location.href='#'"
+                  />
+                </li>
+              </ol>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="center">
+        <div class="pagination">
+          <a href="#"><img src="svg/btn-arrow_dot_left.svg" /></a>
+          <a href="#" class="active">1</a>
+          <a href="#">2</a>
+          <a href="#"><img src="svg/btn-arrow_dot_right.svg" /></a>
+        </div>
+      </div>
+    </div>
+    <!-- footer   -->
+    <footer>Copyright 2021 @ Career Consulting Co. Ltd.</footer>
+
+    <script src="js/dropdown.js"></script>
+  </body>
+</html>

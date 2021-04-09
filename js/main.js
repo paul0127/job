@@ -1,3 +1,4 @@
+/*首頁輪播主圖*/
 $('.banner_slider').owlCarousel({
   loop: true,
   margin: 0,
@@ -10,7 +11,7 @@ $('.banner_slider').owlCarousel({
     },
   },
 })
-
+/*首頁挑戰輪播*/
 $('.challenge_slider').owlCarousel({
   loop: true,
   margin: 0,
@@ -22,7 +23,7 @@ $('.challenge_slider').owlCarousel({
     },
   },
 })
-
+/*首頁消息輪播*/
 $('.news_slider').owlCarousel({
   loop: true,
   nav: true,
@@ -35,18 +36,6 @@ $('.news_slider').owlCarousel({
     1200: {
       items: 2,
       margin: 30,
-    },
-  },
-})
-
-$('.table_slider').owlCarousel({
-  loop: false,
-  margin: 30,
-  nav: true,
-  dots: false,
-  responsive: {
-    0: {
-      items: 1,
     },
   },
 })
@@ -67,10 +56,11 @@ footer_menu_btn.addEventListener('click', () => {
   }
 })
 
+/*PC搜尋欄 開合*/
 let search = document.querySelector('.head .search_btn')
 let search_bar = document.querySelector('.head .search_bar')
-
 let closed = document.querySelector('.pc_closed')
+
 search.addEventListener('click', () => {
   search_bar.classList.toggle('active')
   console.log(search_bar.classList.contains('active'))
@@ -80,20 +70,19 @@ search.addEventListener('click', () => {
     closed.classList.remove('active')
   }
 })
-
 closed.addEventListener('click', () => {
   search_bar.classList.remove('active')
   closed.classList.remove('active')
 })
 
+
 /*手機板主選單 搜尋 開關*/
 let mobile_search = document.querySelector('.mobile_head .search_btn .btn')
 let mobile_search_bar = document.querySelector('.mobile_head .search_btn')
-
 let menu_btn = document.querySelector('.menu_btn .btn')
 let menu = document.querySelector('.menu_btn')
-
 let mobile_closed = document.querySelector('.mobile_closed')
+
 menu_btn.addEventListener('click', () => {
   mobile_search_bar.classList.remove('active')
   menu.classList.toggle('active')

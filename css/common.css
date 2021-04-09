@@ -384,6 +384,7 @@ header .testing_head .bar .range_bar span.progress {
 .top_banner {
   background-image: url(../images/common/top_banner.png);
   background-size: cover;
+  background-position: top center;
   padding: 50px 0;
 }
 .top_banner h1 {
@@ -421,6 +422,7 @@ header .testing_head .bar .range_bar span.progress {
   }
 }
 
+/*頁面初始設定*/
 .page {
   padding-bottom: 48px;
   background-color: #f9f9f9;
@@ -491,6 +493,7 @@ header .testing_head .bar .range_bar span.progress {
   }
 }
 
+/*分頁*/
 .pager {
   display: flex;
   align-items: center;
@@ -544,6 +547,7 @@ header .testing_head .bar .range_bar span.progress {
   opacity: 0.7;
 }
 
+/*上下頁*/
 .page_change {
   display: flex;
   justify-content: center;
@@ -573,6 +577,7 @@ header .testing_head .bar .range_bar span.progress {
   background-color: #db4954;
 }
 
+/*回到列表*/
 .go_list {
   display: flex;
   justify-content: center;
@@ -691,19 +696,7 @@ ul.stepwizard li.complete .text {
 ul.stepwizard li.active .text {
   color: #000;
 }
-/*提示文字*/
-.top_tip {
-  font-size: 1.25rem;
-  text-align: center;
-  color: #333333;
-  margin-bottom: 22px;
-  display: none;
-}
-.top_alert {
-  font-size: 1.5rem;
-  text-align: center;
-  margin-bottom: 43px;
-}
+
 @media (max-width: 1200px) {
   ul.stepwizard {
     padding-top: 51px;
@@ -725,6 +718,22 @@ ul.stepwizard li.active .text {
   ul.stepwizard li .text {
     display: none;
   }
+}
+
+/*提示文字*/
+.top_tip {
+  font-size: 1.25rem;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 22px;
+  display: none;
+}
+.top_alert {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 43px;
+}
+@media (max-width: 1200px) {
   .top_tip {
     display: block;
   }
