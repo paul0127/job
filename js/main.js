@@ -1,79 +1,92 @@
 /*首頁輪播主圖*/
-$('.banner_slider').owlCarousel({
-  loop: true,
-  margin: 0,
-  nav: false,
-  dots: false,
-  autoplay: true,
-  responsive: {
-    0: {
-      items: 1,
+let banner_slider = document.querySelector('.banner_slider')
+if (banner_slider) {
+  $('.banner_slider').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: false,
+    dots: false,
+    autoplay: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
     },
-  },
-})
+  })
+}
 /*首頁挑戰輪播*/
-$('.challenge_slider').owlCarousel({
-  loop: true,
-  margin: 0,
-  nav: true,
-  dots: false,
-  responsive: {
-    0: {
-      items: 1,
+let challenge_slider = document.querySelector('.challenge_slider')
+if (challenge_slider) {
+  $('.challenge_slider').owlCarousel({
+    loop: true,
+    margin: 0,
+    nav: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 1,
+      },
     },
-  },
-})
+  })
+}
 /*首頁消息輪播*/
-$('.news_slider').owlCarousel({
-  loop: true,
-  nav: true,
-  dots: false,
-  responsive: {
-    0: {
-      items: 2,
-      margin: 10,
+let news_slider = document.querySelector('.news_slider')
+if (news_slider) {
+  $('.news_slider').owlCarousel({
+    loop: true,
+    nav: true,
+    dots: false,
+    responsive: {
+      0: {
+        items: 2,
+        margin: 10,
+      },
+      1200: {
+        items: 2,
+        margin: 30,
+      },
     },
-    1200: {
-      items: 2,
-      margin: 30,
-    },
-  },
-})
+  })
+}
 
 /*頁尾選單 開合*/
 let footer_menu = document.querySelector('.footer_menu')
 let footer_menu_btn = document.querySelector('.footer_menu_btn')
 
-let footer_menu_height = $('.footer_menu').height()
-footer_menu.setAttribute('style', 'height: ' + footer_menu_height + 'px')
+if (footer_menu) {
+  let footer_menu_height = $('.footer_menu').height()
+  footer_menu.setAttribute('style', 'height: ' + footer_menu_height + 'px')
 
-footer_menu_btn.addEventListener('click', () => {
-  footer_menu_btn.classList.toggle('closed')
-  if (footer_menu_btn.classList.contains('closed')) {
-    footer_menu.setAttribute('style', 'height: 0')
-  } else {
-    footer_menu.setAttribute('style', 'height: ' + footer_menu_height + 'px')
-  }
-})
+  footer_menu_btn.addEventListener('click', () => {
+    footer_menu_btn.classList.toggle('closed')
+    if (footer_menu_btn.classList.contains('closed')) {
+      footer_menu.setAttribute('style', 'height: 0')
+    } else {
+      footer_menu.setAttribute('style', 'height: ' + footer_menu_height + 'px')
+    }
+  })
+}
 
 /*PC搜尋欄 開合*/
 let search = document.querySelector('.head .search_btn')
 let search_bar = document.querySelector('.head .search_bar')
 let closed = document.querySelector('.pc_closed')
 
-search.addEventListener('click', () => {
-  search_bar.classList.toggle('active')
-  console.log(search_bar.classList.contains('active'))
-  if (search_bar.classList.contains('active')) {
-    closed.classList.add('active')
-  } else {
+if (search) {
+  search.addEventListener('click', () => {
+    search_bar.classList.toggle('active')
+    console.log(search_bar.classList.contains('active'))
+    if (search_bar.classList.contains('active')) {
+      closed.classList.add('active')
+    } else {
+      closed.classList.remove('active')
+    }
+  })
+  closed.addEventListener('click', () => {
+    search_bar.classList.remove('active')
     closed.classList.remove('active')
-  }
-})
-closed.addEventListener('click', () => {
-  search_bar.classList.remove('active')
-  closed.classList.remove('active')
-})
+  })
+}
 
 /*手機板主選單 搜尋 開關*/
 let mobile_search = document.querySelector('.mobile_head .search_btn .btn')
@@ -82,37 +95,39 @@ let menu_btn = document.querySelector('.menu_btn .btn')
 let menu = document.querySelector('.menu_btn')
 let mobile_closed = document.querySelector('.mobile_closed')
 
-menu_btn.addEventListener('click', () => {
-  mobile_search_bar.classList.remove('active')
-  menu.classList.toggle('active')
-  if (
-    mobile_search_bar.classList.contains('active') ||
-    menu.classList.contains('active')
-  ) {
-    mobile_closed.classList.add('active')
-  } else {
-    mobile_closed.classList.remove('active')
-  }
-})
+if (menu_btn) {
+  menu_btn.addEventListener('click', () => {
+    mobile_search_bar.classList.remove('active')
+    menu.classList.toggle('active')
+    if (
+      mobile_search_bar.classList.contains('active') ||
+      menu.classList.contains('active')
+    ) {
+      mobile_closed.classList.add('active')
+    } else {
+      mobile_closed.classList.remove('active')
+    }
+  })
 
-mobile_search.addEventListener('click', () => {
-  menu.classList.remove('active')
-  mobile_search_bar.classList.toggle('active')
-  if (
-    mobile_search_bar.classList.contains('active') ||
-    menu.classList.contains('active')
-  ) {
-    mobile_closed.classList.add('active')
-  } else {
-    mobile_closed.classList.remove('active')
-  }
-})
+  mobile_search.addEventListener('click', () => {
+    menu.classList.remove('active')
+    mobile_search_bar.classList.toggle('active')
+    if (
+      mobile_search_bar.classList.contains('active') ||
+      menu.classList.contains('active')
+    ) {
+      mobile_closed.classList.add('active')
+    } else {
+      mobile_closed.classList.remove('active')
+    }
+  })
 
-mobile_closed.addEventListener('click', () => {
-  mobile_search_bar.classList.remove('active')
-  menu.classList.remove('active')
-  mobile_closed.classList.remove('active')
-})
+  mobile_closed.addEventListener('click', () => {
+    mobile_search_bar.classList.remove('active')
+    menu.classList.remove('active')
+    mobile_closed.classList.remove('active')
+  })
+}
 
 /*聯絡我們 彈出窗*/
 let send_msg = document.querySelector('.send_msg')
@@ -135,3 +150,18 @@ if (pop_msg) {
     }
   })
 }
+
+/*職涯諮詢建議報告 開合*/
+let acc = document.querySelectorAll('.report-suggest-tittle')
+acc.forEach((el) => {
+  el.addEventListener('click', () => {
+    el.classList.toggle('active')
+    let panel = el.nextElementSibling
+    if (panel.style.display === 'block') {
+      panel.style.display = 'none'
+    } else {
+      panel.style.display = 'block'
+    }
+  })
+})
+

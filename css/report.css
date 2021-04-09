@@ -96,7 +96,7 @@ nav{
 }
 
 .nav-logo{
-    content: url(../svg/logo_career-w.svg);
+    content: url(../images/common/logo_career-w.svg);
     width: 230px;
     height: 32px;
     margin: 20px 20px 20px 160px;
@@ -216,14 +216,14 @@ nav{
     width: 32px;
     height: 32px;
     color: #fff;
-    background-image: url(../svg/arrow_up_btn.svg);
+    background-image: url(../images/common/arrow_up_btn.svg);
     font-weight: bold;
     float: right;
   }
   
   .active-F:after {
     content: "";
-    background-image: url(../svg/arrow_btn.svg);;
+    background-image: url(../images/common/arrow_btn.svg);;
   }
 
 .report-suggest-tittle::after {
@@ -233,14 +233,14 @@ nav{
     width: 32px;
     height: 32px;
     color: #fff;
-    background-image: url(../svg/arrow_btn.svg);
+    background-image: url(../images/common/arrow_btn.svg);
     font-weight: bold;
     float: right;
   }
   
   .active:after {
     content: "";
-    background-image: url(../svg/arrow_up_btn.svg);;
+    background-image: url(../images/common/arrow_up_btn.svg);;
   }
 
 @media (max-width:1259px){
