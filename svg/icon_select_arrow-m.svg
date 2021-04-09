@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="157" height="42" viewBox="0 0 157 42">
-  <g id="icon_select_arrow-m" transform="translate(-358 -1078)">
-    <rect id="input_text" width="157" height="42" rx="21" transform="translate(358 1078)" fill="none"/>
-    <g id="arrow_down_icon-c" transform="translate(479 1091)">
-      <path id="arrow_icon" d="M111.03,160l.97.986-8,8.157-8-8.157.965-.986L104,167.167Z" transform="translate(-96 -155)" fill="#ec0086"/>
-      <rect id="Rectangle_441" data-name="Rectangle 441" width="16" height="16" fill="none"/>
-    </g>
-  </g>
-</svg>
