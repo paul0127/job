@@ -75,7 +75,6 @@ closed.addEventListener('click', () => {
   closed.classList.remove('active')
 })
 
-
 /*手機板主選單 搜尋 開關*/
 let mobile_search = document.querySelector('.mobile_head .search_btn .btn')
 let mobile_search_bar = document.querySelector('.mobile_head .search_btn')
@@ -114,3 +113,25 @@ mobile_closed.addEventListener('click', () => {
   menu.classList.remove('active')
   mobile_closed.classList.remove('active')
 })
+
+/*聯絡我們 彈出窗*/
+let send_msg = document.querySelector('.send_msg')
+let pop_msg = document.querySelector('.pop_msg')
+let pop_msg_closed = document.querySelector('.pop_msg .closed')
+let pop_closed = document.querySelector('.pop_closed')
+
+if (pop_msg) {
+  document.addEventListener('click', (e) => {
+    let pop_toggle = pop_msg.classList.contains('active')
+    if (!pop_msg.contains(e.target) && pop_toggle) {
+      pop_msg.classList.remove('active')
+      pop_closed.classList.remove('active')
+    } else if (e.target == send_msg && !pop_toggle) {
+      pop_msg.classList.add('active')
+      pop_closed.classList.add('active')
+    } else if (e.target == pop_msg_closed && pop_toggle) {
+      pop_msg.classList.remove('active')
+      pop_closed.classList.remove('active')
+    }
+  })
+}

@@ -128,6 +128,82 @@
   margin-right: 26px;
   margin-top: 22px;
 }
+.pop_closed{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 997;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: .5;
+  display: none;
+}
+.pop_closed.active{
+  display: block;
+}
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 998;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 1000px;
+  background-color: #fff;
+  display: none;
+  align-items: center;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.popup.active {
+  display: flex;
+}
+.popup .pic {
+  flex: 0 0 300px;
+  margin-right: 60px;
+}
+.popup .pic img {
+  width: 100%;
+}
+.popup .text .title {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+.popup .text .con {
+  margin-bottom: 40px;
+}
+.popup .text .con p {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+.popup .text .con p span {
+  flex: 0 0 50%;
+  margin-bottom: 20px;
+}
+.popup .text .btn {
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  cursor: default;
+}
+.popup .text .btn a {
+  background: transparent linear-gradient(180deg, #ec0086 0%, #db4954 100%) 0%
+    0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000029;
+  border-radius: 48px;
+  color: #fff;
+  width: 168px;
+  height: 48px;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
 @media (max-width: 1200px) {
   .contact ul.tabs {
     margin-top: 20px;
@@ -151,5 +227,28 @@
     width: 185px;
     margin-bottom: 10px;
   }
-  .contact .desc{padding: 0 0 0 0;}
+  .contact .desc {
+    padding: 0 0 0 0;
+  }
+  .popup {
+    width: calc(100% - 30px);
+    padding: 20px;
+  }
+  .popup .pic {
+    display: none;
+  }
+  .popup .text .title {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+  .popup .text .con {
+    margin-bottom: 20px;
+  }
+  .popup .text .con p span {
+    flex: 0 0 100%;
+    margin-bottom: 10px;
+  }
+  .popup .text .btn {
+    justify-content: center;
+  }
 }
