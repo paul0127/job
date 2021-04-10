@@ -47,6 +47,17 @@
   flex: 1;
   flex-wrap: wrap;
 }
+.reservation_form .form .list .input.date {
+  position: relative;
+  max-width: 255px;
+}
+.reservation_form .form .list .input.date::after {
+  content: url(../images/common/icon_Calendar.svg);
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-45%);
+}
 .reservation_form .form .list .input input[type='text'] {
   flex: 1;
   min-width: 0;
@@ -55,7 +66,7 @@
   padding: 8px 15px;
   outline: none;
   border-radius: 48px;
-} 
+}
 .reservation_form .form .list .input input#datepicker {
   flex: 1;
   min-width: 0;
@@ -171,7 +182,7 @@
   width: 579px;
 }
 @media (max-width: 1200px) {
-  .reservation_form{
+  .reservation_form {
     margin-bottom: 40px;
   }
   .reservation_form h2 {

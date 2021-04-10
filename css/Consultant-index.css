@@ -203,7 +203,6 @@ nav a:hover {
   font-weight: 500;
   top: 8px;
 }
-
 .nav-outpatient-tittle::before {
   content: '';
   font-size: 18px;
@@ -223,19 +222,12 @@ nav a:hover {
   top: 7px;
   padding-left: 8px;
 }
-
 .nav-consultant-tittle::before {
   content: '';
   font-size: 18px;
   border-left: 1px solid #fff;
   padding-left: 10px;
 }
-
-/* @media(max-width:427px){
-    .nav-logo{
-        margin: 20px 0px 20px 15px;
-    }
-} */
 
 .info {
   display: inline-block;
@@ -397,7 +389,6 @@ nav a:hover {
 }
 
 /* breadcrumb */
-
 .breadcrumb {
   display: block;
   padding: 20px 0px;
@@ -408,22 +399,18 @@ nav a:hover {
   color: #333333;
   white-space: nowrap;
 }
-
 .breadcrumb li {
   display: inline;
   font-size: 16px;
 }
-
 .breadcrumb a {
   color: #333333;
 }
 
 /* Page-tittle */
-
 .page-tittle {
   margin-bottom: 20px;
 }
-
 .page-tittle img {
   display: inline-block;
   margin-right: 10px;
@@ -442,9 +429,19 @@ nav a:hover {
   width: 255px;
   height: 42px;
 }
-
-.date-style {
+.date-style-out {
+  position: relative;
   width: 255px;
+}
+.date-style-out::after {
+  content: url(../images/common/icon_Calendar.svg);
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-45%);
+}
+.date-style {
+  width: 100%;
   color: #333333;
 }
 /*date-icon*/
@@ -556,7 +553,6 @@ form ol {
 }
 
 /*report-list*/
-
 .report-list {
   margin: 40px 0px;
 }
@@ -620,7 +616,6 @@ form ol {
   margin-right: 10px;
   margin-bottom: 10px;
 }
-
 .report-list-btn-02 {
   font-size: 20px;
   line-height: 24px;
@@ -641,13 +636,11 @@ form ol {
   .report-list .container {
     margin: auto;
   }
-
   .tbody {
     display: block;
     position: relative;
     width: 100%;
   }
-
   .report-list .thead {
     display: none;
   }
@@ -681,17 +674,9 @@ form ol {
     width: 25%;
     background-color: #fff;
   }
-
-  /* @media (max-width:767px) {
-        .tr li {
-            text-align: left;
-            padding-left: 30%;
-        }
-    } */
 }
 
 /*pagination*/
-
 .center {
   text-align: center;
 }
@@ -699,7 +684,6 @@ form ol {
   display: inline-block;
   text-align: center;
 }
-
 .pagination a {
   color: #333333;
   padding: 8px 16px;
