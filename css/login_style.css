@@ -334,7 +334,7 @@ body {
 /* captcha */
 
 .card .txtCode {
-  width: 200px;
+  width: 160px;
   height: 42px;
   padding: 0 10px;
   outline: none;
@@ -342,6 +342,33 @@ body {
   border-color: rgba(0, 0, 20, 0.5);
   border-width: 1px;
   border-style: solid;
+}
+
+td.fresh{
+  display: flex;
+  align-items: center;
+}
+
+button.refresh {
+  border: 1px solid #ccc;
+  background-color: #bbb;
+  outline: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+button.refresh:hover{
+  opacity: .8;
+}
+button.refresh img{
+  width: 14px;
+  height: 14px;
 }
 
 @media (max-width: 416px) {

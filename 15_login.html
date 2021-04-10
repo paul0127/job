@@ -39,11 +39,23 @@
                 <!-- 輸入框 -->
                 <td><input id="Text3" type="text" class="txtCode" /></td>
                 <!-- 顯示驗證碼 -->
-                <td><img src="./images/common/img-CAPTCHA.png" /></td>
+                <td class="fresh">
+                  <img src="./images/common/img-CAPTCHA.png" /><button
+                    class="refresh"
+                  >
+                    <img src="./images/common/refresh.svg" alt="" />
+                  </button>
+                </td>
               </tr>
             </table>
 
-            <input id="btn-login" class="btn-main" type="button" value="登入" onclick="location.href='20_consultant_index.html'"/>
+            <input
+              id="btn-login"
+              class="btn-main"
+              type="button"
+              value="登入"
+              onclick="location.href='20_consultant_index.html'"
+            />
             <hr />
             <div class="btn-sub-area">
               <input
