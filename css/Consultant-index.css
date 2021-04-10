@@ -81,6 +81,9 @@ select::-ms-expand {
   outline: none;
   margin-right: 10px;
 }
+.reset-style:hover {
+  opacity: 0.8;
+}
 
 .submit-style {
   color: #fff;
@@ -94,6 +97,9 @@ select::-ms-expand {
   outline: none;
   cursor: pointer;
   padding: 8px 64px;
+}
+.submit-style:hover {
+  opacity: 0.8;
 }
 
 .all {
@@ -132,6 +138,7 @@ select::-ms-expand {
   cursor: pointer;
   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.16);
 }
+.btn-sub:hover{opacity: .8;}
 
 .btn-sub-linear {
   color: rgba(255, 255, 255, 0.9);
@@ -357,6 +364,9 @@ img .icon-logout {
 .dropdown {
   position: relative;
   display: inline-block;
+}
+.dropdown a:hover{
+  opacity: .8;
 }
 
 .dropdown-content {
@@ -616,6 +626,9 @@ form ol {
   margin-right: 10px;
   margin-bottom: 10px;
 }
+.report-list-btn-01:hover {
+  opacity: 0.8;
+}
 .report-list-btn-02 {
   font-size: 20px;
   line-height: 24px;
@@ -631,7 +644,9 @@ form ol {
   white-space: pre-wrap;
   margin: 0 10px;
 }
-
+.report-list-btn-02:hover {
+  opacity: 0.8;
+}
 @media (max-width: 1199px) {
   .report-list .container {
     margin: auto;
@@ -693,6 +708,7 @@ form ol {
   color: #ec0086;
   text-decoration: underline;
 }
+.pagination a:hover{opacity: .8;}
 
 /* footer */
 footer {

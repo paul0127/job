@@ -116,6 +116,7 @@ button {
   cursor: pointer;
   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.16);
 }
+.btn-main:hover {opacity: .8;}
 
 @media (max-width: 427px) {
   .btn-main {

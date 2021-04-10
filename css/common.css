@@ -516,6 +516,9 @@ header .testing_head .bar .range_bar span.progress {
   font-size: 1rem;
   margin-bottom: 32px;
 }
+.mini_btn a.send_btn:hover {
+  opacity: .8;
+}
 .comfirm_btn {
   display: flex;
   align-items: center;
@@ -870,6 +873,9 @@ footer .footer_menu ul.footer_nav li ul.sub li {
 footer .footer_menu ul.footer_nav li ul.sub li a {
   color: #333;
   text-decoration: none;
+}
+footer .footer_menu ul.footer_nav li ul.sub li a:hover {
+  opacity: .8;
 }
 /*頁尾下半部資訊*/
 footer .bottom {

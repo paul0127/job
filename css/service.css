@@ -57,6 +57,9 @@
   font-size: 1.75rem;
   margin-bottom: 32px;
 }
+.service .service_top_btn a:hover {
+  opacity: .8;
+}
 .service .service_middle {
   display: flex;
   align-items: stretch;

@@ -274,6 +274,9 @@ body {
   margin: 0;
   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.16);
 }
+.btn-main:hover {
+  opacity: 0.8;
+}
 
 /* .btn-main:hover {
     color:#fff;
@@ -296,6 +299,9 @@ body {
   cursor: pointer;
   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.16);
 }
+.btn-sub:hover {
+  opacity: 0.8;
+}
 
 .btn-sub-linear {
   color: rgba(255, 255, 255, 0.9);
@@ -307,6 +313,9 @@ body {
   border: none;
   cursor: pointer;
   box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.16);
+}
+.btn-sub-linear:hover{
+  opacity: .8;
 }
 
 .password-forget-finish .btn-sub-area {
@@ -330,6 +339,9 @@ body {
 #btn-login {
   background: linear-gradient(#ec0086, #db4954);
 }
+#btn-login:hover {
+  opacity: 0.8;
+}
 
 /* captcha */
 
@@ -344,7 +356,7 @@ body {
   border-style: solid;
 }
 
-td.fresh{
+td.fresh {
   display: flex;
   align-items: center;
 }
@@ -363,10 +375,10 @@ button.refresh {
   cursor: pointer;
   margin-left: 10px;
 }
-button.refresh:hover{
-  opacity: .8;
+button.refresh:hover {
+  opacity: 0.8;
 }
-button.refresh img{
+button.refresh img {
   width: 14px;
   height: 14px;
 }
