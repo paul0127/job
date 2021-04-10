@@ -109,6 +109,27 @@
   border-radius: 4px;
   border: 1px solid #bbb;
 }
+.contact .form .list .verify button{
+  border: 1px solid #ccc;
+  background-color: #bbb;
+  outline: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.contact .form .list .verify button:hover{
+  opacity: .8;
+}
+.contact .form .list .verify button img{
+  width: 14px;
+  height: 14px;
+}
 
 .contact .desc {
   width: 100%;
