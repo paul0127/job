@@ -5,12 +5,6 @@ html {
 body {
   font-family: 'Noto Sans CJK TC';
 }
-.slider {
-  width: 100%;
-}
-.slider .banner_slider .item a img {
-  max-width: 100%;
-}
 
 /*header*/
 header {
@@ -21,13 +15,31 @@ header {
 }
 header .head {
   display: flex;
-  align-items: stretch;
+  align-items: flex-end;
   flex-wrap: wrap;
+  padding: 1rem 0;
 }
 header .head .logo {
   flex: 0 0 346px;
-  padding: 1rem 0;
   margin-right: 1rem;
+  line-height: 1;
+  display: flex;
+  align-items: flex-end;
+}
+header .head .logo .text {
+  display: flex;
+  align-items: flex-end;
+  line-height: 1;
+  font-size: 1.55rem;
+  border-left: 1px solid #fff;
+  margin-left: 5px;
+  padding-left: 5px;
+}
+
+header .head .logo .text a {
+  line-height: 1;
+  text-decoration: none;
+  color: #fff;
 }
 /*主選單*/
 header .head ul.nav {
@@ -39,6 +51,7 @@ header .head ul.nav {
 }
 header .head ul.nav li {
   margin-right: 1rem;
+  line-height: 1;
 }
 header .head ul.nav li:last-child {
   margin-right: 0;
@@ -104,6 +117,7 @@ header .head ul.toolBar li .search_bar .search .send {
   color: #fff;
   margin-left: 20px;
 }
+/*pc 搜尋展開 遮幕*/
 .pc_closed {
   position: fixed;
   top: 0;
@@ -119,18 +133,35 @@ header .head ul.toolBar li .search_bar .search .send {
   display: block;
 }
 
+/*測驗head*/
 header .testing_head {
   display: flex;
   flex-wrap: wrap;
+  padding: 1rem 0;
 }
 header .testing_head .logo {
   flex: 0 0 346px;
-  padding: 1rem 0;
   margin-right: 1rem;
+  line-height: 1;
+  display: flex;
+  align-items: flex-end;
 }
-header .testing_head .logo img {
-  width: 100%;
+header .testing_head .logo .text {
+  display: flex;
+  align-items: flex-end;
+  line-height: 1;
+  font-size: 1.55rem;
+  border-left: 1px solid #fff;
+  margin-left: 5px;
+  padding-left: 5px;
 }
+
+header .testing_head .logo .text a {
+  line-height: 1;
+  text-decoration: none;
+  color: #fff;
+}
+/*測驗進度條*/
 header .testing_head .info {
   flex: 0 0 100%;
   display: flex;
@@ -181,6 +212,7 @@ header .testing_head .bar .range_bar span.progress {
   border-radius: 24px;
 }
 
+/*手機head*/
 .mobile_head {
   display: none;
   align-items: center;
@@ -193,6 +225,7 @@ header .testing_head .bar .range_bar span.progress {
 .mobile_head .logo img {
   width: 100%;
 }
+/*手機 搜尋按鈕*/
 .mobile_head .search_btn {
   margin-left: 32px;
   display: flex;
@@ -205,6 +238,7 @@ header .testing_head .bar .range_bar span.progress {
 .mobile_head .search_btn .btn::before {
   content: url(../images/common/search.svg);
 }
+/*手機 搜尋bar*/
 .mobile_head .search_btn .search_bar {
   position: absolute;
   top: 100%;
@@ -237,7 +271,7 @@ header .testing_head .bar .range_bar span.progress {
   color: #fff;
   margin-left: 20px;
 }
-
+/*手機選單按鈕*/
 .mobile_head .menu_btn .btn {
   display: flex;
   align-items: center;
@@ -262,6 +296,7 @@ header .testing_head .bar .range_bar span.progress {
   padding: 0 15px 20px 15px;
   z-index: 9;
 }
+/*手機 下拉選單*/
 .mobile_head .menu_btn.active > .dropdown {
   transform: scaleY(1);
   z-index: 10;
@@ -327,7 +362,7 @@ header .testing_head .bar .range_bar span.progress {
   margin-right: 10px;
   flex: 0 0 23px;
 }
-
+/*手機選單 搜尋bar展開 遮幕*/
 .mobile_closed {
   position: fixed;
   top: 0;
@@ -352,7 +387,7 @@ header .testing_head .bar .range_bar span.progress {
     display: none;
   }
   header .testing_head .logo {
-    flex: 0 0 230px;
+    flex: 0 0 346px;
   }
   header .testing_head .info {
     flex-wrap: wrap;
@@ -380,7 +415,7 @@ header .testing_head .bar .range_bar span.progress {
   }
 }
 
-/*top_banner*/
+/*內頁 top_banner*/
 .top_banner {
   background-image: url(../images/common/top_banner.png);
   background-size: cover;
@@ -428,14 +463,15 @@ header .testing_head .bar .range_bar span.progress {
   background-color: #f9f9f9;
   overflow: hidden;
 }
-.page .btn {
+/*頁面下大按鈕*/
+.big_btn {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0;
   margin-bottom: 81px;
 }
-.page .btn a.send_btn {
+.big_btn a.send_btn {
   width: 350px;
   height: 72px;
   color: #fff;
@@ -450,14 +486,22 @@ header .testing_head .bar .range_bar span.progress {
   font-size: 1.75rem;
   margin-bottom: 32px;
 }
-.page .mini_btn {
+.big_btn a.go_back {
+  color: #ec0086;
+  text-decoration: underline;
+}
+.big_btn a:hover {
+  opacity: 0.8;
+}
+/*頁面下 小按鈕*/
+.mini_btn {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0;
   margin-bottom: 81px;
 }
-.page .mini_btn a.send_btn {
+.mini_btn a.send_btn {
   width: 160px;
   height: 48px;
   color: #fff;
@@ -472,23 +516,56 @@ header .testing_head .bar .range_bar span.progress {
   font-size: 1rem;
   margin-bottom: 32px;
 }
-.page .btn a.go_back {
-  color: #ec0086;
-  text-decoration: underline;
+.comfirm_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
 }
-.page .btn a:hover {
-  opacity: 0.8;
+.comfirm_btn a.store_btn {
+  width: 160px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #db4954 0% 0% no-repeat padding-box;
+  color: #fff;
+  box-shadow: 5px 5px 6px #00000029;
+  border: 1px solid #ec0086;
+  border-radius: 48px;
+  margin-right: 30px;
+  text-decoration: none;
+}
+.comfirm_btn a.send_btn {
+  width: 160px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent linear-gradient(180deg, #ec0086 0%, #db4954 100%) 0%
+    0% no-repeat padding-box;
+  color: #fff;
+  box-shadow: 5px 5px 6px #00000029;
+  border: 1px solid #ec0086;
+  border-radius: 48px;
+  text-decoration: none;
+}
+.comfirm_btn a:hover{
+  opacity: .8;
 }
 @media (max-width: 1200px) {
   .page {
     padding-bottom: 0;
   }
-  .page .btn a.send_btn {
+  .big_btn a.send_btn {
     width: 285px;
     height: 58px;
     font-size: 1rem;
   }
-  .page .btn {
+  .big_btn {
+    margin-bottom: 60px;
+  }
+  .comfirm_btn{
     margin-bottom: 60px;
   }
 }
@@ -527,6 +604,7 @@ header .testing_head .bar .range_bar span.progress {
 .pager .next::before {
   transform: rotate(-90deg) scale(0.6);
 }
+/*分頁 數字*/
 .pager .pager_count {
   display: flex;
   align-items: center;
@@ -696,7 +774,6 @@ ul.stepwizard li.complete .text {
 ul.stepwizard li.active .text {
   color: #000;
 }
-
 @media (max-width: 1200px) {
   ul.stepwizard {
     padding-top: 51px;
@@ -728,6 +805,7 @@ ul.stepwizard li.active .text {
   margin-bottom: 22px;
   display: none;
 }
+/*提醒文字*/
 .top_alert {
   font-size: 1.5rem;
   text-align: center;
@@ -746,6 +824,7 @@ ul.stepwizard li.active .text {
 footer {
   position: relative;
 }
+/*頁尾上半部 選單*/
 footer .footer_menu_btn {
   position: absolute;
   top: 0;
@@ -769,7 +848,6 @@ footer .footer_menu {
   transition: height 0.3s ease;
   overflow: hidden;
 }
-
 footer .footer_menu ul.footer_nav {
   list-style: none;
   padding-left: 0;
@@ -793,7 +871,7 @@ footer .footer_menu ul.footer_nav li ul.sub li a {
   color: #333;
   text-decoration: none;
 }
-
+/*頁尾下半部資訊*/
 footer .bottom {
   padding: 60px 0 28px 0;
   background-color: #f0f0f0;
@@ -810,7 +888,7 @@ footer .bottom .line .footer_left {
   display: flex;
   flex-direction: column;
 }
-
+/*頁尾 社群按鈕*/
 footer .bottom .line .footer_left ul.social {
   flex: 0 0 20px;
   list-style: none;
@@ -827,7 +905,7 @@ footer .bottom .line .footer_left ul.social li:last-child {
 footer .bottom .line .footer_left ul.social li a:hover {
   opacity: 0.8;
 }
-
+/*頁尾 公司資訊*/
 footer .bottom .line .footer_left ul.info {
   list-style: none;
   padding-left: 0;
@@ -854,7 +932,7 @@ footer .bottom .line .footer_right {
   flex-direction: column;
   justify-content: space-between;
 }
-
+/*頁尾 隱藏 手機選單*/
 footer .bottom .line .footer_right ul.mobile_menu {
   list-style: none;
   padding-left: 0;
@@ -880,7 +958,7 @@ footer .bottom .line .footer_right ul.mobile_menu li a {
 footer .bottom .line .footer_right ul.mobile_menu li a:hover {
   opacity: 0.8;
 }
-
+/*頁尾 主選單*/
 footer .bottom .line .footer_right ul.menu {
   flex: 0 0 20px;
   list-style: none;
@@ -902,7 +980,7 @@ footer .bottom .line .footer_right ul.menu li a {
 footer .bottom .line .footer_right ul.menu li a:hover {
   opacity: 0.8;
 }
-
+/*頁尾 宣告*/
 footer .bottom .line .footer_right .copyright {
   color: #77777780;
   margin-left: auto;

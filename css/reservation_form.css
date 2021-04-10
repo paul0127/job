@@ -55,7 +55,7 @@
   padding: 8px 15px;
   outline: none;
   border-radius: 48px;
-}
+} 
 .reservation_form .form .list .input input#datepicker {
   flex: 1;
   min-width: 0;
@@ -86,7 +86,7 @@
   -moz-appearance: none;
   -webkit-appearance: none;
   background: url(../images/common/icon_select_down-c.svg) no-repeat;
-  background-position: 90% 50%;
+  background-position: calc(100% - 20px) 50%;
 }
 .reservation_form .form .list .input textarea {
   flex: 1;

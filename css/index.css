@@ -1,4 +1,12 @@
 @import 'common.css';
+
+/*首頁輪播*/
+.slider {
+  width: 100%;
+}
+.slider .banner_slider .item a img {
+  max-width: 100%;
+}
 /*首頁關於職崖門診*/
 .index_about {
   background-image: url(../images/index/bg.png);
@@ -47,6 +55,24 @@
 .index_about .btn a:hover {
   opacity: 0.8;
 }
+@media (max-width: 1200px) {
+  .index_about {
+    margin-top: 0;
+    background-size: cover;
+    padding-top: 40px;
+    margin-bottom: 40px;
+  }
+  .index_about h1 {
+    font-size: 1.75rem;
+    margin-bottom: 23px;
+  }
+  .index_about .btn a {
+    width: 285px;
+    height: 58px;
+    margin: 22px 0;
+    font-size: 1rem;
+  }
+}
 
 /*首頁成長必經之路*/
 .index_challenge {
@@ -60,7 +86,7 @@
   letter-spacing: -2px;
   margin-bottom: 20px;
 }
-/*輪播*/
+/*職涯成長必經之路 輪播*/
 .index_challenge .challenge_slider {
   position: relative;
 }
@@ -110,16 +136,16 @@
   opacity: 0.8;
 }
 /*內容*/
-.index_challenge .item {
+.index_challenge .item.style_1 {
   background: transparent url('../images/index/bg.svg') 0% 0% no-repeat
     padding-box;
   background-size: cover;
   background-position: center;
 }
-.index_challenge .item .mobile_pic {
+.index_challenge .item.style_1 .mobile_pic {
   display: none;
 }
-.index_challenge .item p {
+.index_challenge .item.style_1 p {
   margin: 0 auto 0 auto;
   padding-top: 300px;
   padding-bottom: 50px;
@@ -127,12 +153,12 @@
   font-size: 1.25rem;
   line-height: 1.75;
 }
-.index_challenge .item .btn {
+.index_challenge .item.style_1 .btn {
   display: flex;
   justify-content: center;
   padding-bottom: 105px;
 }
-.index_challenge .item .btn a {
+.index_challenge .item.style_1 .btn a {
   width: 350px;
   height: 72px;
   color: #fff;
@@ -146,11 +172,42 @@
   text-decoration: none;
   font-size: 1.75rem;
 }
-.index_challenge .item .btn a:hover {
+.index_challenge .item.style_1 .btn a:hover {
   opacity: 0.8;
 }
+@media (max-width: 1200px) {
+  .index_challenge {
+    margin-bottom: 40px;
+  }
+  .index_challenge h1 {
+    font-size: 1.75rem;
+    margin-bottom: 43px;
+  }
+  .index_challenge .challenge_slider .owl-nav .owl-prev,
+  .index_challenge .challenge_slider .owl-nav .owl-next {
+    transform: translateX(0);
+  }
 
-/**/
+  .index_challenge .item.style_1 {
+    background-image: none;
+  }
+  .index_challenge .item.style_1 .mobile_pic {
+    display: block;
+  }
+  .index_challenge .item.style_1 p {
+    padding: 20px 0 42px 0;
+  }
+  .index_challenge .item.style_1 .btn {
+    padding-bottom: 0;
+  }
+  .index_challenge .item.style_1 .btn a {
+    width: 285px;
+    height: 58px;
+    font-size: 1rem;
+  }
+}
+
+/*職涯二三事*/
 .index_news {
   width: 100%;
   background-image: url(../images/index/news_bg.png);
@@ -276,7 +333,7 @@
 .index_news .news_frame .news_block .news_slider .item .text a.btn:hover img {
   transform: translateX(0);
 }
-
+/*職涯顧問群*/
 .index_news .news_frame .question_block {
   flex: 0 0 50%;
   max-width: 520px;
@@ -336,50 +393,6 @@
   opacity: 0.8;
 }
 @media (max-width: 1200px) {
-  .index_about {
-    margin-top: 0;
-    background-size: cover;
-    padding-top: 40px;
-    margin-bottom: 40px;
-  }
-  .index_about h1 {
-    font-size: 1.75rem;
-    margin-bottom: 23px;
-  }
-  .index_about .btn a {
-    width: 285px;
-    height: 58px;
-    margin: 22px 0;
-    font-size: 1rem;
-  }
-  .index_challenge {
-    margin-bottom: 40px;
-  }
-  .index_challenge h1 {
-    font-size: 1.75rem;
-    margin-bottom: 43px;
-  }
-  .index_challenge .item {
-    background-image: none;
-  }
-  .index_challenge .item .mobile_pic {
-    display: block;
-  }
-  .index_challenge .item p {
-    padding: 20px 0 42px 0;
-  }
-  .index_challenge .item .btn {
-    padding-bottom: 0;
-  }
-  .index_challenge .item .btn a {
-    width: 285px;
-    height: 58px;
-    font-size: 1rem;
-  }
-  .index_challenge .challenge_slider .owl-nav .owl-prev,
-  .index_challenge .challenge_slider .owl-nav .owl-next {
-    transform: translateX(0);
-  }
   .index_news {
     padding: 40px 0;
   }

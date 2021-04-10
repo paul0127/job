@@ -152,16 +152,12 @@ if (pop_msg) {
 }
 
 /*職涯諮詢建議報告 開合*/
-let acc = document.querySelectorAll('.report-suggest-tittle')
+let acc = document.querySelectorAll('.report .information .title')
+console.log(acc)
 acc.forEach((el) => {
   el.addEventListener('click', () => {
-    el.classList.toggle('active')
-    let panel = el.nextElementSibling
-    if (panel.style.display === 'block') {
-      panel.style.display = 'none'
-    } else {
-      panel.style.display = 'block'
-    }
+    let panel = el.parentNode
+    panel.classList.toggle('active')
   })
 })
 
