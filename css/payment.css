@@ -5,7 +5,7 @@
   text-align: center;
   font-weight: 900;
   color: #000;
-  letter-spacing: -2px;
+  letter-spacing: 2px;
   margin-bottom: 46px;
 }
 .payment .form {
@@ -49,8 +49,8 @@
   flex: 1;
 }
 .payment .form .item .list .input b.tip {
-    font-size: 1rem;
-    font-weight: normal;
+  font-size: 1rem;
+  font-weight: normal;
   display: block;
   color: #333;
   opacity: 0.5;
@@ -111,6 +111,11 @@
   + label
   span.circle::before {
   background-color: #ec0086;
+}
+.payment .form .item .list .input input[type='radio']:disabled + label {
+  color: #333;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 .payment .form .list .input input[type='text'] {
   flex: 1;

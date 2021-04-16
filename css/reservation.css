@@ -13,7 +13,7 @@
   text-align: center;
   font-weight: 900;
   color: #000;
-  letter-spacing: -2px;
+  letter-spacing: 2px;
   margin-bottom: 16px;
 }
 .reservation p {
@@ -90,6 +90,7 @@
   font-size: 1.25rem;
   color: #333333;
   padding: 20px 0;
+  font-weight: 900;
 }
 .reservation .table .body .tr {
   display: flex;
@@ -350,6 +351,10 @@
   }
   .reservation > .local {
     margin-bottom: 20px;
+    justify-content: center;
+  }
+  .reservation > .local img{
+    margin-right: 10px;
   }
   .reservation ul.tabs {
     display: none;

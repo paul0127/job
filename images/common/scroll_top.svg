@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86" height="86" viewBox="0 0 86 86">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ec0086"/>
+      <stop offset="1" stop-color="#db4954"/>
+    </linearGradient>
+    <filter id="椭圆_11" x="0" y="0" width="86" height="86" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="top_btn" transform="translate(9 6)">
+    <g transform="matrix(1, 0, 0, 1, -9, -6)" filter="url(#椭圆_11)">
+      <circle id="椭圆_11-2" data-name="椭圆 11" cx="34" cy="34" r="34" transform="translate(9 6)" fill="url(#linear-gradient)"/>
+    </g>
+    <g id="组_106" data-name="组 106" transform="translate(-2696 -2845.5)">
+      <path id="路径_165" data-name="路径 165" d="M2904.88,2892.471l11.693-11.932,10.977,11.932" transform="translate(-185.88)" fill="none" stroke="#fff" stroke-width="3"/>
+      <line id="直线_6" data-name="直线 6" x2="29" transform="translate(2716 2866.5)" fill="none" stroke="#fff" stroke-width="3"/>
+    </g>
+  </g>
+</svg>

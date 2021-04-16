@@ -10,6 +10,7 @@
 .service .top_text p {
   font-size: 1.25rem;
   margin-bottom: 30px;
+  text-align: justify;
 }
 .service h1 {
   font-size: 3rem;
@@ -143,6 +144,7 @@
 .service ul.service_bottom li .text .desc {
   color: #333333;
   font-size: 1.25rem;
+  text-align: justify;
 }
 @media (max-width: 1200px) {
   .service {
@@ -158,6 +160,9 @@
   }
   .service h1 br {
     display: block;
+  }
+  .service .top_text p br{
+    display: none;
   }
   .service .service_top {
     flex-direction: column;

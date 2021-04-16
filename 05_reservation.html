@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="./css/reservation.css" />
   </head>
   <body>
+    <div class="scrool_top"><img src="./images/common/scroll_top.svg" alt=""></div>
     <div class="pc_closed"></div>
     <div class="mobile_closed"></div>
     <header>
@@ -48,7 +49,7 @@
                 <div class="container">
                   <div class="search">
                     <input type="text" placeholder="請輸入關鍵字搜尋" />
-                    <div class="send">搜尋</div>
+                    <button class="send">全站搜尋</button>
                   </div>
                 </div>
               </div>
@@ -57,49 +58,80 @@
         </div>
 
         <div class="mobile_head">
-          <div class="logo"><img src="./images/common/logo.svg" alt="" /></div>
+          <div class="logo">
+            <a href="index.html"
+              ><img src="./images/common/logo_career-w.svg" alt=""
+            /></a>
+            <div class="text"><a href="#">職涯門診</a></div>
+          </div>
           <div class="menu_btn">
             <div class="btn"></div>
             <div class="dropdown">
-              <ul class="nav">
-                <li><a href="02_service.html">服務項目</a></li>
-                <li><a href="05_reservation.html">預約諮詢</a></li>
-                <li><a href="03_consultants.html">顧問介紹</a></li>
-                <li><a href="#">職涯二三事</a></li>
-                <li><a href="13_QA.html">常見問題</a></li>
-                <li><a href="12_contact.html">聯絡我們</a></li>
-              </ul>
-              <ul class="social">
-                <li>
-                  <a href="#"
-                    ><img src="./images/common/facebook-w.svg" alt=""
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="./images/common/line.svg" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><img src="./images/common/instagram-w.svg" alt=""
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><img src="./images/common/youtube-play-w.svg" alt=""
-                  /></a>
-                </li>
-              </ul>
-              <ul class="info">
-                <li>
-                  <label><img src="./images/common/phone-w.svg" alt="" /></label
-                  >0800-712-712 平日9:00~18:00
-                </li>
-                <li>
-                  <label
-                    ><img src="./images/common/envelope-w.svg" alt="" /></label
-                  >service@career.com.tw
-                </li>
-              </ul>
+              <div class="container">
+                <div class="dropdown_menu">
+                  <ul class="nav">
+                    <li><a href="02_service.html">服務項目</a></li>
+                    <li><a href="05_reservation.html">預約諮詢</a></li>
+                    <li><a href="03_consultants.html">顧問介紹</a></li>
+                    <li><a href="#">職涯二三事</a></li>
+                    <li><a href="13_QA.html">常見問題</a></li>
+                    <li><a href="12_contact.html">聯絡我們</a></li>
+                  </ul>
+                  <ul class="social">
+                    <li>
+                      <a href="#"
+                        ><img src="./images/common/facebook-w.svg" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/common/line.svg" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/common/instagram-w.svg" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/common/youtube-play-w.svg" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                  <ul class="info">
+                    <li>
+                      <label
+                        ><img src="./images/common/phone-r.svg" alt="" /></label
+                      >0800-712-712 平日9:00~18:00
+                    </li>
+                    <li>
+                      <label
+                        ><img
+                          src="./images/common/envelope-r.svg"
+                          alt="" /></label
+                      >service@career.com.tw
+                    </li>
+                  </ul>
+                  <ul class="bottom_menu">
+                    <li><a href="#">CPAS人才測評</a></li>
+                    <li><a href="#">職涯門診</a></li>
+                    <li><a href="#">職涯活動</a></li>
+                    <li><a href="#">職涯智庫</a></li>
+                    <li><a href="#">人才徵聘</a></li>
+                    <li><a href="#">人才培訓</a></li>
+                    <li><a href="#">校園活動</a></li>
+                  </ul>
+                  <ul class="bottom_menu">
+                    <li><a href="#">關於Career</a></li>
+                    <li><a href="#">服務據點</a></li>
+                    <li><a href="#">版權聲明</a></li>
+                    <li><a href="#">隱私權政策</a></li>
+                    <li><a href="#">常見問題</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           <div class="search_btn">
@@ -108,7 +140,7 @@
               <div class="container">
                 <div class="search">
                   <input type="text" placeholder="請輸入關鍵字搜尋" />
-                  <div class="send">搜尋</div>
+                  <button class="send">全站搜尋</button>
                 </div>
               </div>
             </div>
@@ -342,7 +374,9 @@
           <!--mobile版 end-->
           <div class="desc">
             <div class="list">
-              <p>若無適當時段，可透過<a href="#">聯絡我們</a>或來電洽詢</p>
+              <p>
+                <b> 若無適當時段，可透過<a href="#">聯絡我們</a>或來電洽詢</b>
+              </p>
             </div>
             <div class="list mobile_hide">
               <p>- 台北 ( 02 ) 2703-1250#321 / 392</p>
@@ -416,10 +450,12 @@
             <li>
               <label>人才培訓</label>
               <ul class="sub">
-                <li><a href="">關於我們</a></li>
-                <li><a href="">培訓課程</a></li>
-                <li><a href="">顧問團隊</a></li>
-                <li><a href="">人才培訓專案</a></li>
+                <li><a href="">人才派遣</a></li>
+                <li><a href="">高階獵才</a></li>
+                <li><a href="">專案招募</a></li>
+                <li><a href="">最新職缺</a></li>
+                <li><a href="">員工專區</a></li>
+                <li><a href="">聯絡我們</a></li>
               </ul>
             </li>
             <li>
@@ -504,7 +540,7 @@
                 <li><a href="">聯絡我們</a></li>
               </ul>
               <div class="copyright">
-                Copyright 2020 @ Career Consulting Co.Ltd
+                Copyright 2021 @ Career Consulting Co. Ltd.
               </div>
             </div>
           </div>

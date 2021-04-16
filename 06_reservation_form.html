@@ -20,6 +20,9 @@
     <link rel="stylesheet" href="./css/reservation_form.css" />
   </head>
   <body>
+    <div class="scrool_top">
+      <img src="./images/common/scroll_top.svg" alt="" />
+    </div>
     <div class="pc_closed"></div>
     <div class="mobile_closed"></div>
     <header>
@@ -51,7 +54,7 @@
                 <div class="container">
                   <div class="search">
                     <input type="text" placeholder="請輸入關鍵字搜尋" />
-                    <div class="send">搜尋</div>
+                    <button class="send">全站搜尋</button>
                   </div>
                 </div>
               </div>
@@ -60,49 +63,80 @@
         </div>
 
         <div class="mobile_head">
-          <div class="logo"><img src="./images/common/logo.svg" alt="" /></div>
+          <div class="logo">
+            <a href="index.html"
+              ><img src="./images/common/logo_career-w.svg" alt=""
+            /></a>
+            <div class="text"><a href="#">職涯門診</a></div>
+          </div>
           <div class="menu_btn">
             <div class="btn"></div>
             <div class="dropdown">
-              <ul class="nav">
-                <li><a href="02_service.html">服務項目</a></li>
-                <li><a href="05_reservation.html">預約諮詢</a></li>
-                <li><a href="03_consultants.html">顧問介紹</a></li>
-                <li><a href="#">職涯二三事</a></li>
-                <li><a href="13_QA.html">常見問題</a></li>
-                <li><a href="12_contact.html">聯絡我們</a></li>
-              </ul>
-              <ul class="social">
-                <li>
-                  <a href="#"
-                    ><img src="./images/common/facebook-w.svg" alt=""
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"><img src="./images/common/line.svg" alt="" /></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><img src="./images/common/instagram-w.svg" alt=""
-                  /></a>
-                </li>
-                <li>
-                  <a href="#"
-                    ><img src="./images/common/youtube-play-w.svg" alt=""
-                  /></a>
-                </li>
-              </ul>
-              <ul class="info">
-                <li>
-                  <label><img src="./images/common/phone-w.svg" alt="" /></label
-                  >0800-712-712 平日9:00~18:00
-                </li>
-                <li>
-                  <label
-                    ><img src="./images/common/envelope-w.svg" alt="" /></label
-                  >service@career.com.tw
-                </li>
-              </ul>
+              <div class="container">
+                <div class="dropdown_menu">
+                  <ul class="nav">
+                    <li><a href="02_service.html">服務項目</a></li>
+                    <li><a href="05_reservation.html">預約諮詢</a></li>
+                    <li><a href="03_consultants.html">顧問介紹</a></li>
+                    <li><a href="#">職涯二三事</a></li>
+                    <li><a href="13_QA.html">常見問題</a></li>
+                    <li><a href="12_contact.html">聯絡我們</a></li>
+                  </ul>
+                  <ul class="social">
+                    <li>
+                      <a href="#"
+                        ><img src="./images/common/facebook-w.svg" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/common/line.svg" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/common/instagram-w.svg" alt=""
+                      /></a>
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><img src="./images/common/youtube-play-w.svg" alt=""
+                      /></a>
+                    </li>
+                  </ul>
+                  <ul class="info">
+                    <li>
+                      <label
+                        ><img src="./images/common/phone-r.svg" alt="" /></label
+                      >0800-712-712 平日9:00~18:00
+                    </li>
+                    <li>
+                      <label
+                        ><img
+                          src="./images/common/envelope-r.svg"
+                          alt="" /></label
+                      >service@career.com.tw
+                    </li>
+                  </ul>
+                  <ul class="bottom_menu">
+                    <li><a href="#">CPAS人才測評</a></li>
+                    <li><a href="#">職涯門診</a></li>
+                    <li><a href="#">職涯活動</a></li>
+                    <li><a href="#">職涯智庫</a></li>
+                    <li><a href="#">人才徵聘</a></li>
+                    <li><a href="#">人才培訓</a></li>
+                    <li><a href="#">校園活動</a></li>
+                  </ul>
+                  <ul class="bottom_menu">
+                    <li><a href="#">關於Career</a></li>
+                    <li><a href="#">服務據點</a></li>
+                    <li><a href="#">版權聲明</a></li>
+                    <li><a href="#">隱私權政策</a></li>
+                    <li><a href="#">常見問題</a></li>
+                    <li><a href="#">聯絡我們</a></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           <div class="search_btn">
@@ -111,7 +145,7 @@
               <div class="container">
                 <div class="search">
                   <input type="text" placeholder="請輸入關鍵字搜尋" />
-                  <div class="send">搜尋</div>
+                  <button class="send">全站搜尋</button>
                 </div>
               </div>
             </div>
@@ -163,7 +197,10 @@
         </ul>
         <div class="top_tip">預約諮詢時段</div>
         <div class="reservation_form">
-          <h2>您預約的場次是：台北場 2020/09/10(四) 14:00-16:00 趙美珍顧問</h2>
+          <h2>
+            您預約的場次是：台北場 <br />2020/09/10(四) 14:00-16:00
+            <br />趙美珍顧問
+          </h2>
           <h1>職涯門診報名表</h1>
           <div class="tip">
             <span class="red">*</span
@@ -171,19 +208,19 @@
           </div>
           <div class="form">
             <div class="list">
-              <label for=""><span class="red">*</span>姓名</label>
+              <label for="">姓名<span class="red">*</span></label>
               <div class="input">
                 <input type="text" />
               </div>
             </div>
             <div class="list">
-              <label for=""><span class="red">*</span>身分證字號</label>
+              <label for="">身分證字號<span class="red">*</span></label>
               <div class="input">
                 <input type="text" />
               </div>
             </div>
             <div class="list">
-              <label for=""><span class="red">*</span>性別</label>
+              <label for="">性別<span class="red">*</span></label>
               <div class="input">
                 <input type="radio" name="sex" id="sex_0" /><label for="sex_0"
                   ><span class="circle"></span>男</label
@@ -194,7 +231,7 @@
               </div>
             </div>
             <div class="list">
-              <label for=""><span class="red">*</span>婚姻狀況</label>
+              <label for="">婚姻狀況<span class="red">*</span></label>
               <div class="input">
                 <input type="radio" name="married" id="m_0" /><label for="m_0"
                   ><span class="circle"></span>已婚</label
@@ -205,13 +242,13 @@
               </div>
             </div>
             <div class="list">
-              <label for=""><span class="red">*</span>出生年月日</label>
+              <label for="">出生年月日<span class="red">*</span></label>
               <div class="input date">
                 <input id="datepicker" type="text" placeholder="年/月/日" />
               </div>
             </div>
             <div class="list">
-              <label for=""><span class="red">*</span>手機</label>
+              <label for="">手機<span class="red">*</span></label>
               <div class="input">
                 <input type="text" placeholder="例如：0910-000-123" />
               </div>
@@ -223,13 +260,13 @@
               </div>
             </div>
             <div class="list">
-              <label for=""><span class="red">*</span>EMAIL</label>
+              <label for="">EMAIL<span class="red">*</span></label>
               <div class="input">
                 <input type="text" />
               </div>
             </div>
             <div class="list no_bottom">
-              <label for=""><span class="red">*</span>身份</label>
+              <label for="">身份<span class="red">*</span></label>
               <div class="input">
                 <input type="radio" name="identity" id="i_0" /><label for="i_0"
                   ><span class="circle"></span>已就業</label
@@ -243,7 +280,7 @@
               </div>
             </div>
             <div class="list no_bottom">
-              <label for=""><span class="red">*</span>學歷</label>
+              <label for="">學歷<span class="red">*</span></label>
               <div class="input">
                 <input type="radio" name="education" id="e_0" /><label for="e_0"
                   ><span class="circle"></span>博士</label
@@ -269,13 +306,13 @@
               </div>
             </div>
             <div class="list">
-              <label for=""><span class="red">*</span>就讀或畢業學校</label>
+              <label for="">就讀或畢業學校<span class="red">*</span></label>
               <div class="input">
                 <input type="text" placeholder="請填全名" />
               </div>
             </div>
             <div class="list">
-              <label for=""><span class="red">*</span>就讀或畢業科系</label>
+              <label for="">就讀或畢業科系<span class="red">*</span></label>
               <div class="input">
                 <select name="" id="">
                   <option value="">請選擇學院</option>
@@ -344,7 +381,7 @@
 
             <div class="list no_bottom">
               <label for=""
-                ><span class="red">*</span>諮詢目的<br />(可複選)</label
+                >諮詢目的<br />(可複選)<span class="red">*</span></label
               >
               <div class="input">
                 <input type="checkbox" name="purpose" id="p_0" /><label
@@ -381,7 +418,7 @@
             </div>
             <div class="list">
               <label for=""
-                ><span class="red">*</span>諮詢問題說明<br />(請簡述)</label
+                >諮詢問題說明<br />(請簡述)<span class="red">*</span></label
               >
               <div class="input">
                 <textarea name="" id="" cols="30" rows="10"></textarea>
@@ -443,10 +480,12 @@
             <li>
               <label>人才培訓</label>
               <ul class="sub">
-                <li><a href="">關於我們</a></li>
-                <li><a href="">培訓課程</a></li>
-                <li><a href="">顧問團隊</a></li>
-                <li><a href="">人才培訓專案</a></li>
+                <li><a href="">人才派遣</a></li>
+                <li><a href="">高階獵才</a></li>
+                <li><a href="">專案招募</a></li>
+                <li><a href="">最新職缺</a></li>
+                <li><a href="">員工專區</a></li>
+                <li><a href="">聯絡我們</a></li>
               </ul>
             </li>
             <li>
@@ -531,7 +570,7 @@
                 <li><a href="">聯絡我們</a></li>
               </ul>
               <div class="copyright">
-                Copyright 2020 @ Career Consulting Co.Ltd
+                Copyright 2021 @ Career Consulting Co. Ltd.
               </div>
             </div>
           </div>

@@ -10,12 +10,15 @@
   font-size: 1.75rem;
   margin-bottom: 43px;
 }
+.reservation_form h2 br{
+  display: none;
+}
 .reservation_form h1 {
   font-size: 3rem;
   text-align: center;
   font-weight: 900;
   color: #000;
-  letter-spacing: -2px;
+  letter-spacing: 2px;
   margin-bottom: 46px;
 }
 .reservation_form span.red {
@@ -40,6 +43,7 @@
   margin-right: 42px;
   margin-bottom: 0;
   margin-top: 3px;
+  font-weight: 900;
 }
 .reservation_form .form .list .input {
   display: flex;
@@ -187,7 +191,10 @@
   }
   .reservation_form h2 {
     font-size: 1.5rem;
-    margin-bottom: 13px;
+    margin-bottom: 20px;
+  }
+  .reservation_form h2 br{
+    display: block;
   }
   .reservation_form h1 {
     font-size: 1.75rem;
@@ -203,6 +210,9 @@
   }
   .reservation_form .form .list .input {
     flex: 0 0 100%;
+  }
+  .reservation_form .form .list .input.date{
+    max-width: 825px;
   }
   .reservation_form .form .list .input input#datepicker {
     max-width: 825px;

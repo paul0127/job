@@ -189,7 +189,7 @@
   }
 
   .index_challenge .item.style_1 {
-    background-image: none;
+    background-image: none !important;
   }
   .index_challenge .item.style_1 .mobile_pic {
     display: block;

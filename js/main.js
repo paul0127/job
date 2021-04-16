@@ -1,3 +1,9 @@
+/*向上捲動*/
+let scroll_top = document.querySelector('.scrool_top')
+scroll_top.addEventListener('click', () => {
+  $('html,body').animate({ scrollTop: 0 }, 900)
+})
+
 /*首頁輪播主圖*/
 let banner_slider = document.querySelector('.banner_slider')
 if (banner_slider) {
@@ -25,6 +31,12 @@ if (challenge_slider) {
     responsive: {
       0: {
         items: 1,
+      },
+      1200: {
+        items: 1,
+        autoplay: true,
+        autoplayTimeout: 5000,
+        autoplayHoverPause: true,
       },
     },
   })
@@ -153,7 +165,6 @@ if (pop_msg) {
 
 /*職涯諮詢建議報告 開合*/
 let acc = document.querySelectorAll('.report .information .title')
-console.log(acc)
 acc.forEach((el) => {
   el.addEventListener('click', () => {
     let panel = el.parentNode
@@ -161,3 +172,18 @@ acc.forEach((el) => {
   })
 })
 
+/*判斷視窗是否小於1200 1200以下 會將radio 設定成disable*/
+let atm_choise = document.querySelector('#atm_choise')
+if (atm_choise) {
+  if (window.innerWidth < 1200) {
+    atm_choise.disabled = true
+  }
+  window.addEventListener('resize', () => {
+    if (window.innerWidth < 1200) {
+      atm_choise.disabled = true
+      atm_choise.checked = false
+    } else {
+      atm_choise.disabled = false
+    }
+  })
+}
