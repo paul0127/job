@@ -25,6 +25,7 @@
   margin-right: 42px;
   font-size: 1.25rem;
   margin-bottom: 0;
+  font-weight: 900;
 }
 .report_info .list .desc .line > label span.red {
   color: #ec0086;
@@ -95,6 +96,7 @@
   margin-right: 42px;
   font-size: 1.25rem;
   margin-bottom: 0;
+  font-weight: 900;
 }
 .report_info .list .desc .check_line > label span.red {
   color: #ec0086;
@@ -160,7 +162,7 @@
 }
 @media (max-width: 1200px) {
   .report_info .list .desc .line {
-    margin-bottom: 23px;
+    margin-bottom: 20px;
   }
   .report_info .list .desc .line > label {
     margin-right: 22px;

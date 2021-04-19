@@ -271,8 +271,8 @@ header .testing_head .bar .range_bar span.progress {
   display: flex;
   align-items: flex-end;
 }
-.mobile_head .logo a {
-  width: 175px;
+.mobile_head .logo > a {
+  width: 150px;
 }
 .mobile_head .logo a img {
   width: 100%;
@@ -281,7 +281,7 @@ header .testing_head .bar .range_bar span.progress {
   display: flex;
   align-items: flex-end;
   line-height: 1;
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   border-left: 1px solid #fff;
   margin-left: 5px;
   padding-left: 5px;
@@ -294,7 +294,7 @@ header .testing_head .bar .range_bar span.progress {
 }
 /*手機 搜尋按鈕*/
 .mobile_head .search_btn {
-  margin-left: 32px;
+  margin-left: 26px;
   display: flex;
 }
 .mobile_head .search_btn .btn {
@@ -1151,4 +1151,14 @@ footer .bottom .line .footer_right .copyright {
   footer .bottom .line .footer_right .copyright {
     margin-left: unset;
   }
+}
+
+.testing_footer {
+  font-size: 14px;
+  color: rgba(119, 119, 119, 0.5);
+  text-align: center;
+  background-color: rgba(238, 238, 238, 1);
+  height: 48px;
+  width: 100%;
+  padding: 10px 0px;
 }

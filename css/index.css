@@ -1,5 +1,8 @@
 @import 'common.css';
-
+body {
+  background-image: url(../images/common/bg_img.jpg);
+  background-repeat: repeat;
+}
 /*首頁輪播*/
 .slider {
   width: 100%;

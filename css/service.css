@@ -172,8 +172,10 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    text-align: left;
   }
   .service .service_top .item img {
+    flex: 0 0 63px;
     width: 63px;
     margin-right: 26px;
     margin-bottom: 0;

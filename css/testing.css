@@ -9,6 +9,9 @@
   margin-bottom: 93px;
   margin-top: 64px;
 }
+.testing h1 br{
+  display: none;
+}
 .testing .form {
   margin-bottom: 60px;
 }
@@ -83,6 +86,9 @@
   .testing h1 {
     font-size: 1.75rem;
     margin-bottom: 46px;
+  }
+  .testing h1 br{
+    display: block;
   }
   .testing .form .list > label {
     margin-right: 20px;
