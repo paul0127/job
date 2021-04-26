@@ -100,12 +100,27 @@ if (search) {
   })
 }
 
+/*pc主選單 子選單收合 */
+let sub_menu = document.querySelectorAll('.head .nav li.sub_menu_active > a')
+sub_menu.forEach((item) => {
+  item.addEventListener('click', () => {
+    item.parentNode.classList.toggle('active')
+  })
+})
+
 /*手機板主選單 搜尋 開關*/
 let mobile_search = document.querySelector('.mobile_head .search_btn .btn')
 let mobile_search_bar = document.querySelector('.mobile_head .search_btn')
 let menu_btn = document.querySelector('.menu_btn .btn')
 let menu = document.querySelector('.menu_btn')
 let mobile_closed = document.querySelector('.mobile_closed')
+let sub_meun_btn = document.querySelectorAll(
+  '.menu_btn .dropdown_menu li.sub_active>a'
+)
+let sub_sub_meun_btn = document.querySelectorAll(
+  '.menu_btn .dropdown_menu li.sub_active li.sub_menu_active>a'
+)
+console.log(sub_sub_meun_btn)
 
 if (menu_btn) {
   menu_btn.addEventListener('click', () => {
@@ -138,6 +153,18 @@ if (menu_btn) {
     mobile_search_bar.classList.remove('active')
     menu.classList.remove('active')
     mobile_closed.classList.remove('active')
+  })
+
+  sub_meun_btn.forEach((item) => {
+    item.addEventListener('click', () => {
+      item.parentNode.classList.toggle('active')
+    })
+  })
+
+  sub_sub_meun_btn.forEach((item) => {
+    item.addEventListener('click', () => {
+      item.parentNode.classList.toggle('active')
+    })
   })
 }
 

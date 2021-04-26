@@ -9,13 +9,18 @@
   font-size: 1.75rem;
   padding: 16px 0;
 }
+.report_info .list .title span {
+  border-left: 2px solid #fff;
+  margin-left: 5px;
+  padding-left: 5px;
+}
 .report_info .list .desc {
   margin: 21px 0;
 }
 .report_info .list .desc .line {
   display: flex;
   align-items: flex-start;
-  margin-bottom: 35px;
+  margin-bottom: 10px;
 }
 .report_info .list .desc .line:last-child {
   margin-bottom: 0;
@@ -86,7 +91,7 @@
 .report_info .list .desc .check_line {
   display: flex;
   align-items: center;
-  margin-bottom: 72px;
+  margin-bottom: 20px;
 }
 .report_info .list .desc .check_line:last-child {
   margin-bottom: 0;
@@ -182,8 +187,8 @@
   .report_info .list .desc .check_line .text {
     flex: 0 0 100%;
   }
-  .report_info .list .desc .check_line .text label{
-      margin-top: 12px;
+  .report_info .list .desc .check_line .text label {
+    margin-top: 12px;
   }
   .report_info .list .desc .line.textarea {
     flex-wrap: wrap;

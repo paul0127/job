@@ -1,6 +1,10 @@
 body {
   overflow-x: hidden;
 }
+body.testing_finish {
+  background-image: url(../images/common/bg_img.jpg);
+  background-repeat: repeat;
+}
 h1 {
   font-size: 48px;
   text-align: center;

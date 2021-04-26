@@ -77,19 +77,125 @@ header .head ul.nav {
   margin-bottom: 0;
   align-items: center;
 }
-header .head ul.nav li {
+header .head ul.nav > li {
   margin-right: 1rem;
   line-height: 1;
+  position: relative;
 }
-header .head ul.nav li:last-child {
+header .head ul.nav > li:last-child {
   margin-right: 0;
 }
-header .head ul.nav li a {
+header .head ul.nav > li > a {
   color: #fff;
   text-decoration: none;
   font-size: 1.25rem;
+  display: flex;
+  align-items: center;
 }
-header .head ul.nav li a:hover {
+header .head ul.nav > li.sub_active > a::after {
+  content: url(../images/common/arrow_icon.svg);
+  display: block;
+  transform: scale(0.5);
+}
+header .head ul.nav > li > a:hover {
+  opacity: 0.8;
+}
+header .head ul.nav > li > .sub_menu {
+  padding-top: 16px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 250px;
+  display: none;
+}
+header .head ul.nav > li:hover > .sub_menu {
+  display: block;
+}
+header .head ul.nav > li > .sub_menu > ul {
+  list-style: none;
+  padding: 15px;
+  margin-bottom: 0;
+  background-color: #fff;
+  box-shadow: 0px 3px 6px #00000029;
+}
+
+header .head ul.nav > li > .sub_menu > ul > li > a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+header .head ul.nav > li > .sub_menu > ul > li.sub_menu_active > a::after {
+  content: url(../images/common/arrow_icon_b.svg);
+  display: block;
+  width: 10px;
+  margin-left: auto;
+  margin-bottom: 5px;
+}
+header .head ul.nav > li > .sub_menu > ul > li > a:hover {
+  background-color: #f2f3f5;
+  color: #db4954;
+}
+header .head ul.nav > li > .sub_menu > ul > li.active > a {
+  background-color: #f2f3f5;
+  color: #db4954;
+}
+header .head ul.nav > li > .sub_menu > ul > li.sub_menu_active > a:hover:after {
+  content: url(../images/common/arrow_icon_r.svg);
+}
+header
+  .head
+  ul.nav
+  > li
+  > .sub_menu
+  > ul
+  > li.sub_menu_active.active
+  > a:after {
+  content: url(../images/common/arrow_icon_r.svg);
+  transform: rotate(180deg);
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+header .head ul.nav > li > .sub_menu > ul > li > ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  display: none;
+}
+header .head ul.nav > li > .sub_menu > ul > li.sub_menu_active.active > ul {
+  display: block;
+}
+header .head ul.nav > li > .sub_menu > ul > li > ul > li > a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  display: block;
+}
+header .head ul.nav > li > .sub_menu > ul > li:last-child a,
+header
+  .head
+  ul.nav
+  > li
+  > .sub_menu
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > a {
+  margin-bottom: 0;
+}
+header .head ul.nav > li > .sub_menu > ul > li.sub_menu_active.active a {
+  margin-bottom: 10px;
+}
+header .head ul.nav > li > .sub_menu > ul > li > ul {
+  margin-left: 20px;
+}
+header .head ul.nav > li > .sub_menu > ul > li > ul > li > a:hover {
   opacity: 0.8;
 }
 /*工具欄*/
@@ -385,9 +491,214 @@ header .testing_head .bar .range_bar span.progress {
   color: #db4954;
   text-decoration: none;
   font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+}
+.mobile_head
+  .menu_btn
+  .dropdown
+  .dropdown_menu
+  > ul.nav
+  > li.sub_active
+  > a::after {
+  content: url(../images/common/arrow_icon_r.svg);
+  display: block;
+  width: 10px;
+  margin-left: auto;
+  margin-bottom: 5px;
+}
+.mobile_head
+  .menu_btn
+  .dropdown
+  .dropdown_menu
+  > ul.nav
+  > li.sub_active.active
+  > a::after {
+  transform: rotate(180deg);
+  margin-bottom: 0;
+  margin-top: 5px;
 }
 .mobile_head .menu_btn .dropdown .dropdown_menu > ul.nav > li > a:hover {
   opacity: 0.8;
+}
+.mobile_head .menu_btn .dropdown .dropdown_menu > ul.nav > li > .sub_menu {
+  background-color: #fff;
+  padding: 10px;
+  display: none;
+}
+.mobile_head
+  .menu_btn
+  .dropdown
+  .dropdown_menu
+  > ul.nav
+  > li.sub_active.active
+  > .sub_menu {
+  display: block;
+}
+.mobile_head .menu_btn .dropdown .dropdown_menu > ul.nav > li > .sub_menu > ul {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+.mobile_head
+  .menu_btn
+  .dropdown
+  .dropdown_menu
+  > ul.nav
+  > li
+  > .sub_menu
+  > ul
+  > li
+  > a {
+  color: #333;
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+.mobile_head
+  .menu_btn
+  .dropdown
+  .dropdown_menu
+  > ul.nav
+  > li
+  > .sub_menu
+  > ul
+  > li
+  > a::after {
+  content: url(../images/common/arrow_icon_b.svg);
+  display: block;
+  width: 10px;
+  margin-left: auto;
+  margin-bottom: 5px;
+}
+.mobile_head
+  .menu_btn
+  .dropdown
+  .dropdown_menu
+  > ul.nav
+  > li
+  > .sub_menu
+  > ul
+  > li.active
+  > a,
+.mobile_head
+  .menu_btn
+  .dropdown
+  .dropdown_menu
+  > ul.nav
+  > li
+  > .sub_menu
+  > ul
+  > li
+  > a:hover {
+  color: #db4954;
+  background-color: #f2f3f5;
+}
+
+.mobile_head
+  .menu_btn
+  .dropdown
+  .dropdown_menu
+  > ul.nav
+  > li
+  > .sub_menu
+  > ul
+  > li
+  > a:hover::after {
+  content: url(../images/common/arrow_icon_r.svg);
+}
+.mobile_head
+  .menu_btn
+  .dropdown
+  .dropdown_menu
+  > ul.nav
+  > li
+  > .sub_menu
+  > ul
+  > li.active
+  > a::after {
+  content: url(../images/common/arrow_icon_r.svg);
+  transform: rotate(180deg);
+  margin-bottom: 0;
+  margin-top: 5px;
+}
+.mobile_head
+  .menu_btn
+  .dropdown
+  .dropdown_menu
+  > ul.nav
+  > li
+  > .sub_menu
+  > ul
+  > li
+  > ul {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+  display: none;
+}
+.mobile_head
+  .menu_btn
+  .dropdown
+  .dropdown_menu
+  > ul.nav
+  > li
+  > .sub_menu
+  > ul
+  > li.sub_menu_active.active
+  > ul {
+  display: block;
+  margin-left: 20px;
+}
+.mobile_head
+  .menu_btn
+  .dropdown
+  .dropdown_menu
+  > ul.nav
+  > li
+  > .sub_menu
+  > ul
+  > li
+  > ul
+  > li
+  > a {
+  color: #333;
+  font-size: 1.25rem;
+  display: flex;
+  margin-bottom: 5px;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+.mobile_head
+  .menu_btn
+  .dropdown
+  .dropdown_menu
+  > ul.nav
+  > li
+  > .sub_menu
+  > ul
+  > li
+  > ul
+  > li
+  > a:hover{
+    opacity: .8;
+  }
+.mobile_head
+  .menu_btn
+  .dropdown
+  .dropdown_menu
+  > ul.nav
+  > li
+  > .sub_menu
+  > ul
+  > li:last-child
+  > ul
+  > li:last-child
+  > a {
+  margin-bottom: 0;
 }
 .mobile_head .menu_btn .dropdown .dropdown_menu > ul.social {
   list-style: none;

@@ -9,7 +9,7 @@
   margin-bottom: 93px;
   margin-top: 64px;
 }
-.testing h1 br{
+.testing h1 br {
   display: none;
 }
 .testing .form {
@@ -17,6 +17,9 @@
 }
 .testing .form .item {
   padding: 30px 0;
+}
+.testing .form .item:hover {
+  background-color: #e0e0e0 !important;
 }
 .testing .form .item:nth-child(odd) {
   background-color: #fff;
@@ -87,7 +90,7 @@
     font-size: 1.75rem;
     margin-bottom: 46px;
   }
-  .testing h1 br{
+  .testing h1 br {
     display: block;
   }
   .testing .form .list > label {
