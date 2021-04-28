@@ -1,3 +1,7 @@
+body {
+  position: relative;
+  min-height: 100vh;
+}
 h1 {
   font-size: 48px;
   text-align: center;
@@ -60,7 +64,7 @@ nav {
   height: 70px;
   background: linear-gradient(90deg, #ec0086, #db4954);
 }
-nav .container{
+nav .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -351,7 +355,7 @@ nav .nav-user-info .dropdown .dropdown-content .btn-sub:hover {
   background: url(../images/common/icon_select_down-c.svg) no-repeat;
   background-position: 90% 50%;
 }
-.search-area form ol li .date-style-out{
+.search-area form ol li .date-style-out {
   position: relative;
 }
 .search-area form ol li .date-style-out::after {
@@ -561,6 +565,7 @@ nav .nav-user-info .dropdown .dropdown-content .btn-sub:hover {
 .pagination {
   display: inline-block;
   text-align: center;
+  margin-bottom: 70px;
 }
 .pagination a {
   color: #333333;
@@ -577,6 +582,9 @@ nav .nav-user-info .dropdown .dropdown-content .btn-sub:hover {
 
 /* footer */
 footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
   z-index: -1;
   font-size: 14px;
   color: rgba(119, 119, 119, 0.5);
@@ -585,5 +593,4 @@ footer {
   height: 48px;
   width: 100%;
   padding: 10px 0px;
-  margin-top: 40px;
 }
