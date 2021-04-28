@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CPAS人才診斷報告</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+<link href="css/style.css" type="text/css" media="screen" rel="stylesheet">
+<link rel="stylesheet" type="text/css" media="print" href="css/print.css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+</head>
+<body>
+<div class="header container logo bg-white">CPAS人才診斷報告
+  <div class="header-right"> <img alt="career" src="images/report/career_logo.png"> </div>
+</div>
+<section>
+  <div class="mt-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-12">測驗時間：2018/10/18/10:30:10</div>
+        <div class="col-md-2 col-12">作答時間：08:15</div>
+        <div class="col-md-6 col-12 remind">(若該名受測者之測驗次數為兩次以上，請選擇測驗時間以觀看結果)</div>
+      </div>
+      <hr class="new2">
+      <div class="row">
+        <div class="col-md-2 col-6"><span class="item1">姓名:</span>受測者</div>
+        <div class="col-md-2 col-6"><span class="item1">性別:</span>男</div>
+        <div class="col-md-2 col-6"><span class="item1">學歷:</span>大學</div>
+        <div class="col-md-2 col-6"><span class="item1">科系:</span>農醫學系</div>
+        <div class="col-md-2 col-6"><span class="item1">公司:</span>Career</div>
+	    <div class="col-md-2 col-6"><span class="item1">部門:</span>生產製造</div>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+<!--12項人格特性得分表-->
+<section>
+  <div class="container mt-1">
+    <div class="row">
+
+      <div class="col-md-6 col-12"> 
+        <img src="images/report/t-01.png" width="100%" alt="12項人格特性得分表">
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th valign="middle" class="text-center">特性</th>
+              <th valign="middle" class="text-center">得分</th>
+              <th valign="middle" class="text-center">特性</th>
+              <th valign="middle" class="text-center">得分</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">行動性</td>
+              <td class="text-center"></td>
+              <td class="text-center">獨立自主性</td>
+              <td class="text-center"></td>
+            </tr>
+            <tr>
+              <td class="text-center">持續性</td>
+              <td class="text-center"></td>
+              <td class="text-center">革新性</td>
+              <td class="text-center"></td>
+            </tr>
+            <tr>
+              <td class="text-center">指導性</td>
+              <td class="text-center"></td>
+              <td class="text-center">思考性</td>
+              <td class="text-center"></td>
+            </tr>
+            <tr>
+              <td class="text-center">挑戰性</td>
+              <td class="text-center"></td>
+              <td class="text-center">柔軟性</td>
+              <td class="text-center"></td>
+            </tr>
+            <tr>
+              <td class="text-center">共感性</td>
+              <td class="text-center"></td>
+              <td class="text-center">感受性</td>
+              <td class="text-center"></td>
+            </tr>
+            <tr>
+              <td class="text-center">情緒安定性</td>
+              <td class="text-center"></td>
+              <td class="text-center">慎重性</td>
+              <td class="text-center"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+        <!-- Canvas -->  
+      <div class="chart-container"> 
+        <canvas id="Chart-12-personality" width="350" height="350"></canvas>
+      </div>
+        <!-- <Canvas id="canvas-12-personality" width="350" height="350"></Canvas> -->
+    </div>
+  </div>
+</section>
+<hr>
+<!--五大類職業適性(適合從事工作)得分表-->
+<section>
+  <img id="chart-star" width="12" height="12" src="svg/chart.svg" style="display:none">
+  <div class="container mt-1">
+    <div class="row">
+      <div class="col-md-6 col-12"> <img src="images/report/t-02.png" width="100%" alt="五大類職業適性(適合從事工作)得分表">
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th class="text-center">職業適性及領導潛能</th>
+              <th class="text-center">得分</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">定型工作</td>
+              <td class="text-center"></td>
+            </tr>
+            <tr>
+              <td class="text-center">對人工作</td>
+              <td class="text-center"></td>
+            </tr>
+            <tr>
+              <td class="text-center">營業工作</td>
+              <td class="text-center"></td>
+            </tr>
+            <tr>
+              <td class="text-center">非定型工作</td>
+              <td class="text-center"></td>
+            </tr>
+            <tr>
+              <td class="text-center">具創造性工作</td>
+              <td class="text-center"></td>
+            </tr>
+			<tr class="printgray">
+              <td class="text-center pink">領導潛能得分</td>
+              <td class="text-center pink"></td>
+            </tr>
+          </tbody>
+        </table>
+        
+      </div>
+      <!-- Canvas -->
+      <div class="chart-container"> 
+      <Canvas id="canvas-5-career" width="350" height="350"></Canvas>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+<!--六大核心職能座標圖(說明)-->
+<section>
+  <div class="container mt-1">
+    <div class="row">
+      <div class="col-md-6 col-12"> 
+      <img class="ti-img" src="images/report/t-03.png" alt="六大核心職能座標圖(說明)"> 
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-xl-4 col-12"> 
+        <!-- Canvas -->  
+        <div class="chart-container"> 
+          <canvas id="Chart-6-core-1" ></canvas>
+        </div>
+      </div>
+      <div class="col-md-6 col-xl-4 col-12"> 
+        <!-- Canvas --> 
+        <div class="chart-container">  
+        <canvas id="Chart-6-core-2"></canvas>  
+        </div>    
+      </div>  
+      <div class="col-md-6 col-xl-4 col-12">
+        <!-- Canvas -->  
+        <div class="chart-container"> 
+          <canvas id="Chart-6-core-3" width="350" height="350"></canvas>
+        </div> 
+      </div>
+      <div class="col-md-6 col-xl-4 col-12"> 
+        <!-- Canvas -->  
+        <div class="chart-container"> 
+          <canvas id="Chart-6-core-4" width="350" height="350"></canvas>
+        </div> 
+      </div>
+      <div class="col-md-6 col-xl-4 col-12">
+        <!-- Canvas -->           
+        <div class="chart-container"> 
+          <canvas id="Chart-6-core-5" width="350" height="350"></canvas>
+        </div> 
+      </div>
+      <div class="col-md-6 col-xl-4 col-12"> 
+        <!-- Canvas -->          
+        <div class="chart-container"> 
+          <canvas id="Chart-6-core-6" width="350" height="350"></canvas>
+        </div> 
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+<!--診斷結果-->
+<section style="page-break-after:always">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-12"> <img class="ti-img" src="images/report/t-04.png" alt="診斷結果"> </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-left">
+        <ul class="list-specification">
+          <li><i class="fas fa-caret-right"></i></li>
+          <li><i class="fas fa-caret-right"></i></li>
+          <li><i class="fas fa-caret-right"></i></li>
+          <li><i class="fas fa-caret-right"></i></li>
+          <li><i class="fas fa-caret-right"></i></li>
+          <li><i class="fas fa-caret-right"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section >
+<hr>
+<!--五大適職類型與領導潛能-->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-12"> <img class="ti-img" src="images/report/t-05.png" alt="五大適職類型與領導潛能"> </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-left">
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th class="text-center">適職類型</th>
+              <th class="text-center">得分</th>
+              <th class="text-center">適合之職業(職種舉例)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">定型的工作</td>
+              <td class="text-center"></td>
+              <td>一般行政、文書處理、會計、出納、稽核、總務、內部銷售管理
+、設備維修、廠務維修、電腦維修、倉管、物管、薪資管理師、固定採購等後勤支援工作。</td>
+            </tr>
+            <tr>
+              <td class="text-center">對人的工作</td>
+              <td class="text-center"></td>
+              <td>店員、櫃檯、餐飲服務員、秘書、公關、老師、導遊、護士、醫生
+、客戶服務工程師、員工關係師、招募管理師等必需面帶微笑、貼心服務的對人接待工作。</td>
+            </tr>
+            <tr>
+              <td class="text-center">營業的工作</td>
+              <td class="text-center"></td>
+              <td>電話銷售、店面銷售、拜訪銷售、保險銷售、廣告AE、理財專員
+、汽車、房屋及科技產品的業務銷售員、舉凡有業績目標及獎金激勵的推銷工作皆屬之。</td>
+            </tr>
+            <tr>
+              <td class="text-center">非定型工作</td>
+              <td class="text-center"></td>
+              <td>商品企劃、產業調查、投資分析、市場行銷、編輯企劃、研究調查
+、企管顧問師、系統分析師、節目製作人等屬於動腦變化性大的整合企劃工作。</td>
+            </tr>
+            <tr>
+              <td class="text-center">具創造性的工作</td>
+              <td class="text-center"></td>
+              <td>產品研發、系統設計、流行設計、廣告設計、建築設計、室內設計、工業設計
+、電影製作、藝術製作等具備細膩敏銳的感覺，創造最新觀感與流行趨勢的工作。</td>
+            </tr>
+            <tr>
+              <td class="text-center">領導潛能</td>
+              <td class="text-center"></td>
+              <td>能以嚴謹態度處事，待人溫厚，具領導力、行動力、開創力等特質，常用開朗之特性激勵士氣
+，又善整合企業資源、創造績效，對組織有高度影響力的領導者。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+<!--12項人格特性強弱特徵-->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-12"> <img class="ti-img" src="images/report/t-06.png" alt="12項人格特性強弱特徵"> </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-left">
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th class="text-center" style="width: 15%;">職場性格</th>
+              <th class="text-center" style="width: 15%;">得分</th>
+              <th class="text-center" style="width: 35%;">高得分者：7分(含)以上</th>
+              <th class="text-center" style="width: 35%;">低得分者：3分(含)以下</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">行動力</td>
+              <td class="text-center"></td>
+              <td>決斷力強，活動力強，搶在先機。<br>
+自動積極，少藉口，但易輕率行事。</td>
+              <td>決斷力弱，行動遲緩，處事不活潑。<br>
+被動行事，但處事冷靜細膩，安全性高。</td>
+            </tr>
+            <tr>
+              <td class="text-center">持續性</td>
+              <td class="text-center"></td>
+              <td>忍耐力強，有恆心毅力，有責任心。<br>
+不怕麻煩單調，細心努力追求完美。</td>
+              <td>處事欠耐性，易半途而廢、虎頭蛇尾。<br>
+不夠細膩，不重細節。</td>
+            </tr>
+            <tr>
+              <td class="text-center">指導性</td>
+              <td class="text-center"></td>
+              <td>自信心強，支配慾強，喜歡當意見領袖。<br>
+獨斷的權威感，反應快，但易招致反感。</td>
+              <td>順從他人領導，不善對人發號施令。<br>
+謙虛自律，順應大局，對組織依存度高。</td>
+            </tr>
+            <tr>
+              <td class="text-center">挑戰性</td>
+              <td class="text-center"></td>
+              <td>動機明確，競爭力強，不服輸具企圖心。<br>
+視危機為轉機，勇往直前，鬥志高。</td>
+              <td>消極意識，不愛表現，志向平凡。<br>
+不追求卓越出眾，不愛引人注目。</td>
+            </tr>
+            <tr>
+              <td class="text-center">共感性</td>
+              <td class="text-center"></td>
+              <td>待人親切，相信人，同情人，感情豐富。<br>
+人緣好，善解人意，外向型的社交家。</td>
+              <td>愛在心中口難開。對陌生人冷淡，不善應對。<br>
+感情內斂，不會主動誇獎他人。</td>
+            </tr>
+            <tr>
+              <td class="text-center">情緒安定性</td>
+              <td class="text-center"></td>
+              <td>理性穩重，喜怒不形於色，沉著冷靜。<br>
+態度冷靜，能控制氣氛，人際問題少。</td>
+              <td>情緒變化大，易感情用事衝動行事。<br>
+喜怒哀樂形於色，人際衝突機率大。</td>
+            </tr>
+            <tr>
+              <td class="text-center">獨立自主性</td>
+              <td class="text-center"></td>
+              <td> 創意強，主觀強，自尊型，協調性較差。<br>
+少關心他人，獨思獨行，不善團隊合作。 </td>
+              <td>順應大局，服從組織，協調性高。<br>
+害怕孤軍奮鬥，喜歡團隊合作。</td>
+            </tr>
+            <tr>
+              <td class="text-center">革新性</td>
+              <td class="text-center"></td>
+              <td>否定現況，喜歡挑戰新事務，好奇心強。<br>
+勇於嘗試錯誤，喜歡有變化的工作。</td>
+              <td>維持現狀，心態保守，傳統世故。<br>
+對變革戒慎恐懼，追求安定平穩工作。</td>
+            </tr>
+            <tr>
+              <td class="text-center">思考性</td>
+              <td class="text-center"></td>
+              <td>深思熟慮，冷靜細膩，沉穩內向。<br>
+重理論，慎重自律，喜歡思考甚於行動。</td>
+              <td>憑直覺，重經驗，不善細節分析力。<br>
+決斷力強，思考欠周延，決策衝動。</td>
+            </tr>
+            <tr>
+              <td class="text-center">柔軟性</td>
+              <td class="text-center"></td>
+              <td>善於臨機應變，適應力強，能面對現實。<br>
+不固執己見，但想法易變，常欠一致性。</td>
+              <td>頑固己見，主觀性強，欠缺融通。<br>
+忽視客觀環境，易生溝通波折。</td>
+            </tr>
+            <tr>
+              <td class="text-center">感受性</td>
+              <td class="text-center"></td>
+              <td>感受敏銳，神經纖細，易觸景傷情。<br>
+掌握趨勢，想像力豐富，易鑽牛角尖。</td>
+              <td>理性冷靜，感受遲鈍，敏銳度低。<br>
+重實際，缺想像力，做事粗線條。</td>
+            </tr>
+            <tr>
+              <td class="text-center">慎重性</td>
+              <td class="text-center"></td>
+              <td>謹慎擔心，悲觀，拘泥小節，優柔寡斷。<br>
+內向自省型，不敢冒險，但可信賴性高。</td>
+              <td>處事乾脆，決策快速，樂觀外向。<br>
+重大方向，不重細節，輕率短慮。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+<!--六大核心競爭職能的關鍵職場能力-->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-12"> <img class="ti-img" src="images/report/t-07.png" alt="六大核心競爭職能的關鍵職場能力"> </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-left">
+        <table class="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th class="text-center" style="width:30%">核心競爭職能</th>
+              <th class="text-center">關鍵職場能力</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">執行力</td>
+              <td>行動性與持續性配合而成，診斷一個人即知即行的貫徹力與持之以恆的忍耐力。從事業務工作者與此特性有極大關係。</td>
+            </tr>
+            <tr>
+              <td class="text-center">統御力</td>
+              <td>由指導性與挑戰性兩種特性組合而成，用於分析一個人的企圖心及統御管理能力。</td>
+            </tr>
+            <tr>
+              <td class="text-center">親和力</td>
+              <td>由共感性與情緒安定性兩種特性組合而成，用於判斷一個人的親切感、同理心、EQ等人際溝通與協調能力。對從事服務業者係一項重要的診斷項目。</td>
+            </tr>
+            <tr>
+              <td class="text-center">開創力</td>
+              <td>由獨立自主性與革新性兩特性組合而成，係判斷一個人獨挑大樑，運用智慧改革現況 ，開創新局的獨創能力。</td>
+            </tr>
+            <tr>
+              <td class="text-center">應變力</td>
+              <td>由思考性及柔軟性兩特性組合而成，用以判斷一個人因應情勢變化的深思熟慮程度及柔軟應變能力，原意為「柔軟思考力」，亦可稱之為「應變力」。</td>
+            </tr>
+            <tr>
+              <td class="text-center">敏感力</td>
+              <td>由感受性與慎重性兩特性組合而成，用以判斷一個人對外在環境變化之敏銳度及決策的審慎度。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+<!--note-->
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-left">
+        <p>若您對測驗結果想進一步瞭解，或有職涯發展問題，歡迎與Career聯絡查詢!</p>
+        <p style="color: red;">企業服務專線：<a href="tel:+886-2-27031250">(02)2703-1250#168</a>&emsp;<font style="color: red;">個人諮詢專線：<a href="tel:+886-2-27031250">(02)2703-1250#303、#321</a></font></p>
+        <p>CPAS職業適性診斷測驗網址：<a href="http://cpas.career.com.tw/">http://cpas.career.com.tw</a>&emsp;<font>服務信箱：<a href="mailtoLcpas-test@career.com.tw">cpas-test@career.com.tw</a></font></p>
+      </div>
+    </div>
+  </div>
+</section>
+<hr>
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <p>Copyright © Career就業情報. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script src="js/chart-Radar.js"></script>
+<script src="js/chart-dot.js"></script>
+
+<!-- <script src="js/Canvas-12-personality.js"></script>
+<script src="js/Canvas-5Career.js"></script> -->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.2.1.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.0.0.js"></script>
+</body>
+</html>
