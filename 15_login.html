@@ -12,10 +12,10 @@
       crossorigin="anonymous"
     />
     <!-- CSS Style -->
-    <link href="./css/login_style.css" rel="stylesheet" />
+    <link href="./css/_style.css" rel="stylesheet" />
     <title>職涯門診-顧問登入</title>
   </head>
-  <body>
+  <body class="login_frame">
     <header>
       <div class="container">
         <div class="testing_head">
@@ -34,17 +34,14 @@
           <h1>職涯門診顧問登入</h1>
           <div class="card">
             <p>帳號</p>
-            <input id="id" name="id" />
+            <input id="id" name="id" class="style-input" />
             <p>密碼</p>
-            <input id="password" name="password" />
+            <input id="password" name="password" class="style-input" />
 
             <p>圖形驗證</p>
-            <!-- 驗證碼 -->
             <table>
               <tr>
-                <!-- 輸入框 -->
                 <td><input id="Text3" type="text" class="txtCode" /></td>
-                <!-- 顯示驗證碼 -->
                 <td class="fresh">
                   <img src="./images/common/img-CAPTCHA.png" /><button
                     class="refresh"
@@ -84,6 +81,15 @@
       </div>
     </section>
     <!-- footer   -->
-    <footer>Copyright 2021 @ Career Consulting Co. Ltd.</footer>
+    <footer class="login_footer">Copyright 2021 @ Career Consulting Co. Ltd.</footer>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"
+      integrity="sha512-qzrZqY/kMVCEYeu/gCm8U2800Wz++LTGK4pitW/iswpCbjwxhsmUwleL1YXaHImptCHG0vJwU7Ly7ROw3ZQoww=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/carousel/owl.carousel.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/_main.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

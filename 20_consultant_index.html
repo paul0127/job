@@ -15,18 +15,32 @@
       rel="stylesheet"
       href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
     />
-    <!-- CSS Style -->
-    <link href="./css/Consultant-index.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link
+      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link href="./css/_style.css" rel="stylesheet" />
     <title>職涯門診-顧問系統</title>
   </head>
-  <body>
-    <nav>
+  <body class="consultant_index">
+    <div class="side_btn_gup outpatient">
+      <div id="goTop">
+        <a href="javascript:;"
+          ><i class="fa fa-angle-up" aria-hidden="true"></i
+        ></a>
+      </div>
+    </div>
+
+    <header>
       <div class="container">
-        <a href="#"
-          ><img class="nav-logo" />
-          <span class="nav-outpatient-tittle">職涯門診</span>
+        <div class="nav-logo-group">
+          <a href="./"><img class="nav-logo" /></a>
+          <a href="#" class="nav-outpatient-tittle">職涯門診</a>
           <span class="nav-consultant-tittle">顧問系統</span>
-        </a>
+        </div>
+
         <div class="nav-user-info">
           <div class="info">
             <img src="./images/common/icon-user.svg" />
@@ -43,15 +57,25 @@
           </div>
         </div>
       </div>
-    </nav>
-    <div class="container">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">職涯門診顧問系統</a></li>
-        <li class="breadcrumb-item active" aria-current="page">
-          施測者諮詢報告管理
-        </li>
-      </ol>
-    </div>
+    </header>
+
+    <section class="cstm_path">
+      <div class="container">
+        <div class="row">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="javascript:;">職涯門診顧問系統</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                施測者諮詢報告管理
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </section>
+
     <div class="container">
       <div class="page-tittle">
         <img src="./images/common/icon_user.svg" />
@@ -242,13 +266,11 @@
         </ul>
       </div>
     </div>
-    <div class="center">
-      <div class="pagination">
-        <a href="#"><img src="./images/common/btn-arrow_dot_left.svg" /></a>
-        <a href="#" class="active">1</a>
-        <a href="#">2</a>
-        <a href="#"><img src="./images/common/btn-arrow_dot_right.svg" /></a>
-      </div>
+    <div class="pagination">
+      <a href="#"><img src="./images/common/btn-arrow_dot_left.svg" /></a>
+      <a href="#" class="active">1</a>
+      <a href="#">2</a>
+      <a href="#"><img src="./images/common/btn-arrow_dot_right.svg" /></a>
     </div>
     <!-- footer   -->
     <footer>Copyright 2021 @ Career Consulting Co. Ltd.</footer>
@@ -258,7 +280,8 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="./js/dropdown.js"></script>
+    <script src="js/_main.js"></script>
+    <script src="./js/main.js"></script>
     <script>
       $(function () {
         $('#datepicker_1').datepicker({

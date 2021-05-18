@@ -14,12 +14,21 @@
     />
 
     <link rel="stylesheet" href="./assets/carousel/owl.carousel.min.css" />
-    <link rel="stylesheet" href="./css/reservation.css" />
+    <link rel="stylesheet" href="./css/swiper.min.css" />
+    <link
+      href="fonts/font-awesome-4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/_style.css" />
   </head>
   <body>
-    <div class="scrool_top">
-      <img src="./images/common/scroll_top.svg" alt="" />
+    <div class="side_btn_gup outpatient">
+      <div id="goTop">
+        <a href="javascript:;"><i class="fa fa-angle-up" aria-hidden="true"></i></a>
+      </div>  
     </div>
+    
     <div class="pc_closed"></div>
     <div class="mobile_closed"></div>
     <header>
@@ -225,13 +234,27 @@
         <p>一對一職涯諮詢<br />客觀的分析，專業的建議，學習如何掌握職涯人生</p>
       </div>
     </div>
-    <div class="container">
-      <ul class="bread">
-        <li><a href="#">Career首頁</a></li>
-        <li><a href="#">職涯門診</a></li>
-        <li>預約諮詢</li>
-      </ul>
-    </div>
+
+    <section class="cstm_path">
+      <div class="container">
+        <div class="row">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="javascript:;">Career首頁</a>
+              </li>
+              <li class="breadcrumb-item">
+                <a href="javascript:;">職涯門診</a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                預約諮詢
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </section>
+
     <div class="page">
       <div class="container">
         <ul class="stepwizard">
@@ -473,142 +496,327 @@
       </div>
     </div>
 
-    <footer>
-      <div class="footer_menu_btn">
-        <img src="./images/common/arrow_icon.svg" alt="" />
+    <section class="c10_site_map site_map">
+      <div class="site_map_btn">
+        <button title="選單收合按鈕"><i class="fa fa-angle-down"></i></button>
+        <span></span>
       </div>
-      <div class="footer_menu">
-        <div class="container">
-          <ul class="footer_nav">
-            <li>
-              <label>CPAS人才培訓</label>
-              <ul class="sub">
-                <li><a href="">站內子選單</a></li>
-                <li><a href="">站內子選單</a></li>
-                <li><a href="">站內子選單</a></li>
-                <li><a href="">站內子選單</a></li>
+      <div class="cstm_cntr container-fluid">
+        <div class="row">
+          <div class="col">
+            <section>
+              <h4>
+                <a href="javascript:;" title="CPAS人才測評網">CPAS人才測評</a>
+              </h4>
+              <ul>
+                <li>
+                  <a href="javascript:;" title="站內子選單" target="_blank"
+                    >站內子選單</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="站內子選單" target="_blank"
+                    >站內子選單</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="站內子選單" target="_blank"
+                    >站內子選單</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="站內子選單" target="_blank"
+                    >站內子選單</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="站內子選單" target="_blank"
+                    >站內子選單</a
+                  >
+                </li>
               </ul>
-            </li>
-            <li>
-              <label>職涯活動</label>
-              <ul class="sub">
-                <li><a href="">最新活動</a></li>
-                <li><a href="">活動花絮</a></li>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h4><a href="javascript:;" title="職涯活動網">職涯活動</a></h4>
+              <ul>
+                <li>
+                  <a href="javascript:;" title="最新活動" target="_blank"
+                    >最新活動</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="活動花絮" target="_blank"
+                    >活動花絮</a
+                  >
+                </li>
               </ul>
-            </li>
-            <li>
-              <label>職涯智庫</label>
-              <ul class="sub">
-                <li><a href="">職涯好文</a></li>
-                <li><a href="">影音專區</a></li>
-                <li><a href="">趣味調查</a></li>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h4><a href="javascript:;" title="職涯智庫網">職涯智庫</a></h4>
+              <ul>
+                <li>
+                  <a href="javascript:;" title="職涯好文" target="_blank"
+                    >職涯好文</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="影音專區" target="_blank"
+                    >影音專區</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="趣味調查" target="_blank"
+                    >趣味調查</a
+                  >
+                </li>
               </ul>
-            </li>
-            <li>
-              <label>人才徵聘</label>
-              <ul class="sub">
-                <li><a href="">人才派遣</a></li>
-                <li><a href="">高階獵才</a></li>
-                <li><a href="">專案招募</a></li>
-                <li><a href="">最新職缺</a></li>
-                <li><a href="">員工專區</a></li>
-                <li><a href="">聯絡我們</a></li>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h4><a href="javascript:;" title="人才徵聘網">人才徵聘</a></h4>
+              <ul>
+                <li>
+                  <a href="javascript:;" title="最新職缺" target="_blank"
+                    >最新職缺</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="派遣員工專區" target="_blank"
+                    >派遣員工專區</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="人力派遣" target="_blank"
+                    >人力派遣</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="薪資代管" target="_blank"
+                    >薪資代管</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="javascript:;"
+                    title="人事管理顧問方案"
+                    target="_blank"
+                    >人事管理顧問方案</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="專案招募" target="_blank"
+                    >專案招募</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="高階獵才" target="_blank"
+                    >高階獵才</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="聯絡我們" target="_blank"
+                    >聯絡我們</a
+                  >
+                </li>
               </ul>
-            </li>
-            <li>
-              <label>人才培訓</label>
-              <ul class="sub">
-                <li><a href="">關於我們</a></li>
-                <li><a href="">培訓課程</a></li>
-                <li><a href="">顧問團隊</a></li>
-                <li><a href="">人才培訓專案</a></li>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h4><a href="javascript:;" title="人才培訓網">人才培訓</a></h4>
+              <ul>
+                <li>
+                  <a href="javascript:;" title="關於我們" target="_blank"
+                    >關於我們</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="培訓課程" target="_blank"
+                    >培訓課程</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="顧問團隊" target="_blank"
+                    >顧問團隊</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="人才培訓專案" target="_blank"
+                    >人才培訓專案</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="職涯顧問培訓班" target="_blank"
+                    >職涯顧問培訓班</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="服務實績" target="_blank"
+                    >服務實績</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="聯絡我們" target="_blank"
+                    >聯絡我們</a
+                  >
+                </li>
               </ul>
-            </li>
-            <li>
-              <label>校園專區</label>
-              <ul class="sub">
-                <li><a href="">職涯地圖</a></li>
-                <li><a href="">服務項目</a></li>
-                <li><a href="">教師培訓</a></li>
-                <li><a href="">講座邀約</a></li>
-                <li><a href="">專屬方案</a></li>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h4><a href="javascript:;" title="校園活動網">校園活動</a></h4>
+              <ul>
+                <li>
+                  <a href="javascript:;" title="職涯地圖" target="_blank"
+                    >職涯地圖</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="服務項目" target="_blank"
+                    >服務項目</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="教師培訓" target="_blank"
+                    >教師培訓</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="講座邀約" target="_blank"
+                    >講座邀約</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="專屬方案" target="_blank"
+                    >專屬方案</a
+                  >
+                </li>
               </ul>
-            </li>
-            <li>
-              <label>職涯門診</label>
-              <ul class="sub">
-                <li><a href="">服務內容</a></li>
-                <li><a href="">顧問介紹</a></li>
-                <li><a href="">預約報名</a></li>
-                <li><a href="">常見問題</a></li>
-                <li><a href="">顧問登入</a></li>
+            </section>
+          </div>
+          <div class="col">
+            <section>
+              <h4><a href="javascript:;" title="職涯門診網">職涯門診</a></h4>
+              <ul>
+                <li>
+                  <a href="javascript:;" title="服務內容" target="_blank"
+                    >服務內容</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="顧問介紹" target="_blank"
+                    >顧問介紹</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="預約報名" target="_blank"
+                    >預約報名</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="常見問題" target="_blank"
+                    >常見問題</a
+                  >
+                </li>
+                <li>
+                  <a href="javascript:;" title="顧問登入" target="_blank"
+                    >顧問登入</a
+                  >
+                </li>
               </ul>
-            </li>
-          </ul>
+            </section>
+          </div>
         </div>
       </div>
-      <div class="bottom">
-        <div class="container">
-          <div class="footer_logo">
-            <img src="./images/common/footer_logo.svg" alt="" />
+    </section>
+
+    <!--  -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="logo_img">
+              <a href="javascript:;" title="就業情報"
+                ><img src="./images/svg/Career LOGO.svg" alt="就業情報商標"
+              /></a>
+            </h2>
           </div>
-          <div class="line">
-            <div class="footer_left">
-              <ul class="social">
-                <li>
-                  <a href=""
-                    ><img src="./images/common/facebook.svg" alt=""
-                  /></a>
-                </li>
-                <li>
-                  <a href=""><img src="./images/common/line.svg" alt="" /></a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="./images/common/instagram.svg" alt=""
-                  /></a>
-                </li>
-                <li>
-                  <a href=""
-                    ><img src="./images/common/youtube-play.svg" alt=""
-                  /></a>
-                </li>
-              </ul>
-              <ul class="info">
-                <li>
-                  <label for=""
-                    ><img src="./images/common/phone.svg" alt="" /></label
-                  >0800-712-712 平日9:00~18:00
-                </li>
-                <li>
-                  <label for=""
-                    ><img src="./images/common/envelope.svg" alt="" /></label
-                  >service@career.com.tw
-                </li>
-              </ul>
-            </div>
-            <div class="footer_right">
-              <ul class="mobile_menu">
-                <li><a href="">CPAS人才測評</a></li>
-                <li><a href="">職涯門診</a></li>
-                <li><a href="">職涯活動</a></li>
-                <li><a href="">職涯智庫</a></li>
-                <li><a href="">人才徵聘</a></li>
-                <li><a href="">人才培訓</a></li>
-                <li><a href="">校園活動</a></li>
-              </ul>
-              <ul class="menu">
-                <li><a href="">關於Career</a></li>
-                <li><a href="">服務據點</a></li>
-                <li><a href="">版權聲明</a></li>
-                <li><a href="">隱私權政策</a></li>
-                <li><a href="">常見問題</a></li>
-                <li><a href="">聯絡我們</a></li>
-              </ul>
-              <div class="copyright">
-                Copyright 2021 @ Career Consulting Co. Ltd.
+
+          <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-4">
+            <section class="footer_item footer_item_info">
+              <div class="social_icon">
+                <ul>
+                  <li>
+                    <a href="javascript:;" title="facebook" target="_blank"
+                      ><i class="fa fa-facebook-official" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="javascript:;" title="line" target="_blank"
+                      ><img
+                        class="icon_line"
+                        src="images/svg/line.svg"
+                        alt="line圖示"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="javascript:;" title="instagram"
+                      ><img
+                        class="icon_ins"
+                        src="images/svg/instagram.svg"
+                        alt="instagram圖示"
+                        target="_blank"
+                    /></a>
+                  </li>
+                  <li>
+                    <a href="javascript:;" title="youtube" target="_blank"
+                      ><i class="fa fa-youtube-play" aria-hidden="true"></i
+                    ></a>
+                  </li>
+                </ul>
               </div>
-            </div>
+              <div class="info_tel">
+                <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+                <a href="tel:+886-800-712-712" title="免付費電話號碼"
+                  >0800-712-712</a
+                >
+                <p>平日 9:00~18:00</p>
+              </div>
+              <div class="info_mail">
+                <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                <a href="mailto:service@career.com.tw" title="電子服務信箱"
+                  >service@career.com.tw</a
+                >
+              </div>
+            </section>
+          </div>
+
+          <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-8">
+            <section class="footer_item footer_item_fn">
+              <div class="footer_menu_gup">
+                <ul>
+                  <li>
+                    <a href="javascript:;" title="關於Career">關於Career</a>
+                  </li>
+                  <li><a href="javascript:;" title="服務據點">服務據點</a></li>
+                  <li><a href="javascript:;" title="版權聲明">版權聲明</a></li>
+                  <li>
+                    <a href="javascript:;" title="隱私權政策">隱私權政策</a>
+                  </li>
+                  <li><a href="javascript:;" title="常見問題">常見問題</a></li>
+                  <li><a href="javascript:;" title="聯絡我們">聯絡我們</a></li>
+                </ul>
+              </div>
+              <div class="copy">
+                <p>Copyright 2020 @ Career Consulting Co.Ltd</p>
+              </div>
+            </section>
           </div>
         </div>
       </div>
@@ -618,7 +826,10 @@
       integrity="sha512-qzrZqY/kMVCEYeu/gCm8U2800Wz++LTGK4pitW/iswpCbjwxhsmUwleL1YXaHImptCHG0vJwU7Ly7ROw3ZQoww=="
       crossorigin="anonymous"
     ></script>
+    <script src="js/bootstrap-4.2.1.min.js"></script>
     <script src="./assets/carousel/owl.carousel.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/_main.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>

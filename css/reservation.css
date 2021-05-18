@@ -219,6 +219,9 @@
   outline: none;
   margin-bottom: 12px;
 }
+.reservation .mobile_option .local select option{
+    color: #333;
+  }
 
 .reservation .mobile_table {
   display: none;
