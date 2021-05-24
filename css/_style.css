@@ -4459,15 +4459,14 @@ footer.login_footer {
 .report .information .list .group .item .table .tbody .tr:nth-child(even) {
   background-color: #3333330d;
 }
-.report .information .list .group .item .table .tbody .tr .td span {
+.report .information .list .group .item .table .tbody .tr .td select {
   width: 45px;
   height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   border: 1px solid #ec0086;
   color: #ec0086;
   border-radius: 12px;
+  outline: none;
 }
 @media (max-width: 1200px) {
   .report h1 {
