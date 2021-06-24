@@ -316,6 +316,13 @@ header .head ul.toolBar li .search_bar .search .send:hover {
   text-decoration: none;
   color: #fff;
 }
+/*手機 登入按鈕*/
+.mobile_head .login_btn {
+  margin-right: 26px;
+}
+.mobile_head .login_btn a{
+ text-decoration: none;
+}
 /*手機 搜尋按鈕*/
 .mobile_head .search_btn {
   margin-left: 26px;
@@ -1384,8 +1391,9 @@ body {
 .index_challenge .item.style_1 {
   background: transparent url('../images/index/bg.svg') 0% 0% no-repeat
     padding-box;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: top;
+  background-repeat: no-repeat;
 }
 .index_challenge .item.style_1 .mobile_pic {
   display: none;
@@ -1954,6 +1962,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 1;
 }
 .consultants .list .item .text .info .text_top {
   position: relative;
@@ -2152,6 +2161,7 @@ body {
   color: #ec0086;
   text-decoration: underline;
   margin: 0 5px;
+  font-weight: bolder;
 }
 .reservation p a:hover {
   opacity: 0.8;
@@ -2163,6 +2173,7 @@ body {
   font-size: 1.25rem;
   color: #ec0086;
   margin-bottom: 30px;
+  font-weight: bolder;
 }
 .reservation > .local img {
   margin-right: 20px;
@@ -2175,6 +2186,9 @@ body {
 }
 .reservation ul.tabs li {
   flex: 1;
+  margin-right: 30px;
+}
+.reservation ul.tabs li a{
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2183,12 +2197,13 @@ body {
   border: 1px solid #ec0086;
   border-radius: 48px;
   padding: 15px 0;
-  font-size: 1rem;
-  margin-right: 30px;
+  font-size: 1.25rem;
   cursor: pointer;
+  font-weight: 700;
+  text-decoration: none;
 }
-.reservation ul.tabs li.active,
-.reservation ul.tabs li:hover {
+.reservation ul.tabs li.active a,
+.reservation ul.tabs li a:hover {
   background: transparent linear-gradient(180deg, #ec0086 0%, #db4954 100%) 0%
     0% no-repeat padding-box;
   box-shadow: 5px 5px 6px #00000029;
@@ -3249,9 +3264,10 @@ footer.finish {
   color: #ec0086;
   border: 1px solid #ec0086;
   border-radius: 48px;
-  font-size: 1rem;
+  font-size: 1.25rem;
   margin-right: 30px;
   text-decoration: none;
+  font-weight: 700;
 }
 .contact ul.tabs li.active a,
 .contact ul.tabs li a:hover {
@@ -3368,17 +3384,28 @@ footer.finish {
   padding: 0 60px;
   font-size: 1.25rem;
 }
-.contact .desc p {
-  margin-bottom: 40px;
+.contact .desc .info{
+  margin-bottom: 18px;
 }
-.contact .desc p:last-child {
+.contact .desc .info .title{
+  font-weight: bolder;
+  margin-bottom: 22px;
+}
+.contact .desc .info .place{
+  display: flex;
+  flex-wrap: wrap;
+}
+.contact .desc .info .place span{
+  margin-bottom: 22px;
+  margin-right: 26px;
+}
+.contact .desc .info .place span:nth-child(3n+1){
+  flex: 0 0 278px;
+}
+.contact .desc p {
   margin-bottom: 0;
 }
-.contact .desc p span {
-  display: inline-block;
-  margin-right: 26px;
-  margin-top: 22px;
-}
+
 .pop_closed {
   position: fixed;
   top: 0;
@@ -3481,6 +3508,9 @@ footer.finish {
   .contact .desc {
     padding: 0 0 0 0;
   }
+  .contact .desc .info .place span:nth-child(3n+1){
+    flex: none;
+  }
   .popup {
     width: calc(100% - 30px);
     padding: 20px;
@@ -3525,9 +3555,10 @@ footer.finish {
   color: #ec0086;
   border: 1px solid #ec0086;
   border-radius: 48px;
-  font-size: 1rem;
+  font-size: 1.25rem;
   margin-right: 30px;
   text-decoration: none;
+  font-weight: 700;
 }
 .qa ul.tabs li.active a,
 .qa ul.tabs li a:hover {
