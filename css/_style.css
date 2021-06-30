@@ -1484,8 +1484,9 @@ body {
   margin-bottom: 45px;
 }
 .index_news .news_frame .news_block .mobile_btn {
-  display: none;
-  justify-content: center;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 25%;
 }
 .index_news .news_frame .news_block .mobile_btn a {
   width: 160px;
@@ -1500,6 +1501,9 @@ body {
   justify-content: center;
   text-decoration: none;
   font-size: 1rem;
+}
+.index_news .news_frame .news_block .mobile_btn a:hover {
+  opacity: .8;
 }
 .index_news .news_frame .news_block .news_slider {
   position: relative;
@@ -1684,7 +1688,8 @@ body {
     transform: translateX(0);
   }
   .index_news .news_frame .news_block .mobile_btn {
-    display: flex;
+    padding-right: 0;
+    justify-content: center;
   }
   .index_news .news_frame .question_block {
     flex: 0 0 100%;
