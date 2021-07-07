@@ -80,7 +80,6 @@ let sub_meun_btn = document.querySelectorAll(
 let sub_sub_meun_btn = document.querySelectorAll(
   '.menu_btn .dropdown_menu li.sub_active li.sub_menu_active>a'
 )
-console.log(sub_sub_meun_btn)
 
 if (menu_btn) {
   menu_btn.addEventListener('click', () => {
@@ -152,12 +151,23 @@ if (pop_msg) {
 
 /*職涯諮詢建議報告 開合*/
 let acc = document.querySelectorAll('.report .information .title')
+
+/*初始值設定*/
+if(window.innerWidth>1200){
+  acc.forEach((el) => {
+    el.parentNode.classList.add('active')
+  })
+}else if(acc[0]){
+  acc[0].parentNode.classList.add('active')
+}
+
 acc.forEach((el) => {
   el.addEventListener('click', () => {
     let panel = el.parentNode
     panel.classList.toggle('active')
   })
 })
+
 
 /*判斷視窗是否小於1200 1200以下 會將radio 設定成disable*/
 let atm_choise = document.querySelector('#atm_choise')

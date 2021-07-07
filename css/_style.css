@@ -320,8 +320,8 @@ header .head ul.toolBar li .search_bar .search .send:hover {
 .mobile_head .login_btn {
   margin-right: 26px;
 }
-.mobile_head .login_btn a{
- text-decoration: none;
+.mobile_head .login_btn a {
+  text-decoration: none;
 }
 /*手機 搜尋按鈕*/
 .mobile_head .search_btn {
@@ -1503,7 +1503,7 @@ body {
   font-size: 1rem;
 }
 .index_news .news_frame .news_block .mobile_btn a:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 .index_news .news_frame .news_block .news_slider {
   position: relative;
@@ -2008,6 +2008,13 @@ body {
 .consultants .list .item .text .info .desc {
   font-size: 1.25rem;
   color: #333;
+  white-space: pre-line;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 7;
+  overflow: hidden;
+  margin-bottom: 20px;
 }
 .consultants .list .item .text .more {
   width: 100%;
@@ -2184,6 +2191,13 @@ body {
 .reservation > .local img {
   margin-right: 20px;
 }
+.reservation > .local a {
+  color: #ec0086;
+  text-decoration: underline;
+}
+.reservation > .local a:hover {
+  opacity: 0.8;
+}
 .reservation ul.tabs {
   list-style: none;
   padding-left: 0;
@@ -2194,7 +2208,7 @@ body {
   flex: 1;
   margin-right: 30px;
 }
-.reservation ul.tabs li a{
+.reservation ul.tabs li a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3307,11 +3321,11 @@ footer.finish {
   margin-bottom: 20px;
 }
 .contact .form .list.half {
-  flex: 0 0 340px;
+  flex: 0 0 400px;
 }
 .contact .form .list label {
   flex: 0 0 100px;
-  margin-right: 40px;
+  margin-right: 15px;
   margin-bottom: 0;
   margin-top: 8px;
   font-weight: 900;
@@ -3325,20 +3339,20 @@ footer.finish {
 .contact .form .list .input input[type='text'] {
   border: 1px solid #ec0086;
   border-radius: 48px;
-  width: 200px;
+  width: 260px;
   height: 42px;
   font-size: 1.25rem;
-  padding: 0 30px;
+  padding: 0 20px;
   outline: none;
 }
 .contact .form .list .input select {
   border: 1px solid #ec0086;
   border-radius: 48px;
-  width: 200px;
+  width: 260px;
   height: 42px;
   color: #ec0086;
   font-size: 1.25rem;
-  padding: 0 30px;
+  padding: 0 20px;
   outline: none;
 }
 .contact .form .list .input textarea {
@@ -3346,7 +3360,7 @@ footer.finish {
   height: 120px;
   border: 1px solid #ec0086;
   border-radius: 8px;
-  padding: 5px 10px;
+  padding: 10px 20px;
   outline: none;
 }
 .contact .form .list .verify {
@@ -3360,6 +3374,7 @@ footer.finish {
   outline: none;
   border-radius: 4px;
   border: 1px solid #bbb;
+  padding: 0 20px;
 }
 .contact .form .list .verify button {
   border: 1px solid #ccc;
@@ -3390,22 +3405,22 @@ footer.finish {
   padding: 0 60px;
   font-size: 1.25rem;
 }
-.contact .desc .info{
+.contact .desc .info {
   margin-bottom: 18px;
 }
-.contact .desc .info .title{
+.contact .desc .info .title {
   font-weight: bolder;
   margin-bottom: 22px;
 }
-.contact .desc .info .place{
+.contact .desc .info .place {
   display: flex;
   flex-wrap: wrap;
 }
-.contact .desc .info .place span{
+.contact .desc .info .place span {
   margin-bottom: 22px;
   margin-right: 26px;
 }
-.contact .desc .info .place span:nth-child(3n+1){
+.contact .desc .info .place span:nth-child(3n + 1) {
   flex: 0 0 278px;
 }
 .contact .desc p {
@@ -3496,25 +3511,29 @@ footer.finish {
   .contact .form {
     padding: 20px;
   }
+  .contact .form .list.half {
+    flex: 0 0 100%;
+  }
   .contact .form .list label {
-    margin-right: 37px;
+    margin-right: 20px;
   }
   .contact .form .list .input input[type='text'],
   .contact .form .list .input select,
   .contact .form .list .input textarea {
-    width: 185px;
+    width: 100%;
   }
   .contact .form .list .verify {
     flex-wrap: wrap;
   }
   .contact .form .list .verify input[type='text'] {
-    width: 185px;
+    width: 100%;
+    margin-right: 0;
     margin-bottom: 10px;
   }
   .contact .desc {
     padding: 0 0 0 0;
   }
-  .contact .desc .info .place span:nth-child(3n+1){
+  .contact .desc .info .place span:nth-child(3n + 1) {
     flex: none;
   }
   .popup {
