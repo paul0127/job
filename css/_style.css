@@ -1389,29 +1389,48 @@ body {
 }
 /*內容*/
 .index_challenge .item.style_1 {
-  background: transparent url('../images/index/bg.svg') 0% 0% no-repeat
-    padding-box;
-  background-size: contain;
-  background-position: top;
-  background-repeat: no-repeat;
+  position: relative;
+}
+.index_challenge .item.style_1 .pc_pic{
+  width: 100%;
+}
+.index_challenge .item.style_1 .pc_pic svg{
+  max-width: 100%;
+}
+.index_challenge .item.style_1 .pc_pic svg .before_20,
+.index_challenge .item.style_1 .pc_pic svg .year_20,
+.index_challenge .item.style_1 .pc_pic svg .year_30,
+.index_challenge .item.style_1 .pc_pic svg .year_40,
+.index_challenge .item.style_1 .pc_pic svg .year_50{
+  cursor: pointer;
+}
+.index_challenge .item.style_1 .pc_pic svg .before_20:hover,
+.index_challenge .item.style_1 .pc_pic svg .year_20:hover,
+.index_challenge .item.style_1 .pc_pic svg .year_30:hover,
+.index_challenge .item.style_1 .pc_pic svg .year_40:hover,
+.index_challenge .item.style_1 .pc_pic svg .year_50:hover{
+  opacity: .8;
 }
 .index_challenge .item.style_1 .mobile_pic {
   display: none;
 }
-.index_challenge .item.style_1 p {
+.index_challenge .item.style_1 .text{
+  position: absolute;
+  top: 300px;
+  width: 100%;
+}
+.index_challenge .item.style_1 .text p {
   margin: 0 auto 0 auto;
-  padding-top: 300px;
   padding-bottom: 50px;
   max-width: 500px;
   font-size: 1.25rem;
   line-height: 1.75;
 }
-.index_challenge .item.style_1 .btn {
+.index_challenge .item.style_1 .text .btn {
   display: flex;
   justify-content: center;
-  padding-bottom: 105px;
 }
-.index_challenge .item.style_1 .btn a {
+.index_challenge .item.style_1 .text .btn a {
   width: 350px;
   height: 72px;
   color: #fff;
@@ -1425,7 +1444,7 @@ body {
   text-decoration: none;
   font-size: 1.75rem;
 }
-.index_challenge .item.style_1 .btn a:hover {
+.index_challenge .item.style_1 .text .btn a:hover {
   opacity: 0.8;
 }
 @media (max-width: 1200px) {
@@ -1444,16 +1463,23 @@ body {
   .index_challenge .item.style_1 {
     background-image: none !important;
   }
+  .index_challenge .item.style_1 .pc_pic{
+    display: none;
+  }
   .index_challenge .item.style_1 .mobile_pic {
     display: block;
   }
-  .index_challenge .item.style_1 p {
+  .index_challenge .item.style_1 .text{
+    position: relative;
+    top: unset;
+  }
+  .index_challenge .item.style_1 .text p {
     padding: 20px 0 42px 0;
   }
-  .index_challenge .item.style_1 .btn {
+  .index_challenge .item.style_1 .text .btn {
     padding-bottom: 0;
   }
-  .index_challenge .item.style_1 .btn a {
+  .index_challenge .item.style_1 .text .btn a {
     width: 285px;
     height: 58px;
     font-size: 1rem;

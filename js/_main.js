@@ -19,6 +19,39 @@ if (challenge_slider) {
     },
   })
 }
+/*滑鼠滑入 移動到該年紀圖*/
+let before_20s = document.querySelectorAll('.before_20')
+let year_20s = document.querySelectorAll('.year_20')
+let year_30s = document.querySelectorAll('.year_30')
+let year_40s = document.querySelectorAll('.year_40')
+let year_50s = document.querySelectorAll('.year_50')
+
+before_20s.forEach(item=>{
+  item.addEventListener('mouseover',()=>{
+    $('.challenge_slider').trigger("to.owl.carousel", [0, 300, true]);
+  })
+})
+year_20s.forEach(item=>{
+  item.addEventListener('mouseover',()=>{
+    $('.challenge_slider').trigger("to.owl.carousel", [1, 300, true]);
+  })
+})
+year_30s.forEach(item=>{
+  item.addEventListener('mouseover',()=>{
+    $('.challenge_slider').trigger("to.owl.carousel", [2, 300, true]);
+  })
+})
+year_40s.forEach(item=>{
+  item.addEventListener('mouseover',()=>{
+    $('.challenge_slider').trigger("to.owl.carousel", [3, 300, true]);
+  })
+})
+year_50s.forEach(item=>{
+  item.addEventListener('mouseover',()=>{
+    $('.challenge_slider').trigger("to.owl.carousel", [4, 300, true]);
+  })
+})
+
 /*首頁消息輪播*/
 let news_slider = document.querySelector('.news_slider')
 if (news_slider) {
