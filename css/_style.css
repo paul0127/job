@@ -2145,6 +2145,7 @@ body {
 }
 .consultant .list .item .text {
   font-size: 1.25rem;
+  white-space: pre-line;
 }
 @media (max-width: 1200px) {
   .consultant {
