@@ -28,8 +28,7 @@ Chart.defaults.global.hover.animationDuration = 0;
 
 
 //ctx6C-Data , x與y數值不可大於9 ,r座標控制圓點半徑
-
-var ctx6C1Data =[{x: 5,y: 4,r:30}] //ctx6C1-Data
+var ctx6C1Data =[{x: 5,y: 4,r:5}] //ctx6C1-Data
 var ctx6C2Data =[{x: 2,y: 4,r:5}] //ctx6C2-Data
 var ctx6C3Data =[{x: 8,y: 5,r:5}] //ctx6C3-Data
 var ctx6C4Data =[{x: 4,y: 2,r:5}] //ctx6C4-Data
@@ -42,11 +41,7 @@ var img = document.getElementById("chart-star");
 ctx6C1.drawImage(img, 10, 10,12,12);
 Chart.defaults.global.elements.point.pointStyle =img;
 
-
-
-
 // ctx6c1-Chart  
- 
 var bubbleChart = new Chart(ctx6C1, {
     type: 'bubble',
     data: {
