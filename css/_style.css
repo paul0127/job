@@ -1391,30 +1391,30 @@ body {
 .index_challenge .item.style_1 {
   position: relative;
 }
-.index_challenge .item.style_1 .pc_pic{
+.index_challenge .item.style_1 .pc_pic {
   width: 100%;
 }
-.index_challenge .item.style_1 .pc_pic svg{
+.index_challenge .item.style_1 .pc_pic svg {
   max-width: 100%;
 }
 .index_challenge .item.style_1 .pc_pic svg .before_20,
 .index_challenge .item.style_1 .pc_pic svg .year_20,
 .index_challenge .item.style_1 .pc_pic svg .year_30,
 .index_challenge .item.style_1 .pc_pic svg .year_40,
-.index_challenge .item.style_1 .pc_pic svg .year_50{
+.index_challenge .item.style_1 .pc_pic svg .year_50 {
   cursor: pointer;
 }
 .index_challenge .item.style_1 .pc_pic svg .before_20:hover,
 .index_challenge .item.style_1 .pc_pic svg .year_20:hover,
 .index_challenge .item.style_1 .pc_pic svg .year_30:hover,
 .index_challenge .item.style_1 .pc_pic svg .year_40:hover,
-.index_challenge .item.style_1 .pc_pic svg .year_50:hover{
-  opacity: .8;
+.index_challenge .item.style_1 .pc_pic svg .year_50:hover {
+  opacity: 0.8;
 }
 .index_challenge .item.style_1 .mobile_pic {
   display: none;
 }
-.index_challenge .item.style_1 .text{
+.index_challenge .item.style_1 .text {
   position: absolute;
   top: 300px;
   width: 100%;
@@ -1463,13 +1463,13 @@ body {
   .index_challenge .item.style_1 {
     background-image: none !important;
   }
-  .index_challenge .item.style_1 .pc_pic{
+  .index_challenge .item.style_1 .pc_pic {
     display: none;
   }
   .index_challenge .item.style_1 .mobile_pic {
     display: block;
   }
-  .index_challenge .item.style_1 .text{
+  .index_challenge .item.style_1 .text {
     position: relative;
     top: unset;
   }
@@ -1723,9 +1723,13 @@ body {
   }
   .index_news .news_frame .question_block h1 {
     font-size: 1.75rem;
+    margin-bottom: 23px;
   }
   .index_news .news_frame .question_block .text {
     height: auto;
+  }
+  .index_news .news_frame .question_block .text .img {
+    margin-top: 0;
   }
   .index_news .news_frame .question_block .text .img .btn {
     position: relative;
@@ -2396,16 +2400,21 @@ body {
   margin-bottom: 12px;
 }
 .reservation .mobile_option .local select {
-  background: transparent linear-gradient(180deg, #ec0086 0%, #db4954 100%) 0%
-    0% no-repeat padding-box;
+  background: url(../images/common/arrow_btn.svg) calc(100% - 10px) 50%
+      no-repeat,
+    transparent linear-gradient(180deg, #ec0086 0%, #db4954 100%) 0% 0%
+      no-repeat padding-box;
   color: #fff;
   width: 305px;
   height: 50px;
-  padding: 5px 12px;
+  padding: 5px 15px;
   border-radius: 40px;
   border: none;
   outline: none;
   margin-bottom: 12px;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 }
 .reservation .mobile_option .local select option {
   color: #333;
@@ -4615,6 +4624,9 @@ footer.login_footer {
   .report .information .list .group .item .s_group .table:nth-child(3) .thead {
     display: none;
   }
+  .report .information .list .group .item .table .tbody .tr .td select {
+    width: 53px;
+  }
   .report .information .list .desc .textarea_line .name {
     font-size: 1.5rem;
     margin-bottom: 16px;
@@ -4642,22 +4654,19 @@ body.consultant_index header .container {
 body.consultant_index header a:hover {
   text-decoration: none;
 }
+body.consultant_index header .nav-logo-group{
+  display: flex;
+  align-items: center;
+}
 body.consultant_index header a .nav-logo {
   content: url(../images/common/logo_career-w.svg);
   width: 230px;
-  height: 32px;
   margin: 20px 10px 20px 0px;
 }
 body.consultant_index header .nav-outpatient-tittle {
-  position: relative;
-  width: 104px;
-  height: 32px;
-  display: inline;
   color: #fff;
-  font-size: 23px;
-  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 20px;
   font-weight: 500;
-  top: 8px;
 }
 body.consultant_index header .nav-outpatient-tittle::before {
   content: '';
@@ -4666,15 +4675,8 @@ body.consultant_index header .nav-outpatient-tittle::before {
   padding-left: 10px;
 }
 body.consultant_index header .nav-consultant-tittle {
-  position: relative;
-  width: 104px;
-  height: 32px;
-  display: inline;
   color: #fff;
   font-size: 20px;
-  font-family: 'Noto Sans TC', sans-serif;
-  font-weight: 300;
-  top: 7px;
   padding-left: 8px;
 }
 body.consultant_index header .nav-consultant-tittle::before {
@@ -4684,7 +4686,9 @@ body.consultant_index header .nav-consultant-tittle::before {
   padding-left: 10px;
 }
 body.consultant_index header .nav-user-info {
-  float: right;
+  /* float: right; */
+  display: flex;
+  align-items: center;
 }
 body.consultant_index header .nav-user-info p {
   position: relative;
@@ -4713,6 +4717,9 @@ body.consultant_index header .nav-user-info .dropdown a.dropbtn {
 }
 body.consultant_index header .nav-user-info .dropdown a.dropbtn:hover {
   opacity: 0.8;
+}
+body.consultant_index header .nav-user-info .dropdown a.dropbtn img{
+  width: 100%;
 }
 
 body.consultant_index header .nav-user-info .dropdown .dropdown-content {
@@ -4769,83 +4776,44 @@ body.consultant_index
   }
   body.consultant_index header a .nav-logo {
     content: url(../images/common/logo_career-w-s.svg);
-    width: 160px;
+    width: 120px;
     height: auto;
-    margin: 15px 10px 20px 0px;
+    /* margin: 15px 5px 20px 0px; */
+    margin-right: 5px;
   }
-  body.consultant_index header a .nav-outpatient-tittle {
-    position: relative;
-    width: 104px;
-    height: 26px;
-    display: inline;
+  body.consultant_index header .nav-outpatient-tittle {
+    height: 16px;
     color: #fff;
-    font-size: 18px;
-    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 14px;
     font-weight: 500;
     top: 2px;
   }
-  body.consultant_index header a .nav-outpatient-tittle::before {
+  body.consultant_index header .nav-outpatient-tittle::before {
     content: '';
-    position: relative;
     bottom: 1px;
     font-size: 12px;
     border-left: 1px solid #fff;
-    padding-left: 10px;
+    padding-left: 5px;
   }
 
-  body.consultant_index header a .nav-consultant-tittle {
-    position: relative;
-    width: 104px;
-    height: 32px;
-    display: inline;
+  body.consultant_index header .nav-consultant-tittle {
+    height: 16px;
     color: #fff;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 300;
-    font-family: 'Noto Sans TC', sans-serif;
     top: 1px;
-    padding-left: 8px;
+    padding-left: 5px;
   }
 
-  body.consultant_index header a .nav-consultant-tittle::before {
+  body.consultant_index header .nav-consultant-tittle::before {
     content: '';
     font-size: 10px;
     border-left: 1px solid #fff;
-    padding-left: 10px;
+    padding-left: 5px;
   }
 
   body.consultant_index header .nav-user-info .dropdown a.dropbtn {
-    width: 21px;
-  }
-}
-
-@media (max-width: 409px) {
-  body.consultant_index header a .nav-logo {
-    margin: 15px 0px 20px 0px;
-  }
-  body.consultant_index header a .nav-outpatient-tittle {
-    font-size: 16px;
-    top: 1px;
-  }
-  body.consultant_index header a .nav-outpatient-tittle::before {
-    padding-left: 5px;
-  }
-  body.consultant_index header a .nav-consultant-tittle {
-    font-size: 16px;
-    top: 1px;
-    padding-left: 0px;
-  }
-  body.consultant_index header a .nav-consultant-tittle::before {
-    padding-left: 5px;
-  }
-}
-@media (max-width: 375px) {
-  body.consultant_index
-    header
-    .nav-user-info
-    .dropdown
-    .dropdown-content
-    .btn-sub {
-    width: 127px;
+    width: 20px;
   }
 }
 
