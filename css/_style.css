@@ -2415,6 +2415,7 @@ body {
   appearance: none;
   -moz-appearance: none;
   -webkit-appearance: none;
+  text-align: center;
 }
 .reservation .mobile_option .local select option {
   color: #333;
@@ -4625,7 +4626,7 @@ footer.login_footer {
     display: none;
   }
   .report .information .list .group .item .table .tbody .tr .td select {
-    width: 53px;
+    width: 62px;
   }
   .report .information .list .desc .textarea_line .name {
     font-size: 1.5rem;
